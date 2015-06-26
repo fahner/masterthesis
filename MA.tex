@@ -37,14 +37,32 @@
     urlcolor=darkblue
 }
 
+% eigene Befehle etc.
+%\include{commands}
+%\include{values}
+
 \begin{document}
   %% title pages similar to providet template instead of maketitle
-  \include{titlepages-ger} % select either german
+  %\include{titlepages-ger} % select either german
   \include{titlepages-eng} % or english title page
   \include{abstracts}
 
   \tableofcontents
   %% Put your contents here
+	
+	\include{introduction}
+	\include{detector}
+	\include{theory}
+	%\include{selection}
+	%\include{signalfit}
+	%\include{normalisationfit}
+	%\include{efficiencies}
+	%\include{backgrounds}
+	%\include{systematics}
+	%\include{results}
+	%\include{conclusions}
+
+
 
   \part{Appendix}
   \begin{appendix}
