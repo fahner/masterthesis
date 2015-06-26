@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.27)  23 JUN 2015 13:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.27)  26 JUN 2015 23:07
 entering extended mode
 **MA.tex
 (C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\MA.tex
@@ -570,21 +570,47 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 38.
 
-No file MA.aux.
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\was\upgreek.sty"
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
+\@input{lhcb-symbols-def.aux}
+
+(C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\lhcb-symbols-def.t
+ex)
+\@input{commands.aux}
+(C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\commands.tex)
+(C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\MA.aux
+(C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\titlepages-eng.aux
+) (C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\abstracts.aux)
+(C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\introduction.aux)
+(C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\detector.aux)
+(C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\theory.aux)
+(C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\deposition.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count114
@@ -600,7 +626,7 @@ LaTeX Font Info:    ... okay on input line 44.
 \everyMPtoPDFconversion=\toks23
 )
 \AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring ON on input line 44.
+Package hyperref Info: Link coloring ON on input line 56.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -609,9 +635,12 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count120
 )
-LaTeX Info: Redefining \ref on input line 44.
-LaTeX Info: Redefining \pageref on input line 44.
-LaTeX Info: Redefining \nameref on input line 44.
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \nameref on input line 56.
+
+(C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\MA.out)
+(C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\MA.out)
 \@outlinefile=\write3
 
 (C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\titlepages-eng.tex
@@ -619,6 +648,10 @@ LaTeX Font Info:    Try loading font information for T1+cmss on input line 12.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [1
+
+
+
+
 
 
 
@@ -637,9 +670,10 @@ Package natbib Warning: Citation `loremIpsum' on page 3 undefined on input line
 )) [3
 
 
-]
+] (C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\MA.toc)
 \tf@toc=\write4
- [4
+
+[4
 
 
 ]
@@ -650,45 +684,16 @@ Chapter 1.
 
 ] (C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\detector.tex
 Chapter 2.
-! Undefined control sequence.
-\scr@ds@tocentry ->The \lhcb 
-                             detector
-l.1 \chapter{The \lhcb detector}
-                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\scr@ds@tocentry ->The \lhcb 
-                             detector
-l.1 \chapter{The \lhcb detector}
-                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> The \lhcb 
-                     detector
-l.1 \chapter{The \lhcb detector}
-                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 ) [6
 
 
 
 ] (C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\theory.tex
 Chapter 3.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 4.
+
 ) [7
 
 
@@ -698,8 +703,12 @@ Chapter 3.
 
 ]
 Appendix A.
+(C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\MA.lof)
 \tf@lof=\write5
+
+(C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\MA.lot)
 \tf@lot=\write6
+
 No file MA.bbl.
 [9
 
@@ -710,8 +719,8 @@ No file MA.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
 (C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\MA.aux
 (C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\titlepages-eng.aux
 ) (C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\abstracts.aux)
@@ -719,8 +728,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
 (C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\detector.aux)
 (C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\theory.aux)
 (C:\Users\paddymania\Daten\Dokumente\Uni\Master\masterthesis\deposition.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 87.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 87.
 
 
 Package rerunfilecheck Warning: File `MA.out' has changed.
@@ -728,35 +737,38 @@ Package rerunfilecheck Warning: File `MA.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `MA.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  1E203672E9C6E10502773632D35E03E4;368.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
+(rerunfilecheck)             Before: CAC2FD1AE67EE096AD914FAEA988A528;1339
+(rerunfilecheck)             After:  24CDCEC2D61291FA2F94B6E5DFA24FAD;1567.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 87.
  ) 
 Here is how much of TeX's memory you used:
- 8412 strings out of 493921
- 127027 string characters out of 3144861
- 272609 words of memory out of 3000000
- 11558 multiletter control sequences out of 15000+200000
- 17838 words of font info for 40 fonts, out of 3000000 for 9000
+ 9310 strings out of 493921
+ 135003 string characters out of 3144861
+ 285336 words of memory out of 3000000
+ 12397 multiletter control sequences out of 15000+200000
+ 20391 words of font info for 49 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 49i,7n,80p,248b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,7n,80p,264b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\paddymania\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
 i600\ecsx2488.pk> <C:\Users\paddymania\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\paddymania\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\jknappen\ec\dpi600\ecsx2074.pk> <C:\Users\paddymania\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\paddym
-ania\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <
+\jknappen\ec\dpi600\ecsx1440.pk> <C:\Users\paddymania\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\paddymania\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk> <C:\Users\paddym
+ania\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx2074.pk> <
 C:\Users\paddymania\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ecsx1728.pk> <C:\Users\paddymania\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
-appen\ec\dpi600\ecrm1440.pk> <C:\Users\paddymania\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\jknappen\ec\dpi600\ecss1440.pk> <C:\Users\paddymania\AppData\Local\
-MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1728.pk>
-Output written on MA.pdf (10 pages, 93601 bytes).
+\ecrm1095.pk> <C:\Users\paddymania\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
+appen\ec\dpi600\ecbx1095.pk> <C:\Users\paddymania\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\ecsx1728.pk> <C:\Users\paddymania\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\paddymania
+\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1440.pk> <C:\U
+sers\paddymania\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecs
+s1728.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
+12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b>
+Output written on MA.pdf (10 pages, 171452 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 557 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 

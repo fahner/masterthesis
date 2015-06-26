@@ -37,8 +37,20 @@
     urlcolor=darkblue
 }
 
+% eigene Pakete
+
+% die folgenden Pakete werden benötigt, um die LHCb-Symbole verwenden zu können.
+\usepackage{ifthen} 
+\newboolean{uprightparticles}
+\setboolean{uprightparticles}{false} %Set true for upright particle symbols
+\usepackage{xspace} 
+\usepackage{upgreek}
+% Ende der benötigten Pakete
+
+
 % eigene Befehle etc.
-%\include{commands}
+\include{lhcb-symbols-def}
+\include{commands}
 %\include{values}
 
 \begin{document}
@@ -49,8 +61,6 @@
 
   \tableofcontents
   %% Put your contents here
-<<<<<<< HEAD
-	
 	\include{introduction}
 	\include{detector}
 	\include{theory}
@@ -64,10 +74,6 @@
 	%\include{conclusions}
 
 
-
-=======
-  \include{introduction}
->>>>>>> origin/master
   \part{Appendix}
   \begin{appendix}
     \chapter{Lists}
