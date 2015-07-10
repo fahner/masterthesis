@@ -41,12 +41,19 @@
 
 % die folgenden Pakete werden benötigt, um die LHCb-Symbole verwenden zu können.
 \usepackage{ifthen} 
+\newboolean{articletitles}
+\setboolean{articletitles}{true} % False removes titles in references
 \newboolean{uprightparticles}
 \setboolean{uprightparticles}{false} %Set true for upright particle symbols
+\newboolean{inbibliography}
+\setboolean{inbibliography}{false} %True once you enter the bibliography
 \usepackage{xspace} 
 \usepackage{upgreek}
 % Ende der benötigten Pakete
 
+
+% eigene Einstellungen
+\graphicspath{{../figures/detector/}}
 
 % eigene Befehle etc.
 \include{lhcb-symbols-def}
@@ -79,9 +86,11 @@
     \chapter{Lists}
     \listoffigures
     \listoftables
+    
     \bibliography{references}{}
-    \citestyle{egu}
-    \bibliographystyle{plainnat}
+    %\bibliographystyle{LHCb}
+    %\citestyle{egu}
+    %\bibliographystyle{plainnat}
     \include{deposition}
   \end{appendix}
 \end{document}
