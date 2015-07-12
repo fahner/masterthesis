@@ -24,7 +24,7 @@
 \usepackage                             {amsmath}
 \usepackage                             {graphicx}
 \usepackage     [english]               {babel}
-\usepackage                             {natbib}
+\usepackage                             {mciteplus}
 \usepackage                             {hyperref}
 
 % links
@@ -70,7 +70,7 @@
   %% Put your contents here
 	\include{introduction}
 	\include{detector}
-	\include{theory}
+	%\include{theory}
 	%\include{selection}
 	%\include{signalfit}
 	%\include{normalisationfit}
@@ -87,8 +87,9 @@
     \listoffigures
     \listoftables
     
-    \bibliography{references}{}
-    %\bibliographystyle{LHCb}
+    \setboolean{inbibliography}{false} %True once you enter the bibliography
+    \bibliographystyle{LHCb}
+    \bibliography{references}
     %\citestyle{egu}
     %\bibliographystyle{plainnat}
     \include{deposition}
