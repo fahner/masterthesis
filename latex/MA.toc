@@ -14,5 +14,7 @@
 \contentsline {section}{\numberline {2.3}Trigger}{10}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}L0-Trigger}{10}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}High Level Trigger (HLT)}{10}{subsection.2.3.2}
-\contentsline {part}{\numberline {I}Appendix}{11}{part.1}
-\contentsline {chapter}{\numberline {A}Lists}{12}{appendix.A}
+\contentsline {chapter}{\numberline {3}Data reconstruction and selection}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Trigger requirements}{11}{section.3.1}
+\contentsline {part}{\numberline {I}Appendix}{12}{part.1}
+\contentsline {chapter}{\numberline {A}Lists}{13}{appendix.A}
