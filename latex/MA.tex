@@ -52,6 +52,7 @@
 % Ende der benötigten Pakete
 \usepackage[scientific-notation=true,
             separate-uncertainty]      {siunitx}
+\usepackage                            {multirow}
 
 % eigene Einstellungen
 \graphicspath{{../figures/detector/}{../figures/analysis/}}
@@ -72,12 +73,13 @@
 	\include{introduction}
 	\include{detector}
 	%\include{theory}
+	%\include{strategy}
     \include{selection}
-	%\include{signalfit}
+	\include{signalfit}
 	\include{normalisationfit}
 	%\include{efficiencies}
 	%\include{backgrounds}
-	%\include{systematics}
+	\include{systematics}
 	%\include{structure}
 	%\include{results}
 	%\include{conclusions}
