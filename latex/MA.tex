@@ -50,7 +50,8 @@
 \usepackage{xspace} 
 \usepackage{upgreek}
 % Ende der benötigten Pakete
-
+\usepackage[scientific-notation=true,
+            separate-uncertainty]      {siunitx}
 
 % eigene Einstellungen
 \graphicspath{{../figures/detector/}{../figures/analysis/}}
@@ -58,7 +59,7 @@
 % eigene Befehle etc.
 \include{lhcb-symbols-def}
 \include{commands}
-%\include{values}
+\include{includes/values}
 
 \begin{document}
   %% title pages similar to providet template instead of maketitle
