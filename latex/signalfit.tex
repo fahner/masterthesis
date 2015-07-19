@@ -108,7 +108,7 @@ This is a very signal rich region and should give a proper idea of the mass shap
 The main part of the signal will be nonresonant but furthermore it is expected to see at least two resonances, namely the decays \decay{\LcResI}{\Dz\proton} and \decay{\LcResII}{\Dz\proton}.
 These two resonances are parametrized by a relativistic Breit-Wigner distribution convoluted with a Gaussian $\mathcal{G}(m|m_0,\sigma)$ to account for the detector's massresolution.
 \begin{align}
-    \text{RelBW}(m|m_0,\Gamma) = \left[ 2m \cdot \text{PS}(m|m_1,m_2) \cdot \frac{1}{(m^2 -m_0^2)^2 + m_0^2\Gamma^2} \right] \ast \mathcal{G}(m|m_0,\sigma), \label{eq:RelBW}
+    \text{RelBW}(m|m_0,\Gamma) = \left[ 2m \cdot \text{PS}(m|m_1,m_2) \cdot \frac{1}{(m^2 -m_0^2)^2 + m_0^2\Gamma^2} \right] \otimes \mathcal{G}(m|m_0,\sigma), \label{eq:RelBW}
 \end{align}
  Here $PS$ denotes the phase space function of eq (\ref{eq:PS}), $m_0$ the resonance's mass and $\Gamma$ its width.
  The determination of the mass resolution is described in section \ref{sec:Massresolution}. 
@@ -144,6 +144,9 @@ In the following this component will be treated as signal since it appears very 
 
 \section{Determination of the mass resolution}
 \label{sec:Massresolution}
+If one sees a resonance in a mass spectrum, it isn't usually the natural width of a resonance which is seen.
+The reason lies in the fact that the detector has a finite massresolution ``overlapping" the natural width.
+In this analysis the effect is accounted for by convoluting the Breit-Wigner, which is assumed to be the natural shape of the resonance, with a Gaussian, describing the smearing of the resonance due to massresolution.
 
 
 \section{Nominal fit in two dimensions}
