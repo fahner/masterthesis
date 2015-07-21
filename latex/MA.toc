@@ -21,16 +21,21 @@
 \contentsline {subsection}{\numberline {4.1.1}\ensuremath {\qopname \relax o{log}\chi ^2_{\text {IP}}}\xspace shape}{14}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Control of \ensuremath {\qopname \relax o{log}\chi ^2_{\text {IP}}}\xspace parametrization}{16}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}{\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace mass shape}{17}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Determination of the mass resolution}{19}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Nominal fit in two dimensions}{19}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Control of the method and parametrization}{20}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Extraction of \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace signal yield together with \ensuremath {{\ensuremath {\PLambda }}\xspace _{\ensuremath {\ensuremath {c}\xspace }}\xspace (2880)^+}\xspace and \ensuremath {{\ensuremath {\PLambda }}\xspace _{\ensuremath {\ensuremath {c}\xspace }}\xspace (2940)^+}\xspace properties}{22}{subsection.4.2.3}
-\contentsline {chapter}{\numberline {5}Normalisation fit}{24}{chapter.5}
-\contentsline {section}{\numberline {5.1}Reduction and handling of backgrounds}{24}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Non {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace background}{24}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Random combinations of {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace and {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace }{25}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Peaking backgrounds}{25}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}Fit of the {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {{\ensuremath {\ensuremath {K}\xspace }}\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\ensuremath {\pi }\xspace }}\xspace ^+}}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace corrected mass}{26}{section.5.2}
-\contentsline {chapter}{\numberline {6}Systematics}{29}{chapter.6}
-\contentsline {part}{\numberline {I}Appendix}{30}{part.1}
-\contentsline {chapter}{\numberline {A}Lists}{31}{appendix.A}
+\contentsline {section}{\numberline {4.2}Determination of the massresolution}{19}{section.4.2}
+\contentsline {section}{\numberline {4.3}Nominal fit in two dimensions}{20}{section.4.3}
+\contentsline {section}{\numberline {4.4}Control of the method and parametrization}{21}{section.4.4}
+\contentsline {section}{\numberline {4.5}Extraction of \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace signal yield together with \ensuremath {{\ensuremath {\PLambda }}\xspace _{\ensuremath {\ensuremath {c}\xspace }}\xspace (2880)^+}\xspace and \ensuremath {{\ensuremath {\PLambda }}\xspace _{\ensuremath {\ensuremath {c}\xspace }}\xspace (2940)^+}\xspace properties}{23}{section.4.5}
+\contentsline {chapter}{\numberline {5}Normalisation fit}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Reduction and handling of backgrounds}{25}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Non {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace background}{25}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Random combinations of {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace and {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace }{26}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Peaking backgrounds}{26}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Fit of the {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {{\ensuremath {\ensuremath {K}\xspace }}\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\ensuremath {\pi }\xspace }}\xspace ^+}}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace corrected mass}{27}{section.5.2}
+\contentsline {section}{\numberline {5.3}Efficiencies}{30}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Kinematic reweighting of the \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace and \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace }\xspace channel}{31}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Reweighting of the {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace signal MC}{31}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Generator level efficiencies}{32}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Reconstruction and selection efficiencies}{32}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}Total efficiencies}{32}{subsection.5.3.5}
+\contentsline {chapter}{\numberline {6}Systematics}{33}{chapter.6}
+\contentsline {chapter}{\numberline {A}Massresolution}{34}{appendix.A}

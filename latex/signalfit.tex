@@ -141,13 +141,38 @@ In the following this component will be treated as signal since it appears very 
 \end{figure}
 \input{includes/table_fit_D0p_data_mD0p_RS_TurnOnDExp_3RelBWPSRes}
 
-
-\section{Determination of the mass resolution}
+\section{Determination of the massresolution}
 \label{sec:Massresolution}
 If one sees a resonance in a mass spectrum, it isn't usually the natural width of a resonance which is seen.
 The reason lies in the fact that the detector has a finite massresolution ``overlapping" the natural width.
 In this analysis the effect is accounted for by convoluting the Breit-Wigner, which is assumed to be the natural shape of the resonance, with a Gaussian, describing the smearing of the resonance due to massresolution.
 
+The determination of the massresolution makes use of a simulation.
+For that purpose, the \Dz\proton mass spectrum is split up in bins of 30\mev.
+For each mass bin a histogram is filled with the difference of the generated (also called ``true") and the reconstruted mass in the simulation.
+It is expected that this difference peaks around zero.
+Finally, a fit is performed on these histograms using a simple Gaussian function.
+The width of this Gaussian is then assumed to be the massresolution in the particular bin.
+Figure \ref{fig:massresolution} shows on the left side exemplarily the massdifference between reconstructed and generated mass together with the fit in the bin $2863 < M(\Dz\proton) < 2893 \mev$. 
+The fits of all bins can be seen in Appendix \ref{app:Massresolution}, figure \ref{fig:massresolution_all}.
+On the right side, the obtained massresolutions for all bins are plotted.
+The higher the bin, the larger the errors are due to less statistics in these bins.
+Since only the bins containing the resonances are of particular interest, these larger errors doesn't matter for this study.
+\begin{figure}[hptb]
+    \centering
+	\includegraphics[width=0.49\textwidth]{LbToD0p/massresolution/massresolution_002}
+	\includegraphics[width=0.49\textwidth]{LbToD0p/massresolution/massresolution_widths}
+	\caption{Left: Fit of a Gaussian to the difference between generated and reconstructed \Dz\proton mass (simulation sample) in the range $2863 < M(\Dz\proton) < 2893 \mev$. The width of the Gaussian is taken as massresolution. Right: Obtained massresolutions for all bins. 
+             The large errors in the higher bins doesn't matter for the desired purpose as only the bins containing the resonances are relevant.}
+    \label{fig:massresolution}
+\end{figure}
+
+Regarding these results, the \LcResI, \LcResII and the enhancement are fitted with the following fixed massresolutions:
+\begin{align*}
+    \LcResI:           && \sigma_{M,\LcResI}            &= (\MassresResIval \pm \MassresResIerr) \mev, \\
+    \LcResII:          && \sigma_{M,\LcResII}           &= (\MassresResIIval \pm \MassresResIIerr) \mev, \\
+    \text{enhancement}:&& \sigma_{M,\text{enhancement}} &= (\MassresStructureval \pm \MassresStructureerr) \mev.
+\end{align*}
 
 \section{Nominal fit in two dimensions}
 \label{sec:Fit_2D}
