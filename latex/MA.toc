@@ -50,9 +50,13 @@
 \contentsline {section}{\numberline {8.5}Total efficiencies}{36}{section.8.5}
 \contentsline {chapter}{\numberline {9}Backgrounds}{37}{chapter.9}
 \contentsline {section}{\numberline {9.1}Proton misidentification}{37}{section.9.1}
-\contentsline {subsection}{\numberline {9.1.1}Definition of PID particle regions - Number of particle candidates}{38}{subsection.9.1.1}
-\contentsline {subsubsection}{Determination of ``true" candidates with PID efficiencies}{38}{section*.2}
-\contentsline {subsubsection}{Estimate of misidentified protons}{39}{section*.3}
-\contentsline {chapter}{\numberline {10}Systematics}{42}{chapter.10}
-\contentsline {chapter}{\numberline {A}Massresolution}{43}{appendix.A}
-\contentsline {chapter}{\numberline {B}Reweighting of \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace decay simulation}{45}{appendix.B}
+\contentsline {subsection}{\numberline {9.1.1}Definition of particle identification regions - Number of particle candidates}{38}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}Determination of ``true" candidates with PID efficiencies}{39}{subsection.9.1.2}
+\contentsline {subsection}{\numberline {9.1.3}Estimate of misidentified protons}{40}{subsection.9.1.3}
+\contentsline {section}{\numberline {9.2}Misidentified muons}{40}{section.9.2}
+\contentsline {section}{\numberline {9.3}Prompt {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace }{41}{section.9.3}
+\contentsline {section}{\numberline {9.4}Other possible backgrounds}{42}{section.9.4}
+\contentsline {section}{\numberline {9.5}Backgrounds summary and estimate of background yield}{43}{section.9.5}
+\contentsline {chapter}{\numberline {10}Systematics}{44}{chapter.10}
+\contentsline {chapter}{\numberline {A}Massresolution}{45}{appendix.A}
+\contentsline {chapter}{\numberline {B}Reweighting of \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace decay simulation}{47}{appendix.B}
