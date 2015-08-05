@@ -1,2 +1,32 @@
 \chapter{Results}
 \label{sec:Results}
+This chapter summarises all the ingredients needed for the calculation of the relative branching ratio \R.
+As a reminder, the relative branching ratio of the decays \LbToDpmunuX and \LbToLcmunu is calculated by:
+\begin{align}
+	\R =
+	\frac{\BR(\decay{\Lb}{\Dz\proton \mun \neumb X})}{\BR(\decay{\Lb}{\Lc \mun\neumb})}
+	 = 
+	 \frac{N_{\Dz\proton}}{N_{\Lc}}  
+	 \cdot \frac{\epsilon_{\Lc}}{\epsilon_{\Dz\proton}}
+	 \cdot \frac{\BR(\decay{\Lc}{p \Km \pip})}{\BR(\decay{\Dz}{\Km\pip})}.
+\end{align}
+
+Concerning the signal yield \NDp of the \LbToDpmunuX channel, not all backgrounds could be separated in the signal fit, since it is only able to separate random background.
+In section \sec{sec:Backgrounds} additional background contributions like fake protons etc. have been discussed and a background yield \NBgdDp has been assigned.
+Thus the final calculation of R is a bit modified to
+\begin{align}
+	\R =
+	 \frac{N_{\Dz\proton}-\NBgdDp}{N_{\Lc}}  
+	 \cdot \frac{\epsilon_{\Lc}}{\epsilon_{\Dz\proton}}
+	 \cdot \frac{\BR(\decay{\Lc}{p \Km \pip})}{\BR(\decay{\Dz}{\Km\pip})}. \label{eq:R_mod}
+\end{align}
+Note that for the normalisation fit and the determination of \NLc it is assumed, that all non-negligible backgrounds are considered in the fit.
+The efficiency ratio \effRatio has been determined by the use of simulation samples.
+These had to be reweighted to better emulate the data distribution.
+
+\input{includes/table_finalresults}
+An overview of all important observables can be found in Table \ref{tab:results}.
+With these values the relative branching ratio \R gets
+\begin{align*}
+    \R = \Rval \pm \Rerr \pm \Rsysterr.
+\end{align*}
