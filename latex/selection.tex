@@ -1,5 +1,30 @@
 \chapter{Data reconstruction and selection}
 \label{sec:Selection}
+The data sample used in this analysis originates from \proton\proton collisions and has been recorded in the years 2011 with a center of mass energy $\sqs = 7 \tev$ and 2012 with $\sqs = 8 \tev$, corresponding to an integrated luminosity of \intlum{3 \invfb}.
+This chapter describes and motivates the selection criteria for the reconstruction of the decays \LbToDpmunuX and \LbToLcmunu\footnote{If not stated otherwise, the $\mathcal{CP}$ conjugated decays \decay{\Lbbar}{\Dzb\antiproton\mup\neum} and \decay{\Lbbar}{\Lcbar\mup\neum} are included in those samples}.
+As the \Dz and the \Lc are not stable enough to be directly indentified and detected, the subsequent decays \DToKpi and \LcTopKpi have been chosen for their reconstruction.
+These decays are good to detect at \lhcb, meaning that one gets a clear signal.
+Furthermore, with this choice one ends up with the same final state particles for reconstruction in both signal and normalisation channel, namely \pKpi\mun.
+Hence, any inefficiencies due to different interaction of particles with the detector should be avoided, at least to first order.
+
+One experimental difficulty arises due to the semileptonic nature of the signal and normalisation channel:
+The neutrino cannot be reconstructed.
+Consequently it is not possible to fully reconstruct the \Lb and to get a \Lb mass peak for the distinction between signal and background.
+This leads to a high pollution of the data sample with backgrounds.
+
+\section{Reconstruction of the decay \LbToDpmunuX}
+The main strategy in the reconstruction process of the decay \LbToDpmunuX is to find events with the signature $\decay{X_{b}}{(\DToKpi) \mun \neumb X}$, where $X_b$ denotes a \bquark-quark containg hadron, first.
+Then, the proton track is combined to the \Dz\mun vertex to make a \LbToDpmunuX candidate.
+It is apparent that a main source of background will be a \decay{\Bd/\Bp}{\Dz\mun\neumb X} decay, where the proton is randomly combined.
+To better understand the selection criteria and the way this \textsc{combinatorial background} is reduced, it might be helpful to have a look at a sketch of a typical \LbToDpmunuX decay in Figure \ref{fig:DecaySketch}.
+
+
+\section{Reconstruction of the decay \LbToLcmunu}
+
+\section{Simulation samples}
+
+
+\textbf{Here begins the old part, which will be rewritten!} \\
 
 The analysis of the decays \LbToDpmunuX (signal channel)  and \LbToLcmunu (normalization channel) requires the reconstruction and selection of possible signal candidates.
 The term ``signal candidates" implies, that a data sample doesn't contain only the desired signal events after reconstruction and selection, but is also polluted by events from different sources, albeit looking like signal.
