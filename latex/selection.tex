@@ -45,6 +45,7 @@ The \logIP is defined as the logarithm of the difference of the \Dz\mun vertex f
 This means the better the proton makes a vertex with the \Dz\mun, the smaller is \logIP and the more likely the event is a real \LbToDpmunuX decay.
 
 \subsection{Reconstruction of the \Dz}
+\label{sec:Selection_D0}
 The first step of the reconstruction process is to reconstruct the \Dz.
 This is supposed to happen via the \DToKpi signature.
 For both, kaon and pion, it is required that their momentum is larger than 2 \gev to ensure that they are not bent out of the detector by the magnet and that the \rich detector gives reliable results on the particle idenitification.
@@ -65,6 +66,7 @@ In this case events with a DIRA $>0.99$ of the \Dz are selected.
 As last requirement one suppresses combinatorial background by restricting the \Dz to be close to its mean mass, i.e. the mass difference to the PDG value is smaller than 25 \mev and to require a minimum \Dz flight distance with respect to the primary vertex of 5 \mm.
 
 \subsection{Reconstruction of the \Dz\mun candidate}
+\label{sec:Selection_D0mu}
 Having reconstructed the \Dz candidate one needs a muon track to combine them.
 The motivation for the requirements on the muon track is analagous to the kaon and pion for the \Dz reconstruction.
 Thus they will be just briefly mentioned:
@@ -79,202 +81,202 @@ To avoid completely random combinations the invariant \Dz\mun mass is required t
 The minimum DIRA of the \Dz\mun candidate is 0.999.
 With a requirement on the flight distance \chisq to be greater than 25 it is ensured that the \Dz\mun decay vertex is certainly displaced form the primary vertex.
 
-\subsection{Reconstruction of the \Lb / \Dz\mun\proton candidate}
+\subsection{Reconstruction of the \Lb (\Dz\mun\proton) candidate}
 The proton's momentum and transverse momentum is required to be 15 \gev and 1 \gev for a good particle identification and to exclude protons boosted from the primary interaction.
 To reduce the amount of fake protons, i.e. pions or kaon that are misidentified as protons, tight particle idenitification requirements are applied: PIDp $> 10$ and PIDp$-$PIDK $> 10$.
-The \chisqip
+The \chisqip with respect to the primary vertex is greater than 25, since the proton must not come from the primary vertex.
+In contrast the proton should make a good vertex with the \Dz\mun candidate.
+It is thus required that the \logIP of the proton with respect to the \Dz\mun vertex is smaller than 1.
+It should be noted, that throughout this thesis, the simple label \logIP refers to this variable.
+This last requirement on \logIP is not applied in the signal fit to distinguish nonresonant signal and background as will be thoroughly explained in chapter \ref{sec:Signalfit}.
 
+For the combined \Dz\mun\proton candidate the requirement on the DIRA is the tightest compared to the daughter candidates.
+This is obvious since the impact of the detector resolution leading to a discrepancy between flight direction and momentum should be the smallest for the first decay of the decay chain.
+An arccos(DIRA) $< 0.015$ is required, which is equivalent to a DIRA $\gtrsim 0.9999$.
 
-\section{Reconstruction of the decay \LbToLcmunu}
+As stated at the beginning of this chapter, the information on the neutrino is missing in the reconstruction.
+Thus the reconstructed \Lb mass is smeared out.
+However, there are different ways to at least partially account for the missing neutrino.
+One of them is the so called \textsc{corrected mass} of the \Lb.
+It is defined as
+\begin{align}
+    m_{\text{corr}} = \sqrt{m_{\Dz\mun\proton}^2 + p_{\perp}^2} + p_{\perp}, \label{eq:correctedMass}
+\end{align}
+where $m_{\Dz\mun\proton}$ denotes the invariant mass of the \Dz\mun\proton candidate and $p_\perp$ its transverse momentum perpendicular to the \Lb flight direction, which is measured by the connection of the primary vertex and the \Lb decay vertex.
+If the only missing particle is massless as the neutrino in this case, then the corrected mass peaks around the mass of the mother particle, here the \Lb \cite{CorrectedMass}.
+Hence, it is required that the corrected \Lb mass lies around its PDG mass $M(\Lb)=(5619.5 \pm 0.4)\mev$ \cite{PDG} between 5 and 6 \gev.
 
-\section{Simulation samples}
+Another background might be the decay \decay{\Lb}{\Dz\proton\pim}, where the pion is misidentified as muon.
+In this case, all final state particles are reconstructed and the invariant \Dz\mun\proton mass peaks around the \Lb mass.
+To veto such backgrounds only events with an invariant \Dz\mun\proton mass of less than 5.5 \gev are selected.
+A detailed discussion of these backgrounds can be found in chapter \ref{sec:Backgrounds}, especially Figure \ref{fig:plot_D0pmuMass} visualises this veto.
 
-
-\textbf{Here begins the old part, which will be rewritten!} \\
-
-The analysis of the decays \LbToDpmunuX (signal channel)  and \LbToLcmunu (normalization channel) requires the reconstruction and selection of possible signal candidates.
-The term ``signal candidates" implies, that a data sample doesn't contain only the desired signal events after reconstruction and selection, but is also polluted by events from different sources, albeit looking like signal.
-These backgrounds can have several reasons: 
-One possibility is that the final state particles are randomly combined but fulfil all the applied criteria. 
-This kind of background is also known as combinatoric background.
-There are furthermore the so-called physical backgrounds.
-With this term one summarises physical decays where one either misidentifies a final state particle or only partially reconstruct an event und thus leading to a wrong interpretation of the decay.
-As an example for the misidentification consider the decay \decay{\Lb}{\Dz\proton\pim}. If the \pim is now misidentified as a muonthis decay looks exactly like the signal channel of this analysis.
-Partially reconstructed events play an important role in the normalisation channel \LbToLcmunu.
-There exists also semileptonic \Lb decays into excited \Lcstar states, \decay{\Lb}{\Lcstar\mun\neumb}.
-Subsequently, these excited \Lcstar states decay into an \Lc and additional pions or photons.
-If one misses these pions and photons the decay looks exactly like \LbToLcmunu.
-
-Since such misidentified decays or combinatoric backgrounds distort the measurement of physical quantities, the event reconstruction and above all the selection aims to reduce these backgrounds as much as possible while keeping as much signal as possible.
-At \lhcb, this procedure is done in several steps, described for the present analysis in this chapter, namely the Trigger, the preselection (or stripping) and the offline selection. 
-Nonetheless not every background source can be easily eliminated. 
-The handling of such issues is part of chapter \ref{sec:Backgrounds}.
-
-\section{Trigger requirements}
-Trigger requirements are already applied during data taking to reduce the arising data to a recordable amount.
-There exists so called trigger lines for different physics purposes. 
-These trigger lines then contain the requirements on the particles' properties.
-
-Due to their large lifetime and their little interaction with matter muons leave a very clean signal in the detector and are the best suited to trigger on. For the \LbToDpmunuX channel the muon has pass the \texttt{L0Muon\_TOS} line at L0 level. TOS is the abbreviation for Trigger On Signal, i.e. the presence of the signal is sufficient to generate a positive trigger decision \cite{Tolk:1701134}. 
-To record an event this line requires that the transverse momentum of at least one muon candidate is larger than 1760\mev\footnote{This requirement changed between 2011 and 2012. For a better readability only the 2012 trigger settings are described here. The 2011 configuration can be found in \cite{Trigger_2011_2012}.}.
-At Hlt1 the \texttt{Hlt1TrackMuon\_TOS} line requires the muon candidate to have at least one hit in the VELO and triggers on the track quality.
-The full event reonstruction is available at Hlt2 level.
-Here, the so called topological trigger lines dedicated to trigger inclusive 2,3 or 4 body decays of \B mesons are applied.
-Additionally to kinematical information they are applying requirements on the vertex quality demanding the tracks to be very close to each other.
-These trigger lines deliver events containing a \Dz\mun candidate.
-These events are afterwards combined with \proton tracks to form a \LbToDpmunuX candidate.
-
-\section{Preselection / Stripping}
-The stripping selection serves for the reduction of data in the analysis given a certain decay topology.
-The requirements made for a specific decay category are collected in so called stripping lines.
-For the \LbToDpmunuX channel the line \texttt{b2D0MuXB2DMuNuXLine} and for \LbToLcmunu the line \texttt{b2LcMuXB2DMuNuXLine} is used.
-These lines are dedicated to filter the data for inclusive decays of \bquark containing hadrons to either a \Dz\mun or a \Lc\mun, namely $X_{\bar{b}} \rightarrow (D^0 \rightarrow K^- \pi^+) \mu^- \bar{\nu}_{\mu} X$ or respectively $X_{\bar{b}} \rightarrow (\Lambda_c^+ \rightarrow K^- \pi^+ p^+) \mu^- \bar{\nu}_{\mu} X$.
-The requirements included in these lines are mentioned in tables \ref{tab:cuts_D0p} and \ref{tab:cuts_Lc}.
-In the following the used variables will be explained.
-\begin{itemize}
-    \item \ptot (\pt) denotes the total (transverse) momentum of a particle
-    \item \textbf{GhostProb:} It might happen, that several hits in the detector are incidentally combined to a track albeit having different sources. 
-          A measure how likely such a ``ghost" is, is given by the ghost probability.
-    \item The \textbf{impact parameter (IP)} is defined as the smallest perpendicular distance between a track and a vertex, in most cases this is the primary vertex.
-    \item As tracks and vertices are fitted, \textbf{\chisq} values can be derived from them. 
-          The \textbf{\chisqip} denotes the difference of a vertex fit \chisq value with and without a specific particle. 
-          It is thus a measure how well a particle makes a vertex. 
-          Requiring a high \chisqip of a particle for instance with respect to the primary vertex ensures that this particle comes from another source.
-    \item The particle identification system delivers a likelihood for each particle hypothesis.
-          \textbf{PIDx} (or often also \textbf{DLL$_x$}) denotes the difference of the logarithmic likelihoods between the hypothesis that a particle is x and the hypothesis to be a pion.
-          The higher PIDx the more likely it is particle x.
-    \item \textbf{DIRA} denotes the cosine of the angle between the momentum of the particle and the direction of flight from the primary vertex to the decay vertex.
-\end{itemize}
-
-\section{Additional analysis selection}
-To further reduce backgrounds prominent in this analysis an additional analysis selection is applied on top of the stripping.
-The requirements at this level are also listed in table \ref{tab:cuts_D0p} for the \LbToDpmunuX channel and \ref{tab:cuts_Lc} for \LbToLcmunu.
-Some of the requirements are just tightened a bit, but also some further observables are used.
-
-Concerning the \LbToDpmunu channel a high focus has been put on avoiding backgrounds where a kaon or pion is misidentified as a proton. 
-For this purpose the particle identification variables have to fulfil the conditions PIDp $> 10$ and PIDp$-$PIDK $> 10$.
-Due to the missing neutrino the \Lb mass can't be fully reconstructed.
-Thus, only a loose selection can be made by this variable.
-It is demanded to be less than 5500 \mev which is less than the actual \Lb mass.
-Events peaking around the \Lb mass should be clearly background from particles misidentified as muon.
-More on this can be found in section \ref{sec:BKG_misIDmu}.
-A way of using more information on the masses is the use of the corrected \Lb mass, which peaks around the \Lb mass if the missing particle (as the missing neutrino here) is massless.
-It is thus required to be between 5 and 6 \gev.
-Another source of background might be prompt \Dz, i.e. \Dz directly coming from the primary interaction, with a randomly combined muon.
-To suppress such events it is required that the combined \Dz\mun particle flies a distinct path and is well separated from the primary vertex.
-A measure for this purpose is the flight distance \chisq with respect to the primary vertex, which should be larger than 25.
-Except for the twodimensional signal fit where the \logIP distribution is used to distinguish nonresonant signal and background it is required to be less than 1 to eliminate random combinations of protons with the \Dz\mun candidate.
 \begin{table}[h]
     \centering
-    \caption{Selection requirements for the decay \LbToDpmunuX.}
+    \caption{Summary of the selection requirements for the decay \LbToDpmunuX.}
     \label{tab:cuts_D0p}
-    \resizebox{\textwidth}{!}{
-    \begin{tabular}{r|lll}
+    \begin{tabular}{r|ll}
         \hline
-                & Variable          & Stripping & Analysis \\
+                & Variable            & Value           \\
         \hline
-        Event   & nLongTracks       & $< 250$   & -- \\
+        Event   
+        & number of long tracks       & $< 250$         \\
         \hline
-        Trigger
-        & L0    & --                                & Muon is L0Muon\_TOS \\
-        & Hlt1  & B is TOS on any Track line        & Muon is Hlt1TrackMuon\_TOS \\
-        & Hlt2  & B is Hlt2Topo(2$|$3$|$4)Body\_TOS & -- \\
-        \hline
-        Muons
-        &  \pt                        & $> 1.2 \gev$    & --\\
-        &  \ptot                      & $> 6 \gev$      & --\\
-        &  GhostProb                  & $< 0.5$         & -- \\
-        &  track \chisq/ndf           & $< 4$           & -- \\
-        &  \chisqip w.r.t. PV         & $> 9.0$         & -- \\
-        &  PIDmu                      & $> 0.0$         & $> 0.3$ \\
+        \mun 
+        & Momentum                    & $> 6 \gev$      \\
+        & Transverse momentum         & $> 1.2 \gev$    \\
+        & Ghost probability           & $< 0.5$         \\
+        & Track \chisq/ndf            & $< 4$           \\
+        & \chisqip w.r.t. PV          & $> 9.0$         \\
+        & PIDmu                       & $> 0.3$         \\
         \hline
         $D^0 \to K^-\pi^+$
-        & Daughter $p$                & $> 2 \gev$      & -- \\
-        & Daughter \pt                & $> 300.0 \mev$  & -- \\
-        & Daughter GhostProb          & $< 0.5$         & -- \\
-        & Daughter track \chisq/ndf   & $< 4$           & -- \\
-        & Daughter \chisqip w.r.t. PV & $> 4.0$         & -- \\
-        & Daughter ($K$) PIDK         & $> 4.0$         & -- \\
-        & Daughter ($\pi$) PIDK       & $< 10.0$        & -- \\
-        & \chisqvtx/ndf               & $< 6$           & -- \\
-        & DIRA w.r.t. PV              & $> 0.99$        & -- \\
-        & Mass diff. to PDG           & $< 80 \mev$     & $< 25 \mev$ \\
-        & Flight distance w.r.t. PV   & --              & $> 5 \mm$ \\
+        & Daughter momentum           & $> 2 \gev$      \\
+        & Daughter transverse momentum& $> 300.0 \mev$  \\
+        & Daughter ghost probablity   & $< 0.5$         \\
+        & Daughter track \chisq/ndf   & $< 4$           \\
+        & Daughter \chisqip w.r.t. PV & $> 4$           \\
+        & \Km daughter PIDK           & $> 4$           \\
+        & \pip daughter PIDK          & $< 10$          \\
+        & \chisqvtx/ndf               & $< 6$           \\
+        & DIRA w.r.t. PV              & $> 0.99$        \\
+        & Mass difference to PDG      & $< 25 \mev$     \\
+        & Flight distance w.r.t. PV   & $> 5 \mm$       \\
         \hline
         $D^0\mun$
-        & Mass                            & $\in \left[2.2, 8.0\right] \gev$ & -- \\
-        & \chisqvtx/ndf                   & $< 6$                            & $< 3 $ \\
-        & DIRA w.r.t. PV                  & $> 0.999$                        & -- \\
-        & Flight distance \chisq w.r.t. PV& --                               & $ > 25 $ \\
-        & Transverse momentum             & --                               & $ > 3000 \mev $ \\
-        \hline
-        $D^0\mun\proton$
-        & $\arccos$(DIRA) w.r.t. PV       & --                               & $ < 0.015 $ \\
-        & Mass                            & --                               & $ < 5.5 \gev $\\
-        & Corrected Mass                  & --                               & $ \in \left[5, 6\right] \gev $\\ 
+        & Mass                            & $\in \left[2.2, 8.0\right] \gev$ \\
+        & \chisqvtx/ndf                   & $< 3$                            \\
+        & DIRA w.r.t. PV                  & $> 0.999$                        \\
+        & Flight distance \chisq w.r.t. PV& $ > 25 $                         \\
+        & Transverse momentum             & $ > 3000 \mev $                  \\
         \hline
         \proton
-        & \chisqip w.r.t. PV              & -- & $ > 25 $ \\
-        & PIDp$-$PIDK                     & -- & $ > 10 $ \\
-        & PIDp                            & -- & $ > 10 $ \\
-        & Momentum                        & -- & $ > 15 \gev $\\
-        & Transverse momentum             & -- & $ > 1 \gev $\\
-        & \logIP w.r.t. \Dz\mun vertex  \footnote{not included in twodimensional \Dz\proton signalfit (see section \ref{sec:Signalfit}} & -- & $ < 1 $ \\
+        & \chisqip w.r.t. PV              & $ > 25 $    \\
+        & PIDp$-$PIDK                     & $ > 10 $    \\
+        & PIDp                            & $ > 10 $    \\
+        & Momentum                        & $ > 15\gev$ \\
+        & Transverse momentum             & $ > 1 \gev$ \\
+        & \logIP w.r.t. \Dz\mun vertex    & $ < 1 $     \\
         \hline
-    \end{tabular}}
+        $D^0\mun\proton$
+        & $\arccos$(DIRA) w.r.t. PV       & $ < 0.015 $                   \\
+        & Mass                            & $ < 5.5 \gev $                \\
+        & Corrected mass                  & $ \in \left[5, 6\right] \gev $\\ 
+        \hline
+    \end{tabular}
 \end{table}
 
-Moving on to \LbToLcmunu, the requirements on the proton coming from the subdecay \LcTopKpi are chosen to be the same as in \LbToDpmunuX to avoid different efficiencies due to different selections.
-It is furthermore ensured that the \Lc vertex is displaced from the primary interaction by the requirements on the impact parameter and again the flight distance \chisq.
+Table \ref{tab:cuts_D0p} summarises all selection requirements mentioned in the last sections.
+After the reconstruction and application of these requirements there are in total 21444 \LbToDpmunuX candidates left for the analysis.
+In the nominal signalfit the cut on \logIP is not applied.
+In this case, there are 34760 candidates available.
+Figure \ref{fig:plot_mD0p_logIP} shows the invariant \Dz\proton mass (top) and the \logIP distribution (bottom). 
+The first one is used for spectroscopy later.
+\begin{figure}[hptb]
+	\centering
+	\includegraphics[width=\textwidth]{LbToD0p/plots/data/Bh_DELTA_MASS} \\
+	\includegraphics[width=\textwidth]{LbToD0p/plots/data/logIP}
+	\caption{Invariant \Dz\proton mass (top) after the application of all selection requirements and \logIP distribution (bottom) after all requirements except for \logIP itself.
+             The arrow in the \logIP distribution indicates where the selection requirement is applied.
+             The colour-shaded areas shows the respective distributions for wrong sign (WS) combinations.}
+	\label{fig:plot_mD0p_logIP}
+\end{figure}
+Some peaking structures can be seen in the spectrum, indicating that the decay \LbToDpmunuX might happen via intermediate resonances.
+There is furthermore a broad distribution under the peaks.
+This is assumed to be either background or nonresonant signal.
+For their distinction, the \logIP distribution is used.
+The plot confirms the explanation above.
+Background events tend to peak at higher \logIP then signal events justified by the so called \textsc{wrong sign (WS)} combinations.
+To the physical decay \LbToDpmunuX there are also samples produced with one charge conjugated daughter particle.
+There are three possibilities of combining a wrong sign particle:
+\begin{itemize}
+    \item \textbf{WSp:} \Dz\antiproton\mun final state
+    \item \textbf{WSD0:} \Dzb\proton\mun final state
+    \item \textbf{WSmu:} \Dz\proton\mup final state
+\end{itemize}
+There is not any physical process that allows the decay of a \Lb to this final state.
+The wrong sign events must be randomly combined, thus giving a good first estimate of the \LbToDpmunuX background behaviour.
+
+\section{Reconstruction of the decay \LbToLcmunu}
+The reconstruction of the \LbToLcmunu channel with \LcTopKpi is done quite similarly to the decay \LbToDpmunuX.
+The main difference between those two channels is, that the proton is now combined with the \Km\pip to make a \LcTopKpi instead of being comined with the \Dz\mun.
+As to the rest, the topology is analogous to \LbToDpmunuX.
+The lifetime of the \Lb is long enough, such that the \Lb decays at a secondary vertex into a \Lc and \mun.
+Like the \Dz, the \Lc flies another distance, finally decaying at a tertiary vertex into \pKpi.
+The strategy for the selection is thus to find decays with the signature $X_{b} \rightarrow (\Lambda_c^+ \rightarrow K^- \pi^+ p^+) \mu^- \bar{\nu}_{\mu} X$.
+
+\subsection{Reconstruction of \Lc (\pKpi) candidates}
+First of all, requirements on the tracks of the final state particles \proton, \kaon and \pion are made.
+These are required to have a minimum momentum of 2\gev and a transverse momentum of 250\mev, their ghost probability should be less than 0.5 and the \chisqip with respect to the primary vertex is greater than 4.
+The motivation for these cuts are the same as for the \Dz reconstruction in Section \ref{sec:Selection_D0}:
+a good vertex quality, tracks not pointing to the primary vertex, good kinematics for particle identification and for not being bent out by the magnet.
+To be compatible to the \LbToDpmunuX decay and to ensure a similar reconstruction of the proton, the requirements on the proton are adopted from the \LbToDpmunuX reconstruction:
+A minimum momentum of 15 \gev, a minimum transverse momentum of 1 \gev and a minimum \chisqip with respect to the primary vertex of 25 is required.
+Furthermore fake protons are suppressed by demanding PIDp $> 10$ and PIDp$-$PIDK $> 10$.
+The kaon must satisfy PIDK $>-5$ and the pion PIDK $< 20$.
+
+For the combined \pKpi, i.e. \Lc candidate the vertex must be of good quality, guaranteed by \chisqvtx/ndf $< 3$.
+Its DIRA is required to be larger than 0.99 to match flight direction and momentum.
+The difference of the \Lc mass to its PDG value is required to be smaller than 80\mev only, since the \Lc sidebands are later used to subtract combinatorial backgrounds below the \Lc mass peak.
+Aside from a minimum transverse momentum of 2.1 \gev, \textsc{prompt} \Lc, i.e. \Lc directly coming from the primvary vertex, are supressed by requiring the logarithm of the \Lc impact parameter to be grater than -1.5 and a flight distance \chisq of more than 25, both with respect to the primary vertex.
+
+\subsection{Reconstruction of the \Lb (\Lc\mun) candidate}
+The reconstruction of the muon track is completely analogous to the description in Section \ref{sec:Selection_D0mu} and hence not discussed here again.
+The combined \Lc\mun, i.e. the \Lb candidate should make a good vertex with a maximum \chisqvtx of 6.
+Its DIRA is required to be larger than 0.999.
+Being a semileptonic decay again, only a loose selection on the invariant \Lc\mun mass can be applied.
+It must have a mass between 2.2 and 8.0 \gev.
+
+Compared to \LbToDpmunuX, main backgrounds are not assumed to be of combinatorial nature, but rather \Lb decays into excited \Lc states.
+A good example is the decay \decay{\Lb}{\LcRes{(2595)\mun\neumb} with \decay{\LcRes{(2595)}}{\Lc\piz}}, where the \piz is not reconstructed.
+Its decay topology does not differ from \LbToLcmunu, because the \LcRes{(2595)} decays immediately.
+However, if the massive \piz is missing in addtion, the the corrected \Lb mass should be shifted to lower masses compared to \LbToLcmunu.
+That is why there is not any requirement made on the \Lb corrected mass here.
+The different behaviour of the corrected masses is used in the normalisation fit in Chapter \ref{sec:Normalisationfit}  to disentangle the signal from those backgrounds.
 \begin{table}[h]
     \centering
-    \caption{Selection requirements for the \LbToLcmunu channel.}
+    \caption{Summary of the selection requirements for the reconstruction of \LbToLcmunu candidates.}
     \label{tab:cuts_Lc}
-    \resizebox{\textwidth}{!}{
-    \begin{tabular}{r|lll}
+    \begin{tabular}{r|ll}
         \hline
-                & Variable          & Stripping & Analysis \\
+                & Variable          & Value \\
         \hline
-        Event   & nLongTracks       & $< 250$   & -- \\
+        Event   & number of long tracks       & $< 250$ \\
         \hline
-        Trigger
-        & L0    & --                                & Muon is L0Muon\_TOS \\
-        & Hlt1  & B is TOS on any Track line        & Muon is Hlt1TrackMuon\_TOS \\
-        & Hlt2  & B is Hlt2Topo(2$|$3$|$4)Body\_TOS & -- \\
-        \hline
-        Muons
-        &  \pt                        & $> 1 \gev$      & --\\
-        &  \ptot                      & $> 6 \gev$      & --\\
-        &  GhostProb                  & $< 0.5$         & -- \\
-        &  track \chisq/ndf           & $< 4$           & -- \\
-        &  \chisqip w.r.t. PV         & $> 9.0$         & -- \\
-        &  PIDmu                      & $> 0.0$         & $> 0.3$ \\
+        \mun
+        & Transverse momentum         & $> 1 \gev$  \\
+        & Momentum                    & $> 6 \gev$  \\
+        & Ghost probability           & $< 0.5$     \\
+        & Track \chisq/ndf            & $< 4$       \\
+        & \chisqip w.r.t. PV          & $> 9.0$     \\
+        & PIDmu                       & $> 0.3$     \\
         \hline
         \LcTopKpi
-        & Daughter $p$                & $> 2 \gev$      & -- \\
-        & Daughter \pt                & $> 250.0 \mev$  & -- \\
-        & Daughter GhostProb          & $< 0.5$         & -- \\
-        & Daughter \chisqip w.r.t. PV & $> 4.0$         & -- \\
-        & Daughter (\proton) PIDp     & $> 0.0$         & $> 10$ \\
-        & Daughter (\proton) PIDp-PIDK& --              & $> 10$ \\
-        & Daughter (\proton) \ptot    & $> 9 \gev$      & $> 15 \gev$ \\
-        & Daughter (\proton) \pt      & --              & $> 1 \gev$ \\
-        & Daughter (\proton)\chisqip w.r.t. PV & $> 4.0$& $> 25 $    \\
-        & Daughter ($K$) PIDK         & $> -5.0$        & -- \\
-        & Daughter ($\pi$) PIDK       & $< 20.0$        & -- \\
-        & \chisqvtx/ndf               & $< 6$           & $< 3$ \\
-        & DIRA w.r.t. PV              & $> 0.99$        & -- \\
-        & Mass diff. to PDG           & $< 80 \mev$     & -- \\
-        & \pt                         & $>2.1 \gev$     & -- \\
-        & $\log_{10}$(IP) w.r.t. PV   & --              & $ > - 1.5 $ \\
-        & Flight distance \chisq w.r.t. PV   & --       & $> 25$ \\
+        & Daughter momentum           & $> 2 \gev$    \\
+        & Daughter transverse momentum& $> 250.0 \mev$\\
+        & Daughter ghost probability  & $< 0.5$       \\
+        & Daughter \chisqip w.r.t. PV & $> 4.0$       \\
+        & \proton daughter PIDp       & $> 10$ \\
+        & \proton daughter PIDp$-$PIDK& $> 10$ \\
+        & \proton daughter \ptot      & $> 15 \gev$ \\
+        & \proton daughter \pt        & $> 1 \gev$ \\
+        & \proton daughter \chisqip w.r.t. PV & $> 25 $    \\
+        & \Km daughter PIDK           & $> -5.0$     \\
+        & \pip daughter PIDK          & $< 20.0$     \\
+        & \chisqvtx/ndf               & $< 3$ \\
+        & DIRA w.r.t. PV              & $> 0.99$     \\
+        & Mass diff. to PDG           & $< 80 \mev$  \\
+        & Transverse momentum         & $>2.1 \gev$  \\
+        & $\log_{10}$(IP) w.r.t. PV   & $ > - 1.5 $ \\
+        & Flight distance \chisq w.r.t. PV  & $> 25$ \\
         \hline
         \Lc\mun
-        & Mass                            & $\in \left[2.2, 8.0\right] \gev$ & -- \\
-        & \chisqvtx/ndf                   & $< 6$                            & -- \\
-        & DIRA w.r.t. PV                  & $> 0.999$                        & -- \\
+        & Mass                            & $\in \left[2.2, 8.0\right] \gev$ \\
+        & \chisqvtx/ndf                   & $< 6$                            \\
+        & DIRA w.r.t. PV                  & $> 0.999$                        \\
         \hline
-    \end{tabular}}
+    \end{tabular}
 \end{table}
 
-After application of all these requirements there are in total 21444 \LbToDpmunuX (34760 without \logIP cut) and 2670999 \LcTopKpi candidates left for the fits and the further analysis. 
+Table \ref{tab:cuts_Lc} summarises all requirements for the reconstruction of the \LbToLcmunu candidates.
+After application of all these requirements there are in total 2670999 \LcTopKpi candidates left for the further analysis. 

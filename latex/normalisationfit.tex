@@ -1,84 +1,90 @@
 \chapter{Normalisation fit}
 \label{sec:Normalisationfit}
-This chapter describes the analysis of the normalisation channel \LbToLcmunu (\LcTopKpi) resulting in the signal yield \NLc for the calculation of \R. The method is different to the one in the signal channel \LbToDpmunuX due to several reasons:
-The final state particles of the subdecay \LcTopKpi are all reconstructed. 
-It is thus possible to see a clear \Lc mass peak as shown in figure \ref{fig:plot_Lc_M}.
-The small sidebands indicate a small combinatorial background concerning the subdecay \LcTopKpi.
-Background coming from a random combination of a \Lc with a muon can be estimated by a look at the WS final states combinations \Lc\mup.
-Since a \Lb can't decay into a \Lc\mup due to charge conservation, this unphysical combination gives a good hint for randomly combined \Lc\mun.
-The second reason why a different method is chosen compared to the \LbToDpmunuX channel is the fact that the \Lb can decay in several excited \Lc states (in the following denoted as \Lcstar for any excited \Lc state).
-It has been shown in \ref{SL_Vub} that the \LbToLcmunu data is saturated by the decays \decay{\Lb}{\LcstarRes{(2595)}\mun\neumb} and \decay{\Lb}{\LcstarRes{(2625)}\mun\neumb}.
-These excited \Lcstar instantly decay for instance in \Lc\pip\pim. 
-If these two pions aren't reconstructed, this decay can't be distinguished by its topology.
-That's why a different approach for the determination of \NLc has to be chosen.
+This chapter describes the measurement of the signal yield \NLc in the normalisation channel \LbToLcmunu (\LcTopKpi). 
+The method is different to the one in the signal channel \LbToDpmunuX due to several reasons:
+All of the final state particles of the subdecay \LcTopKpi can be reconstructed and the statistics is much higher. 
+Going through an intermediate resonance it is possible to see a clear \Lc mass peak as shown in figure \ref{fig:plot_Lc_M}.
+In \LbToDpmunuX the major part of the decays was non-resonant.
+The small sidebands indicate a small combinatorial background in the subdecay \LcTopKpi.
+The background contribution coming from a random combination of a \Lc with a muon can be estimated by investigating the wrong sign final states combinations \Lc\mup.
+Since a \Lb can't decay into a \Lc\mup due to charge conservation, this unphysical combination serves a model for randomly combined \Lc\mun.
+The second reason why a different method is chosen compared to the \LbToDpmunuX channel is the fact that the \Lb can decay in several excited \Lc states, in the following denoted as \Lcstar for any excited \Lc state.
+It has been shown in \ref{SL_Vub} that the \LbToLcmunu data is saturated by the decays \decay{\Lb}{\LcRes{(2595)}\mun\neumb} and \decay{\Lb}{\LcRes{(2625)}\mun\neumb}.
+These excited \Lcstar baryons instantly decay for instance in \Lc\pip\pim or \Lc\piz. 
+If these pions are not reconstructed, this decay cannot be distinguished from \LbToLcmunu by its topology.
+That is why a fit of \logIP does not make any sense here and a different approach for the determination of \NLc has to be chosen.
 The solution of the latter problem is to fit the corrected \pKpi\mun, i.e the visible \Lb mass.
-An explanation for this choice and the description of the fit is given in section \ref{sec:Normalisationfit}.
+It has been stated in chapter \ref{sec:Selection}, that the corrected \pKpi\mun or \Lb mass peak at the nominal \Lb mass, if the missing particle is massless.
+Concerning the \decay{\Lb}{\Lcstar\mun\neumb} decays, on misses not only the neutrino, but furthermore massive particles like the pions.
+Thus, the corrected \Lb mass is shifted to lower mass, enabling a fit to distinguish between the semileptonic \Lb decay into a \Lc or \Lcstar.
+This assumption on the corrected mass is verified in section \ref{sec:FitCorrectedMass}.
 \begin{figure}[hptb]
     \centering
 	\includegraphics[width=\textwidth]{LbToLc/plots/data/Lc_M}	
-	\caption{Plot of the invariant \pKpi mass. A clear mass peak identified as the \Lc can be seen. The yellow shaded area shows events with the WS combination \Lc\mup.}
+	\caption{Plot of the invariant \pKpi mass distribution. A clear mass peak identified as the \Lc can be seen. The yellow shaded area shows events with the WS combination \Lc\mup.}
 	\label{fig:plot_Lc_M}
 \end{figure}
 
-
 \section{Reduction and handling of backgrounds}
-This section describes the ways, how different sources of backgrounds are either handled or reduced.
+This section describes the ways how different sources of backgrounds are either handled or reduced.
 
 \subsection{Non \Lc background}
-As already mentioned the reconstructed \pKpi mass delivers a nice peak forming the hadronically decaying \Lc nicely seen in figure \ref{fig:plot_Lc_M}. 
-Events being outside of this peak can be explained by a random combination of proton, kaon and pion and thus not being decay remnants of the \Lc.
-Nonetheless there is also a certain amount of this ``combinatoric" background in the peak region.
+As already mentioned the reconstruction of \pKpi yields a nice mass peak forming the hadronically decaying \Lc, which can be seen in figure \ref{fig:plot_Lc_M}. 
+Events outside of this peak can be explained by a random combination of a proton, a kaon and a pion.
+Nonetheless there is also a certain amount of this ``combinatorial" background in the peak region.
 It is statistically eliminated by a sideband subtraction (see section \ref{sec:Sidebandsubtraction}).
-As signal band the invariant \pKpi masses in the range M(\pKpi) $\in \left[2260, 2320\right]\mev$ are chosen.
+The signal band is chosen to lie in the invariant \pKpi mass range between $\in \left[2260, 2320\right]\mev$.
 The background bands are M(\pKpi) $\in \left[2225, 2260\right]\mev$ or M(\pKpi) $\in \left[2320, 2345\right]\mev$.
 
 \subsection{Random combinations of \Lc and \mun}
-The next possible source of backgrounds are random combinations of \Lc and \mun. 
-Due to the semileptonic decay \LbToLcmunu and hence the missing neutrino \neumb it is not possible to use a sidebandsubtraction on the invariant \pKpi\mun (\Lc\mun) mass.
-Thus, wrong sign (WS) events, i.e. ``unphysical" events with a \Lc\mup in the final state as explained above are used to estimate the amount of random \Lc\mun background.
-While trying to perform the final fit later (see sec. \ref{sec:FitCorrectedMass}) it turns out, that the number of WS events is too small that the fit is sensitive to it.
-As a consequence it is assumed that the shape and the number of the WS events are equal to the shape and number of random \Lc\mun combinations.
-Finally, the WS events are subtracted from the ``right sign" (RS) events to eliminate this source of backgrounds.
+The next possible source of backgrounds are random combinations of a \Lc baryon and a \mun. 
+Due to the missing neutrino \neumb there is no signal mass peak and it is not possible to use a sidebandsubtraction on the invariant \pKpi\mun (\Lc\mun) mass.
+Thus, wrong sign events, i.e. ``unphysical" events with a \Lc\mup in the final state as explained above are used to estimate the amount of random \Lc\mun background.
+It is assumed that the shape and the number of the wrong sign events are compatible with the shape and number of random \Lc\mun combinations.
+Finally, the wrong sign events are subtracted from the ``right sign" events to eliminate this source of backgrounds.
 
 \subsection{Peaking backgrounds}
-The third source of backgrounds is peaking background from partially reconstructed decays. 
+The third source of backgrounds is peaking background from partially reconstructed decays.
+This means that there are physical decays mimicking to be signal since some of the particles are not reconstructed.
 In this case the data is saturated by the decays \decay{\Lb}{\LcstarRes{(2595)}\mun\neumb} and \decay{\Lb}{\LcstarRes{(2625)}\mun\neumb} \cite{SL_Vub}.
-The \Lcstar subsequently decay in a \Lc and an untracked neutral remnant, e.g. \piz, \pip\pim.
-Since this decay happens instantly it looks the same as \LcTopKpi in the detector.
-The solution is to fit the corrected \pKpi\mun (alias the visible \Lb) mass. 
-A property of the corrected mass is that if the only missing particle is a massless, then the corrected mass should peak around the real mass of the mother particle, here the \Lb.
-If there are additionally more missing, but massive particles then this peak should be shifted to lower masses.
-It is thus expected that the corrected \pKpi\mun mass distributions look different for the semileptonic \Lb decays into a \Lc, \LcstarRes{(2595)} and \LcstarRes{(2625)}.
-A fit of the corrected mass should also be able to distinguish between those components.
+A \Lcstar subsequently decays into a \Lc and an unreconstructed neutral remnant, e.g. \piz, \pip\pim.
+Since this decay happens instantaneously it looks the same as \LcTopKpi in the detector.
+As already explained, those decays can be distinguished from \LbToLcmunu by their corrected \Lb mass.
+Thus, these kind of backgrounds are not subtracted from the data, but rather included as component into the fit to the corrected \Lb mass.
 
-\section{Fit of the \pKpi\mun corrected mass}
+\section{Fit to the corrected \pKpi\mun (\Lb) mass}
 \label{sec:FitCorrectedMass}
-Having read the previous sections it should be clear, why the corrected \pKpi\mun mass is used for the determination of \NLc, the \LbToLcmunu signal yield.
-Nonetheless it should be verified, that the corrected \pKpi\mun mass is an appropriate variable.
-Therefore simulations for the different components, \LbToLcmunu, \decay{\Lb}{\LcstarRes{(2595)}\mun\neumb} and \decay{\Lb}{\LcstarRes{(2625)}\mun\neumb} are used to compare their corrected \pKpi\mun mass shapes.
+In this chapter it is verified in simulations, that the corrected \pKpi\mun mass is different for \LbToLcmunu, \decay{\Lb}{\LcstarRes{(2595)}\mun\neumb} and \decay{\Lb}{\LcstarRes{(2625)}\mun\neumb}.
+Figure \ref{fig:correctedMass_normalisation} shows the simulated corrected \pKpi\mun mass distributions for the different decays.
 \begin{figure}[hptb]
 	\centering
-	\includegraphics[width=0.49\textwidth]{LbToLc/correctedMass/correctedMass}
+	\includegraphics[width=0.75\textwidth]{LbToLc/correctedMass/correctedMass}
 	\caption{Comparison of the \pKpi\mun corrected mass for the semileptonic \Lb decays via \Lc, \LcstarRes{(2593)} and \LcstarRes{(2625)} gained from simulation. The black points show the sideband subtracted data distribution. The shape of combinatorial \Lc\mun background (WS events) is shown in yellow.}
 	\label{fig:correctedMass_normalisation}
 \end{figure}
 
-From figure \ref{fig:correctedMass_normalisation} one can draw the following conclusions:
+With the help of Figure \ref{fig:correctedMass_normalisation}, one can draw the following conclusions:
 \begin{itemize}
-    \item The corrected \pKpi\mun mass indeed looks different for \Lc and \Lcstar channels.
-    \item It is not possible to distinguish between the \LcstarRes{(2595)} and \LcstarRes{(2625)} as their shapes are too similar.
+    \item The corrected \pKpi\mun mass indeed looks different for \LbToLcmunu and \decay{\Lb}{\Lcstar\mun\neumb} decays.
+          It peaks around the nomimal \Lb mass for \LbToLcmunu whereas it is shifted to lower masses for the decays into the excited \Lcstar states. 
+    \item It is not possible to distinguish between the semileptonic \Lb decays into \LcstarRes{(2595)} and \LcstarRes{(2625)} as their shapes are too similar.
 \end{itemize}
-The latter conclusion isn't really a problem since the only result of interest is the \LbToLcmunu signal yield. 
-A distinction among the excited states isn't needed.
-In the fit there will be just a component for both final states.
-Having these in mind, the fit procedure is done as follows:
+The latter conclusion is not really a problem since the only result of interest is the \LbToLcmunu signal yield. 
+A distinction among the excited states is not needed.
+In the fit there will be just one common component for both final states.
+Having this in mind, the fit procedure is performed as follows:
 \begin{enumerate}
-    \item The data is subtracted by the \pKpi (i.e. \Lc) mass bands.
-    \item The corrected \pKpi\mun mass distribution is subtracted by the WS events' distribution.
-    \item A fit of the \pKpi\mun mass is performed using the Beeston-Barlow method (see sec. \ref{sec:BeestonBarlow}) to account for uncertainties in the MC corrected mass templates. The fitted components are the \Lc signal yield and one for both excited \Lcstar channels.
-    \item For the plotting (see fig. \ref{fig:correctedMass_fit} and a better comparison the WS component is added again.
+    \item The data is sideband-subtracted in the \pKpi (i.e. \Lc) mass bands.
+    \item The corrected \pKpi\mun mass distribution from wrong sing events is subtracted from the respective distribution from the right sign data.
+    \item A fit of the \pKpi\mun mass is performed using the Beeston-Barlow method (see sec. \ref{sec:BeestonBarlow}) to account for uncertainties in the corrected mass templates from simulation. The fitted parameters are the \Lc signal yield and one common yield for the two excited \Lcstar channels.
 \end{enumerate}
-The results can be seen in figure \ref{fig:correctedMass_fit} and table \ref{tab:fit_correctedMass}. The \LbToLcmunu signal yield \NLc, required for the determination of \R is:
+The results can be seen in figure \ref{fig:correctedMass_fit} and table \ref{tab:fit_correctedMass}. 
+They are presented in different ways:
+The left-hand side shows the fit result with the Beeston-Barlow adjusted templates, i.e. the templates have been modified binwise within their uncertainties to better match the data.
+The agreement with the data is remarkable, even on a logarithmic scale, shown in the bottom row of Figure \ref{fig:correctedMass_fit}.
+The right-hand side compares data and fitresult with the bare templates.
+Slight deviations can be figured out here, above all in the tails with few statistics.
+The \LbToLcmunu signal yield \NLc obtained by the fit to the corrected \pKpi\mun mass and required for the determination of \R is:
 \begin{align*}
     \NLc = (\NLcvalscient \pm \NLcerrscient)\cdot 10^{\NLcexpscient}
 \end{align*}
@@ -88,8 +94,7 @@ The results can be seen in figure \ref{fig:correctedMass_fit} and table \ref{tab
 	\includegraphics[width=0.49\textwidth]{LbToLc/correctedMass/fit_correctedMass_noBB} \\
 	\includegraphics[width=0.49\textwidth]{LbToLc/correctedMass/fit_correctedMass_logscale}
 	\includegraphics[width=0.49\textwidth]{LbToLc/correctedMass/fit_correctedMass_noBB_logscale}
-	\caption{Fit to the \pKpi\mun corrected mass for the determination of the \LbToLcmunu signal yield. The left plot shows the fitresult with the Beeston-Barlow adjusted templates, the right one the bare templates without any modification. The top row shows the result on a linear, the bottom row on logarithmic scale.}
+	\caption{Fit to the \pKpi\mun corrected mass for the determination of the \LbToLcmunu signal yield. The left plot shows the fit result with the Beeston-Barlow adjusted templates, the right one the bare templates without any modification. The top row shows the result on a linear, the bottom row on logarithmic scale.}
 	\label{fig:correctedMass_fit}
 \end{figure}
-
 \input{includes/table_fit_correctedMass}
