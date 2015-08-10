@@ -1,42 +1,40 @@
 \chapter{Systematics}
 \label{sec:Systematics}
-
-In this section studies on systematic uncertainties are discussed.
-These cover the signal yields as well as the efficiencies.
+In this section studies on systematic uncertainties are presented.
+They will not be presented as systematic uncertainty on \R, but rather discussed separately for the signal yields and the efficiencies.
 
 \section{Branching ratio uncertainty of subsequent decays}
 Regarding equation (\ref{eq:R}) a precise knowledge of the subdecays' \DToKpi and \LcTopKpi branching ratios is essential for the determination of \R.
-The values used in this analysis are taken from PDG \cite{PDG} for \BR(\DToKpi) and from a recent \belle measurement \cite{Belle_BR_LcTopKpi} for \BR(\LcTopKpi).
+The values used in this analysis are taken from PDG \cite{PDG} for $\BR(\DToKpi)$ and from a recent \belle measurement \cite{Belle_BR_LcTopKpi} for $\BR(\LcTopKpi)$.
 They are
 \begin{align*}
     \BR(\DToKpi) &= \BRDToKpival \pm \BRDToKpisysterr, \\ 
     \BR(\LcTopKpi) &= \BRLcTopKpival \pm \BRLcTopKpisysterr.
 \end{align*}
-Their errors goes in as systematic in the calculation of \R.
+Their errors are assigned as systematic uncertainty of \R.
 They correspond to a relative systematic uncertainty of \SystBRDToKpipercent\% respectively \SystBRLcTopKpipercent\%.
 
-\section{Kinematic \pt(\Lb) reweighting of signal and normalisation channel simulation sample}
-To account for the wrong emulation of the \Lb kinematics in the simulation, both, the \LbToDpmunuX and the \LbToLcmunu simulation have been reweighted in the transverse momentum of the \Lb.
+\section{Kinematic \pt(\Lb) reweighting of \LbToDpmunuX and \LbToLcmunu simulation events}
+To account for the wrong emulation of the \Lb kinematics in the simulation, both, the \LbToDpmunuX and the \LbToLcmunu simulation events have been reweighted in the transverse momentum of the \Lb.
 Compared to the reweighting of the \LbToDpmunuX decay model this is a minor correction and it is thus sufficient to compare the efficiency ratio \effRatio with and without the kinematic \pt(\Lb) reweighting.
-The difference between both cases is used as systematic uncertainty and amounts to $\SysteffRatiokinrew$ corresponding to $\SysteffRatiokinrewpercent\%$.
+The difference between both cases is assigned as systematic uncertainty and amounts to $\SysteffRatiokinrew$ corresponding to $\SysteffRatiokinrewpercent\%$.
 
-
-\section{Reweighting of \LbToDpmunuX simulation decay model}
+\section{Reweighting of \LbToDpmunuX simulation events}
 \subsection{Choice of reweighting dimensions}
-As it is not obvious which variables are the best for the reweighting of the \LbToDpmunuX simulation sample to determine the efficiency, they choice of a certain set of weighting variables is absolutely another source of systematics on the final result.
-Having a closer look at the comparisons between data and reweighted simulation (see fig. \ref{fig:reweight_D0p_app}) one might argue, that both distribution still aren't in good agreement regarding the particles' momenta.
-Thus, another thredimensional weighting in the momenta of the \Dz\proton\mun, \Dz\mun and \Dz candidates is performed and compared with the nominal reweighting.
-The difference in the efficiencies \effDp is $\SysteffDpDprew$ or $\SysteffDpDprewpercent\%$.
+As it is not obvious which variables are the best for the reweighting of the \LbToDpmunuX simulation sample to determine the efficiency, the choice of a certain set of weighting variables is absolutely another source of systematics on the final result.
+Having a closer look at the comparisons between data and reweighted simulation (see fig. \ref{fig:reweight_D0p_app}) one might argue, that both distributions still are not in good agreement regarding the particles' momenta.
+Thus, another three-dimensional reweighting in the momenta of the \Dz\proton\mun, \Dz\mun and \Dz candidates is performed and compared with the nominal reweighting.
+The difference in the efficiencies \effDp is $\num{\SysteffDpDprew}$ or $\SysteffDpDprewpercent\%$.
 
 \subsection{Number of bins per dimension}
 To reweight the data the three dimensions are furthermore binned.
 Each dimension has been split up in 20 bins.
 It is thus interesting to see, how strong the efficiency depends on the choice of the bin number.
 For this purpose the reweighting is redone for a variety of different bin numbers.
-The results of the efficiency \effDp and the difference to the nominal reweighting can be seen in table \ref{tab:systematic_effD0p_nbins}.
+The results of the efficiency \effDp and the difference to the nominal reweighting can be seen in Table \ref{tab:systematic_effD0p_nbins}.
 A binning with 5 bins per dimension is too coarse to satisfy the behaviour of the three dimensions.
-Using 40 bins per dimension there are too many vanishing weighting bins where there isn't either some data or simulation, hence pulling the other one down and distorting the reweighting.
-This can be nicely seen in figure \ref{fig:reweighting_nbins}.
+Using 40 bins per dimension there are too many vanishing weighting bins where there is not either some data or simulation, hence pulling the other one down and distorting the reweighting.
+This effect can be nicely seen in Figure \ref{fig:reweighting_nbins}.
 As systematic uncertainty the biggest deviation except for the reweighting with 5 or 40 bins per dimension is assigned, namely $\SysteffDpnbinspercent\%$
 \input{includes/table_systematic_efficiency_D0p_nbins}
 \begin{figure}[hptb]
@@ -61,35 +59,39 @@ As systematic uncertainty the biggest deviation except for the reweighting with 
 \end{figure}
 
 \subsection{Maximum allowed weight}
-The shrinken the impact of single outlier events, a maximum allowed weight of 20 has been defined in the reweighting process.
+When reweighting events, there might be some outliers getting a much higher weight than most of the other events.
+Such events dominate a reweighting disproportionally
+To shrinken the impact of single outlier events, a maximum allowed weight of 20 has been defined in the reweighting process.
 All events with a higher weight are weighted with this maximum weight.
 Analogously to the study of the reweighting in different bins per dimension, a check of the efficiencies obtained by different maximum weights is done.
 The results can be seen in \ref{tab:systematic_effD0p_maxweight}.
 Again, a maximum weight of 5 is a too tight restriction since there are too many events with weights $> 5$.
 Apart from that the biggest discrepancy to the nominal case is taken as systematic uncertainty.
-The impact on \R due to the allowed maximum weight amounts to $\SysteffDpmaxweightpercent\%$
-
+The impact on \R due to the allowed maximum weight amounts to $\SysteffDpmaxweightpercent\%$.
+Thus, it is a small effect compared to other systematics.
 \input{includes/table_systematic_efficiency_D0p_maxweights}
 
 \section{Choice of fit strategy}
-The determination of the \LbToDpmunuX signal yield is based on a twodimensional fit in the \Dz\proton mass and the \logIP distribution.
-However, actually just the \logIP variable is responsible for the distinction between signal and background.
-It should be hence sufficient to fit only the \logIP distribution to extract the signal yield.
-As a cross check the signal yield \NDp is determined by a onedimensional fit on the \logIP distribution as described and reported in section \ref{sec:ControlLogIP}. 
-The difference between this onedimensional fit and the nominal twodimensional fit amounts to $\SystNDpfit$ events which is equivalent to $\SystNDpfitpercent\%$.
+The determination of the \LbToDpmunuX signal yield is based on a two-dimensional fit to the \Dz\proton mass and the \logIP distribution.
+However, the distinction between signal and background is mainly based on the \logIP distribution.
+Hence, it should be sufficient to fit to the \logIP distribution only to extract the signal yield \NDp.
+As a cross-check, the signal yield \NDp is determined by a one-dimensional fit on the \logIP distribution as described and reported in section \ref{sec:ControlLogIP}.
+The results are listed there in Table \ref{tab:logIP_RS}.
+The difference between this one-dimensional fit and the nominal two-dimensional fit amounts to $\SystNDpfit$ events which is equivalent to $\SystNDpfitpercent\%$.
 
 \section{Knowledge of backgrounds}
-A limited knowledge of the to the signal yields contributing backgrounds raises another systematic uncertainty.
+A limited knowledge of the backgrounds contributing to the signal yields raises another systematic uncertainty.
 Different sources of backgrounds have been discussed in section \ref{sec:Backgrounds}.
-In the end it is concluded that the background fraction in the obtained signal yield \NDp is $(\NDpBKGratioval \pm \NDpBKGratioerr)\%$.
-Propagating the uncertainty on that estimate to the calculation of \R, this means a systematic uncertainty on \NDp due to the limited knowledge of the backgrounds of $\SystNDpBKG$ or $\SystNDpBKGpercent\%$.
+In the end it is concluded that the background fraction in the obtained signal yield \NDp is estimated to be $(\NDpBKGratioval \pm \NDpBKGratioerr)\%$.
+Propagating the uncertainty on that estimate to the calculation of \R, this means a systematic uncertainty on \NDp due to the limited knowledge of the backgrounds of $\SystNDpBKG$ events or $\SystNDpBKGpercent\%$.
 
 \section{Systematics overview}
 Table \ref{tab:systematics} summarises all considered systematics and gives a total value for each quantity.
-Summing them all up in quadrature to total systematic error on \R is
+The reweighting process due to the poor physics description in the simulation is clearly the dominant systematic.
+It is followed by the uncertainty on the \LcTopKpi branching ratio.
+Summing them all up in quadrature, the total systematic error on \R is
 \begin{align*}
     \Systerr{\R}{} &= \Rsysterr \\
     \frac{\Systerr{\R}{}}{\R} &= \Rsysterrpercent\% 
 \end{align*}
-
 \input{includes/table_systematics}
