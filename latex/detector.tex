@@ -36,8 +36,10 @@ Both groups will be explained in the following.
 % ===========================
 \section{Tracking detectors}
 Tracking describes the whole procedure to reconstruct the trajectories of (charged) particles produced in the proton-proton collision. 
-If there is a magnet in use, the particles' charges and momenta can be determined as well by the deflection of the track. 
-For that purpose, a system of several subdetectors is aligned up- and downstream the dipole magnet, namely the Vertex locator (VELO), the Trigger Tracker (TT) and the Trigger stations (T1-T3) built-up by the Inner Tracker (IT) and the Outer Tracker (OT).
+Together with the dipole magnet, the particles' charges and momenta can be determined as well by the deflection of the track.
+The magnet provides a magnetic field of 4\unit{Tm} integrated over a length of 10\m.
+Its main component, the magnetic field in $y$ direction, is shown in Figure \ref{fig:MagneticField_Tracks}.
+For the particle tracking, a system of several subdetectors is aligned up- and downstream the dipole magnet, namely the Vertex locator (VELO), the Trigger Tracker (TT) and the Trigger stations (T1-T3) built-up by the Inner Tracker (IT) and the Outer Tracker (OT).
 
 \subsection{Vertex Locator (VELO)}
 The VErtex LOcator (VELO) is placed directly around the primary interaction point. 
@@ -121,24 +123,101 @@ The spatial resolution is 200\mum along the $x$ axis.
 On the one hand this is worse than the spatial resolution of the IT with 50\mum, but on the other hand the angular coverage is much higher \cite{OT_Performance}.
 
 \subsection{Track classification}
-
+For the reconstruction of tracks the registered hits of the VELO, TT, IT and OT are combined to form particle trajectories.
+Depending on the trajectories one defines different classes of trajectories, which are also sketched in Figure \ref{fig:MagneticField_Tracks}:
+\begin{itemize}
+    \item \textsc{Long tracks} traverse the full tracking system from the VELO to the T stations.
+          Note: In this analysis only long tracks are used.
+    \item If particles traverse the VELO and TT stations only, their tracks are called \textsc{upstream tracks}.
+    \item Particles decaying outside the VELO acceptance and leaving hits only in the TT and T stations are called \textsc{downstream tracks}.
+    \item \textsc{VELO tracks} are measured in the VELO only.
+    \item \textsc{T tracks} only traverse the T stations.
+\end{itemize}
+\begin{figure}[hptb]
+    \centering
+	\includegraphics[width=0.5\textwidth]{MagneticField_Tracks}	
+	\caption{A schematic illustration of the various track types: long, upstream, downstream, VELO and T tracks.
+             For reference the main $B$-field component $B_y$ is plotted above as function of the $z$ coordinate.
+             Figure and caption taken from \cite{LHCb_Reoptimization}.}
+	\label{fig:IT_layer}
+\end{figure}
 
 % ================================
 % SECTION: Particle identification
 % ================================
 \section{Particle identification}
+The reconstruction of \bquark- and \cquark- hadrons require the identification of the particles associated to the reconstructed tracks.
+Several facilities for that purpose are available at the \lhcb detector, that are described in the following.
 
-\subsection{Ring Imaging Cherenkoy Detector (RICH)}
+\subsection{Ring Imaging Cherenkov Detector (RICH)}
+The RICH detectors at \lhcb are dedicated to distinguish charged hadrons espeacially pions, kaons and hadrons.
+They make use of the Cherenkov radiation.
+If charged particles fly through a dielectric medium with a velocity $\beta = v/c$ that is faster as the speed of light in that medium, they emit photons in a cone around their flight path.
+The opening angle $\theta_C$ of that light cone is given by
+\begin{align}
+    \cos \theta_C = \frac{1}{\beta n},
+\end{align}
+where $n$ denotes the refractive index of the medium \cite{Jackson_ED}.
+\lhcb's RICH detectors measure the opening angle of the Cherenkov cone and use it to determine the velocity.
+Together with the measured momenta from tracking it is possible to calculate the mass of the particle and thus to identify it.
+The \lhcb detector consists of two RICH detectors.
+RICH1 is located upstream the magnet before particles might bent out of the \lhcb detector acceptance by the magnet..
+It contains aerogel and \cfourften gas and is dedicated to measure low-momenta particles between 1 \gev and 60 \gev.
+However, RICH2 is placed downstream the magnet, filled with \cffour gas and covers the high-momentum range from 15 \gev to 100 \gev \cite{detector, RICH_Performance}.
 
 \subsection{Calorimeter system}
+The main purpose of the calorimeter system is to measure the energy of the particles.
+Furthermore, it provides the identification of electrons, photons and hadrons and delivers trigger signals from photons, electrons and hadrons with high transverse momentum.
+It contains several subsystems which are all located downstream the magnet.
+The first part of the calorimeter system is the scintillating pad detector (SPD).
+It is used to select charged particles and above all to distinguish between electrons and photons in the subsequent calorimeter parts.
+After a 2.5 radiation lengths lead wall it is followed by the preshower detector (PS) identifying electromagnetic particles.
+To measure the energy of electromagnetic particles, the electromagnetic calorimeter (ECAL) is placed behind the PS.
+It uses the so called shashlik-technology, i.e. it employs an alternating structure of scintillating tiles and lead plates.
+The last part of the calorimeter system is the hadronic calorimeter (HCAL).
+It is a sampling device made of iron as absorber and scintillating tiles as active material and measures the energy of hadrons.
+
+Basically, all calorimeters obey the same principle:
+Scintillation light is transmitted to a Photo-Multiplier (PMT) by wavelength-shifting fibres.
+Multianode photomultiplier tubes (MAPMT) read out the single fibres of the SPD / PS cells.
+Fibre bunches in the ECAL and HCAL modules require individual phototubes \cite{detector, PS_SPD, Calorimeter_Running, ECAL, HCAL}.
 
 \subsection{Muon chambers}
+Muons as long-lived and minimum ionising particles can penetrate the whole detector.
+That is why the muon chambers for the identification of muons are the last part of the detector.
+There are five muon stations, one (M1) before the calorimeter system and four (M2-M5) behind.
+To ensure that only muons penetrate the whole system the latter ones are interleaved with 80\cm thick iron absorbers.
+Besides for the inner part of M1, the muon chambers mainly consist of multi-wire proportional chambers (MWPC) providing a fast readout.
+In the inner part of M1 a gas electron multiplier is used due to the high particle flux \cite{detector, Muon_Performance}.
 
 % ===========================
 % SECTION: Trigger
 % ===========================
 \section{Trigger}
+The LHC is designed to cross proton bunches every 25\ns.
+This is equivalent to a beam crossing rate of 40\mhz.
+However, it is not possible to record data at this rate.
+Thus, the task of the \lhcb trigger system is to reduce the rate to a recordable level.
+It has to decide quickly if an event is of interest for the \lhcb physics programme.
+For this purpose, the trigger system is made up of three stages.
 
-\subsection{L0-Trigger}
+The first stage, the Level-0 (L0) trigger, is completely based on hardware.
+It reduces the beam crossing rate of 40\mhz down to 1\mhz.
+Due to the high rate, a full event reconstruction is not possible at this stage.
+Thus, the L0 trigger only tries to reconstruct
+\begin{itemize}
+    \item the highest transverse energy \et hadron, electron and photon clusters in the calorimeters,
+    \item the two highest transverse momentum muons in the muon chambers,
+\end{itemize}
+because \B mesons often produce large transverse momentum respectively energy particles due to their large mass \cite{detector}.
+Furthermore the pile-up system in the VELO is used to estimate the number of primary \proton\proton interactions per bunch-crossing.
 
-\subsection{High Level Trigger (HLT)}
+The L0 trigger is followed by the software based high-level trigger HLT.
+The HLT itself is subdivided into the HLT1 and the HLT2.
+Events passing the L0 trigger enter the HLT1 with a rate of about 1\mhz.
+Due to limited computing power only a partial event reconstruction using particles in the VELO and T stations is possible.
+The decision if an event passes the trigger or not is mainly based on the track quality.
+This reduces the event rate to about 40\khz and enables HLT2 to fully reconstruct the event.
+The information of all \lhcb subsystems are available at this stage which allows a more advanced selection.
+The event rate is reduced to 5\khz by HLT2, which is low enough to store the data on disk \cite{detector, Trigger, Trigger_Performance_2011}.
+
