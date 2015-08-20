@@ -1,11 +1,11 @@
 \chapter{Data reconstruction and selection}
 \label{sec:Selection}
-The data sample used in this analysis originates from \proton\proton collisions and has been recorded in the years 2011 with a center of mass energy $\sqs = 7 \tev$ and 2012 with $\sqs = 8 \tev$, corresponding to an integrated luminosity of \intlum{3 \invfb}.
+The data sample used in this analysis originates from \proton\proton collisions and has been recorded in the years 2011 at a center of mass energy $\sqs = 7 \tev$ and 2012 with $\sqs = 8 \tev$, corresponding to an integrated luminosity of \intlum{3 \invfb}.
 This chapter describes and motivates the selection criteria for the reconstruction of the decays \LbToDpmunuX and \LbToLcmunu\footnote{If not stated otherwise, the $\mathcal{CP}$ conjugated decays \decay{\Lbbar}{\Dzb\antiproton\mup\neum} and \decay{\Lbbar}{\Lcbar\mup\neum} are included in those samples}.
 As the \Dz and the \Lc are not stable enough to be directly indentified and detected, the subsequent decays \DToKpi and \LcTopKpi have been chosen for their reconstruction.
-These decays are good to detect at \lhcb, meaning that one gets a clear signal.
+These decays leave a clear signature in the detector and can be well reconstructed at \lhcb, meaning that the pollution with background is small.
 Furthermore, with this choice one ends up with the same final state particles for reconstruction in both signal and normalisation channel, namely \pKpi\mun.
-Hence, any inefficiencies due to different interaction of particles with the detector should be avoided, at least to first order.
+Hence, any inefficiencies due to different interaction of particles with the detector should cancel, at least to first order.
 
 One experimental difficulty arises due to the semileptonic nature of the signal and normalisation channel:
 The neutrino cannot be reconstructed.
@@ -13,9 +13,9 @@ Consequently it is not possible to fully reconstruct the \Lb and to get a \Lb ma
 This leads to a high pollution of the data sample with backgrounds.
 
 \section{Reconstruction of the decay \LbToDpmunuX}
-The main strategy in the reconstruction process of the decay \LbToDpmunuX is to find events with the signature $\decay{X_{b}}{(\DToKpi) \mun \neumb X}$, where $X_b$ denotes a \bquark-quark containg hadron, first.
+The main strategy in the reconstruction process of the decay \LbToDpmunuX is to find events with the signature $\decay{X_{b}}{(\DToKpi) \mun \neumb X}$, where $X_b$ denotes a \bquark-quark containing hadron, first.
 Then, the proton track is combined to the \Dz\mun vertex to make a \LbToDpmunuX candidate.
-It is apparent that a main source of background will be a \decay{\Bd/\Bp}{\Dz\mun\neumb X} decay, where the proton is randomly combined.
+It is apparent that a main source of background will be a \decay{\Bd/\Bp}{\Dz\mun\neumb X} decay, where a random proton is added.
 To better understand the selection criteria and the way this \textsc{combinatorial background} is reduced, it might be helpful to have a look at a sketch of a typical \LbToDpmunuX decay in Figure \ref{fig:DecaySketch} left.
 \begin{figure}[hptb]
 	\centering
@@ -31,27 +31,27 @@ To better understand the selection criteria and the way this \textsc{combinatori
 \end{figure}
 Due to its relatively long lifetime, it is typical for a \Lb or in general a \bquark-hadron that it decays at a so called \textsc{secondary vertex (SV)} displaced from the primary \proton\proton interaction, the \textsc{primary vertex (PV)}.
 The decay products \Dz, \mun and \proton  originate from the secondary vertex. 
-The neutrino and possible further possible particles like pions, denoted as $X$, are not reconstructed.
+The neutrino and further possible (especially neutral) particles like pions, denoted as $X$, are not reconstructed.
 The \Dz itself lives long enough to decay into a \Km\pip at a \textsc{tertiary vertex (TV)}.
 
-Concerning the combinatrial background \decay{\Bd/\Bp}{\Dz\mun\neumb X} with a randomly combined proton, there is one important difference to the signal.
+Concerning the combinatorial background \decay{\Bd/\Bp}{\Dz\mun\neumb X} with a randomly added proton, there is one important difference to the signal.
 The proton does not orgin from the secondary vertex but from another source.
 It should thus have a significant \textsc{impact parameter (IP)} with respect to the primary vertex.
 The impact parameter is defined as the smallest perpendicular distance between a track and a vertex.
-An equivalent way is to use the \logIP variable, which will be very important throughout this analysis.
+An equivalent way is to use the \logIP variable of a given track with respect to a given vertex, which will be very important throughout this analysis.
 All reconstructed track and vertices are fitted in \lhcb.
 From each fit one can retrieve the fit \chisq and the corresponding number of degrees of freedom (ndf).
-The \logIP is defined as the logarithm of the difference of the \Dz\mun vertex fit \chisq with and without the proton.
+The \logIP of the proton is defined as the logarithm of the difference of the \Dz\mun vertex fit \chisq with and without the proton.
 This means the better the proton makes a vertex with the \Dz\mun, the smaller is \logIP and the more likely the event is a real \LbToDpmunuX decay.
 
 \subsection{Reconstruction of the \Dz}
 \label{sec:Selection_D0}
 The first step of the reconstruction process is to reconstruct the \Dz.
 This is supposed to happen via the \DToKpi signature.
-For both, kaon and pion, it is required that their momentum is larger than 2 \gev to ensure that they are not bent out of the detector by the magnet and that the \rich detector gives reliable results on the particle idenitification.
+For both, kaon and pion, it is required that their momentum is larger than 2 \gev to ensure that they are not bent out of the detector by the magnet and that the \rich detector gives reliable results for the particle idenitification.
 Their transverse momentum is required to be larger than 300 \mev.
 This suppresses kaons and pions from the primary interaction, which are usually boosted along the beam pipe, thus having a small transverse momentum.
-Aside a good track quality quantified with $\chisqndf < 4$ of the track fit, only tracks with a $\chisqip/\text{ndf} > 4$ are selected, meaning the kaons and pions are not coming from the primary interaction.
+Aside a good track quality quantified with $\chisqndf < 4$ of the track fit, only tracks with a $\chisqip/\text{ndf} > 4$  with respect to the primary vertex are selected, meaning the kaons and pions are not coming from the primary interaction.
 \lhcb's particle identification system provides a likelihood for a particle hypothesis of each particle candidate.
 For the pion candidate a likelihood is available that it is really a pion or that is a kaon and so on.
 One defines the PIDx variable of a particle candidate, which denotes the difference of the logarithmic likelihoods between the hypotheses that this particle is of species x and a pion.
@@ -64,6 +64,14 @@ If the detector resolution was perfect, DIRA would be one ($\alpha = 0$) for a s
 Requiring a DIRA close to one ensures that the assigned momentum and track match to each other.
 In this case events with a DIRA $>0.99$ of the \Dz are selected.
 As last requirement one suppresses combinatorial background by restricting the \Dz to be close to its mean mass, i.e. the mass difference to the PDG value is smaller than 25 \mev and to require a minimum \Dz flight distance with respect to the primary vertex of 5 \mm.
+\begin{figure}[hptb]
+	\centering
+	\includegraphics[width=0.8\textwidth]{LbToD0p/plots/data/D0_M} \\
+	\caption{Invariant \Dz mass after the application of all selection requirements except for the \Dz mass itself.
+             The arrows in the \logIP distribution indicates where the selection requirement is applied.
+             The colour-shaded areas shows the respective distributions for wrong sign (WS) combinations.}
+	\label{fig:plot_mD0}
+\end{figure}
 
 \subsection{Reconstruction of the \Dz\mun candidate}
 \label{sec:Selection_D0mu}
