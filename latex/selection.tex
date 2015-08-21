@@ -54,22 +54,37 @@ This suppresses kaons and pions from the primary interaction, which are usually 
 Aside a good track quality quantified with $\chisqndf < 4$ of the track fit, only tracks with a $\chisqip/\text{ndf} > 4$  with respect to the primary vertex are selected, meaning the kaons and pions are not coming from the primary interaction.
 \lhcb's particle identification system provides a likelihood for a particle hypothesis of each particle candidate.
 For the pion candidate a likelihood is available that it is really a pion or that is a kaon and so on.
-One defines the PIDx variable of a particle candidate, which denotes the difference of the logarithmic likelihoods between the hypotheses that this particle is of species x and a pion.
+One defines the PIDx variable of a particle candidate, which denotes the difference of the logarithmic likelihoods between the hypotheses that this particle is of species x and a pion, i.e.
+\begin{align}
+    \text{PIDx} = \ln \mathcal{L}_x - \ln \mathcal{L}_\pion, \label{eq:PIDdef}
+\end{align}
+where $\mathcal{L}_{\pion}$ denotes the likelihood for the pion hypothesis and $\mathcal{L}_{x}$ for particle $x$ respectively.
 The higher PIDx the more likely the candidate is really a particle x\footnote{Throughout this thesis x is either mu for muons, p for protons and K for kaons.}.
 For the kaon candidate a PIDK $>4$ and for the pion candidate a PIDK $<10$ is required.
-These two candidates and their tracks are now combined to a \Dz candidate with a good vertex quality of \chisqvtx/ndf $<6$.
+At first glance it might be confusing why the requirement on the pion's PIDK is so loose.
+In a \proton\proton collision there are many more pions produced than kaons.
+Thus it is much more likely that a pion is misidentified as a kaon and the requirement on the PIDK needs to be tight.
+However, for pions most of the background are pions, too.
+Hence, there is less motivation to apply requirements on the pion PID.
+The pion and kaon candidates and their tracks are now combined to a \Dz candidate with a good vertex quality of \chisqvtx/ndf $<6$.
 Another variable one defines for the reconstruction is DIRA.
-It is defined as the cosine of the angle $\alpha$ between the track of a particle and its momentum.
-If the detector resolution was perfect, DIRA would be one ($\alpha = 0$) for a signal decay.
-Requiring a DIRA close to one ensures that the assigned momentum and track match to each other.
-In this case events with a DIRA $>0.99$ of the \Dz are selected.
+It is defined as the cosine of the angle $\alpha$ between the direction of flight of a particle from some reference vertex and its momentum.
+If the detector resolution was perfect, DIRA would be one ($\alpha = 0$).
+Requiring a DIRA close to one ensures that the assigned momentum and flight direction match to each other.
+The flight direction is determined by the connection of the reference vertex and the decay vertex of the particle.
+Throughout this selection, all DIRA requirements are calculated with respect to the primary vertex.
+Thus, the DIRA requirements on particles not coming from the primary vertex like the \Dz in this case have to be a bit looser as e.g. for the \Lb which is directly produced at the primary vertex.
+For the reconstruction of the \Dz events with a DIRA $>0.99$ of the \Dz are selected.
 As last requirement one suppresses combinatorial background by restricting the \Dz to be close to its mean mass, i.e. the mass difference to the PDG value is smaller than 25 \mev and to require a minimum \Dz flight distance with respect to the primary vertex of 5 \mm.
+Figure \ref{fig:plot_mD0} shows the invariant mass of the reconstructed \Dz candidates after the application of all the requirements except for the restriction of the \Dz mass itself.
+A clear mass peak with very small sidebands indicating a small combinatorial background contribution can be seen.
 \begin{figure}[hptb]
 	\centering
-	\includegraphics[width=0.8\textwidth]{LbToD0p/plots/data/D0_M} \\
+	\includegraphics[width=0.8\textwidth]{LbToD0p/plots/data/D0_M}
 	\caption{Invariant \Dz mass after the application of all selection requirements except for the \Dz mass itself.
-             The arrows in the \logIP distribution indicates where the selection requirement is applied.
-             The colour-shaded areas shows the respective distributions for wrong sign (WS) combinations.}
+             The arrows indicate where the selection requirements are applied.
+             The colour-shaded areas shows the respective distributions for wrong sign (WS) combinations.
+             A definition and explanation of wrong sign combinations is given at the end of section \ref{sec:Selection_D0pmu}}
 	\label{fig:plot_mD0}
 \end{figure}
 
@@ -90,29 +105,60 @@ The minimum DIRA of the \Dz\mun candidate is 0.999.
 With a requirement on the flight distance \chisq to be greater than 25 it is ensured that the \Dz\mun decay vertex is certainly displaced form the primary vertex.
 
 \subsection{Reconstruction of the \Lb (\Dz\mun\proton) candidate}
-The proton's momentum and transverse momentum is required to be 15 \gev and 1 \gev for a good particle identification and to exclude protons boosted from the primary interaction.
+\label{sec:Selection_D0pmu}
+The proton's momentum and transverse momentum is required to be larger than 15 \gev and 1 \gev respectively for a good particle identification and to exclude protons boosted from the primary interaction.
 To reduce the amount of fake protons, i.e. pions or kaon that are misidentified as protons, tight particle idenitification requirements are applied: PIDp $> 10$ and PIDp$-$PIDK $> 10$.
+Having the definition of the PIDx variable in equation \ref{eq:PIDdef} in mind, PIDx serves always as distinction between a particle $x$ and a pion.
+Thus, the difference between PIDp and PIDK enables for a better distinction between protons and kaons, since
+\begin{align*}
+    \text{PIDp}-\text{PIDK} &= \left(\ln \mathcal{L}_{\proton} - \ln \mathcal{L}_\pion\right) - \left(\ln \mathcal{L}_{\kaon} - \ln \mathcal{L}_\pion\right) \\
+    & = \left(\ln \mathcal{L}_{\proton} - \ln \mathcal{L}_{\kaon}\right).
+\end{align*}
 The \chisqip with respect to the primary vertex is greater than 25, since the proton must not come from the primary vertex.
-In contrast the proton should make a good vertex with the \Dz\mun candidate.
+In contrast, the proton should make a good vertex with the \Dz\mun candidate.
 It is thus required that the \logIP of the proton with respect to the \Dz\mun vertex is smaller than 1.
 It should be noted, that throughout this thesis, the simple label \logIP refers to this variable.
 This last requirement on \logIP is not applied in the signal fit to distinguish nonresonant signal and background as will be thoroughly explained in chapter \ref{sec:Signalfit}.
 
-For the combined \Dz\mun\proton candidate the requirement on the DIRA is the tightest compared to the daughter candidates.
+For the combined \Dz\mun\proton candidate the requirement on the angle $\alpha$ between flight direction and momentum is the tightest compared to the daughter candidates.
 This is obvious since the impact of the detector resolution leading to a discrepancy between flight direction and momentum should be the smallest for the first decay of the decay chain.
-An arccos(DIRA) $< 0.015$ is required, which is equivalent to a DIRA $\gtrsim 0.9999$.
+An angle $\alpha < 0.015$ is required, which is equivalent to a DIRA $\gtrsim 0.999999$.
 
 As stated at the beginning of this chapter, the information on the neutrino is missing in the reconstruction.
-Thus the reconstructed \Lb mass is smeared out.
+Thus, the reconstructed \Lb mass is smeared out and does not peak at the nominal \Lb mass of 5619.5\mev.
 However, there are different ways to at least partially account for the missing neutrino.
 One of them is the so called \textsc{corrected mass} of the \Lb.
 It is defined as
 \begin{align}
     m_{\text{corr}} = \sqrt{m_{\Dz\mun\proton}^2 + p_{\perp}^2} + p_{\perp}, \label{eq:correctedMass}
 \end{align}
-where $m_{\Dz\mun\proton}$ denotes the invariant mass of the \Dz\mun\proton candidate and $p_\perp$ its transverse momentum perpendicular to the \Lb flight direction, which is measured by the connection of the primary vertex and the \Lb decay vertex.
-If the only missing particle is massless as the neutrino in this case, then the corrected mass peaks around the mass of the mother particle, here the \Lb \cite{CorrectedMass}.
+where $m_{\Dz\mun\proton}$ denotes the invariant mass of the \Dz\mun\proton candidate and $p_\perp$ its transverse momentum perpendicular to the \Lb flight direction, which is measured by the connection of the primary vertex and the \Lb decay vertex \cite{CorrectedMass}.
+It is the minimum correction to the \Lb candidate if any daughters are missing.
+If only a massless particle is missed the corrected mass would be the mass of the \Lb \cite{HLT2_Topological}.
+This can be seen as follows:
+In the rest frame of the \Lb, the \Lb mass can be written as
+\begin{align}
+    m_{\Lb} &= E_{\text{vis}} + E_{\text{miss}} \\
+            &= \sqrt{M_{\text{vis}}^2 + p_{\perp, \text{vis}}^2 + p_{\parallel, \text{vis}}^2} + \sqrt{M_{\text{miss}}^2 + p_{\perp, \text{miss}}^2 + p_{\parallel, \text{miss}}^2},
+\end{align}
+where the index vis denotes the respective quantities of the visible, i.e. reconstructed particles and miss the ones of the missing particles.
+If the missing particle is massless and if one changes to the \Lb rest frame, where $p_{\perp, \text{vis}} = p_{\perp, \text{miss}} = p_\perp$ and $p_{\parallel, \text{vis}} = p_{\parallel, \text{miss}} = p_\perp$ the \Lb mass becomes
+\begin{align}
+    m_{\Lb} = \sqrt{M_{\text{vis}}^2 + p_{\perp}^2 + p_{\parallel}^2} + \sqrt{p_{\perp}^2 + p_{\parallel}^2}.
+\end{align}
+Furthermore, if the longitudinal momentum can be ignored in the present rest frame the \Lb mass is described by the corrected mass $m_\text{corr}$ \cite{bQuark_LEP, Kodama:1991ij}.
 Hence, it is required that the corrected \Lb mass lies around its PDG mass $M(\Lb)=(5619.5 \pm 0.4)\mev$ \cite{PDG} between 5 and 6 \gev.
+Figure \ref{fig:plot_correctedMass} shows the distribution of the corrected \Lb mass.
+Due to the correction of the missing neutrino it peaks near the PDG mass as explained above.
+\begin{figure}[hptb]
+	\centering
+	\includegraphics[width=0.8\textwidth]{LbToD0p/plots/data/Bh_BPVCORRM}
+	\caption{Corrected \Lb mass after the application of all selection requirements except for the corrected \Lb mass itself.
+             The arrows indicate where the selection requirements are applied.
+             The colour-shaded areas shows the respective distributions for wrong sign (WS) combinations.
+             The corrected \Lb mass tends to peak near the nominal \Lb mass of $M(\Lb)=(5619.5 \pm 0.4)\mev$ \cite{PDG}.}
+	\label{fig:plot_correctedMass}
+\end{figure}
 
 Another background might be the decay \decay{\Lb}{\Dz\proton\pim}, where the pion is misidentified as muon.
 In this case, all final state particles are reconstructed and the invariant \Dz\mun\proton mass peaks around the \Lb mass.
@@ -179,7 +225,9 @@ After the reconstruction and application of these requirements there are in tota
 In the nominal signalfit the cut on \logIP is not applied.
 In this case, there are 34760 candidates available.
 Figure \ref{fig:plot_mD0p_logIP} shows the invariant \Dz\proton mass (top) and the \logIP distribution (bottom). 
-The first one is used for spectroscopy later.
+The first one is used for a spectroscopical analysis later.
+If this thesis refers to the \Dz\proton mass, there is rather the quantity $\MDp - M(\Dz) + M_\text{PDG}(\Dz)$, where one first subtracts the reconstructed \Dz mass and then adds up the nominal \Dz mass from the PDG.
+With this trick, one ``subtracts" the finite width from the \Dz\proton mass spectrum and improves the mass resolution.
 \begin{figure}[hptb]
 	\centering
 	\includegraphics[width=\textwidth]{LbToD0p/plots/data/Bh_DELTA_MASS} \\
@@ -193,8 +241,9 @@ Some peaking structures can be seen in the spectrum, indicating that the decay \
 There is furthermore a broad distribution under the peaks.
 This is assumed to be either background or nonresonant signal.
 For their distinction, the \logIP distribution is used.
-The plot confirms the explanation above.
-Background events tend to peak at higher \logIP then signal events justified by the so called \textsc{wrong sign (WS)} combinations.
+The plot confirms the explanation above:
+Background events tend to peak at higher \logIP than signal events. 
+This is justified by the so called \textsc{wrong sign (WS)} combinations.
 To the physical decay \LbToDpmunuX there are also samples produced with one charge conjugated daughter particle.
 There are three possibilities of combining a wrong sign particle:
 \begin{itemize}
@@ -202,8 +251,13 @@ There are three possibilities of combining a wrong sign particle:
     \item \textbf{WSD0:} \Dzb\proton\mun final state
     \item \textbf{WSmu:} \Dz\proton\mup final state
 \end{itemize}
-There is not any physical process that allows the decay of a \Lb to this final state.
-The wrong sign events must be randomly combined, thus giving a good first estimate of the \LbToDpmunuX background behaviour.
+There is not any physical process that allows the decay of a \Lb to these final states.
+The most apparent violation of a physical law in these decays is the charge conservation.
+Whereas the \Lb is electrically neutral, the final states of WSp and WSmu have a total charge of $\mp 2$.
+For the WSD0 combinations, the electrical charge is fine, but the decay \decay{\Lb}{\Dzb\proton\mun} would require the quark transition \bquark \to \cquarkbar, which is forbidden in the Standard Model.
+Thus if one reconstructs such unphysical decays these either arise due to random combinations of particle tracks or due to true physical decays, where one misidentifies a particle.
+As example for the latter case serves a decay like \decay{\Bz}{\Dz\mun\pip\pip\piz} where one misidentifies the \piz as \antiproton and misses the two \pip.
+Being caused by either random combinations or misidentification of particles, the wrong sign events provide first, rough estimate of the \LbToDpmunuX background behaviour.
 
 \section{Reconstruction of the decay \LbToLcmunu}
 The reconstruction of the \LbToLcmunu channel with \LcTopKpi is done quite similarly to the decay \LbToDpmunuX.
@@ -227,6 +281,13 @@ For the combined \pKpi, i.e. \Lc candidate the vertex must be of good quality, g
 Its DIRA is required to be larger than 0.99 to match flight direction and momentum.
 The difference of the \Lc mass to its PDG value is required to be smaller than 80\mev only, since the \Lc sidebands are later used to subtract combinatorial backgrounds below the \Lc mass peak.
 Aside from a minimum transverse momentum of 2.1 \gev, \textsc{prompt} \Lc, i.e. \Lc directly coming from the primvary vertex, are supressed by requiring the logarithm of the \Lc impact parameter to be grater than -1.5 and a flight distance \chisq of more than 25, both with respect to the primary vertex.
+Figure \ref{fig:plot_Lc_M} shows a clear peak of the invariant \Lc mass.
+\begin{figure}[hptb]
+    \centering
+	\includegraphics[width=\textwidth]{LbToLc/plots/data/Lc_M}	
+	\caption{Plot of the invariant \pKpi mass distribution. A clear mass peak identified as the \Lc can be seen. The yellow shaded area shows events with the WS combination \Lc\mup.}
+	\label{fig:plot_Lc_M}
+\end{figure}
 
 \subsection{Reconstruction of the \Lb (\Lc\mun) candidate}
 The reconstruction of the muon track is completely analogous to the description in Section \ref{sec:Selection_D0mu} and hence not discussed here again.
@@ -287,4 +348,14 @@ The different behaviour of the corrected masses is used in the normalisation fit
 \end{table}
 
 Table \ref{tab:cuts_Lc} summarises all requirements for the reconstruction of the \LbToLcmunu candidates.
-After application of all these requirements there are in total 2670999 \LcTopKpi candidates left for the further analysis. 
+After application of all these requirements there are in total 2670999 \LbToLcmunu candidates left for the further analysis. 
+Figure \ref{fig:plot_Lb_M_Lc} shows on the left-hand side the invariant mass distribution of the \Lb candidates and on the right-hand side the corrected \Lb mass distribution.
+Whereas the \Lb mass is shifted to lower masses due to the missing neutrino, the corrected mass peaks close to the PDG mass of about 5619.5\mev \cite{PDG}.
+\begin{figure}[hptb]
+    \centering
+	\includegraphics[width=0.49\textwidth]{LbToLc/plots/data/Lb_M} 	
+	\includegraphics[width=0.49\textwidth]{LbToLc/plots/data/Lb_BPVCORRM}	
+	\caption{Plot of the invariant \Lb mass distribution (left) and of the corrected \Lb mass (right). Due to the missing neutrino the \Lb mass peak is shifted to lower masses compared its nominal mass of 5619.5 \mev. With the correction for the missing neutrino, the peak is close to the nominal \Lb
+    mass. The yellow shaded area shows events with the WS combination \Lc\mup.}
+	\label{fig:plot_Lb_M_Lc}
+\end{figure}
