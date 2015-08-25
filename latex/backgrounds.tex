@@ -1,9 +1,8 @@
 \chapter{Backgrounds}
 \label{sec:Backgrounds}
-
 The big disadvantage of semileptonic decays is that the neutrino cannot be reconstructed.
 At hadron colliders like the \lhc, it is impossible to know the kinematics of the initial state, so one does not have enough constraints to reconstruct the full kinematic information about the decaying particle.
-Being aware of these problems due to experimental setup it is clear that one cannot use a well reconstructed \Lb mass peak to separate signal from background.
+Being aware of these problems due to the experimental setup it is clear that one cannot use a well reconstructed \Lb mass peak to separate signal from background.
 A main source of background is expected to be the decay \decay{\Bd/\Bp}{\Dz\mun\neumb X} where one randomly combines a proton to this decay.
 This background is handled by the fit of the \logIP distribution.
 Other sources of backgrounds and their possible impact on the obtained signal yield \NDp are discussed in the following.
@@ -15,14 +14,14 @@ Thus, the discussion in this chapter refers completely to the \LbToDpmunuX chann
 % ====================================
 \section{Proton misidentification}
 \label{sec:BKG_misIDp}
-A possible source of backgrounds is that one misinterprets a decay as \LbToDpmunuX since one misidentifies a final state particle.
-In this analysis it is most likely that the proton is misidentified since the final state pion and kaon are reconstructed to a \Dz yielding in a nice peak and the muon leaves a clear signature in the detector due to its relatively long lifetime and low interaction with matter.
+A possible source of backgrounds is that one misinterprets a decay as \LbToDpmunuX if one misidentifies a final state particle.
+In this analysis it is most likely that the proton is fake since the final state pion and kaon are reconstructed to a \Dz yielding in a nice peak and the muon leaves a clear signature in the detector due to its relatively long lifetime and low interaction with matter.
 Examples for these kind of backgrounds are the decays \decay{\Bs}{\Dz\Kp\mun\neumb X} and \decay{\Bd/\Bp}{\Dz\pip\mun\neumb X}, where either the \Kp or \pip is misidentified as proton.
 Though there are tight requirements on the proton identification at selection stage, the data is still polluted by misidentified particles.
 To identify the amount of misidentified protons, a slightly different data sample than the nominal one is used. 
 In this sample no requirements on the proton idenfication are applied.
-Except for those all other requirements are the same as described in section \ref{sec:Selection}.
-However the removal of the particle identification requirements lets the data size of the sample rapidly increase.
+All other requirements are the same as described in Section \ref{sec:Selection}.
+However the removal of the particle identification requirements for the protons lets the data size of the sample rapidly increase.
 To keep the data size acceptable a so called 5\% prescaling has been applied, i.e. only 5\% of all events are actually stored.
 The decision if a particle is stored or not is made by random.
 That is why absolute numbers quoted in this section cannot be compared to the obtained signal yields etc. in the previous sections.
@@ -32,9 +31,9 @@ The study on misidentified backgrounds is done in three steps.
 \label{sec:PIDCalib_Ncand}
 As a first step, it has to be defined what requirements have to be fulfilled, that a particle is called a proton, pion or kaon.
 For that purpose, the PID (for Particle IDentification) variables are used.
-Remember, that \lhcb's particle idenitfication system provides likelihoods for each particle hypothesis.
+Remember, that \lhcb's particle identification system provides likelihoods for each particle hypothesis.
 The PID variables now describe differences between the logarithms of these likelihoods, e.g. PIDp is defined as the difference of the logarithmic likelihoods between the proton and pion hypothesis.
-A value of PIDp$>0$ hence means, that the particle is more likely a proton than a pion.
+A value of PIDp $>0$ hence means, that the particle is more likely a proton than a pion.
 Respectively, the PIDK compares kaon to pion hypothesis.
 If one wants to separate protons from kaons it is useful to look at PIDp$-$PIDK.
 The definition what will be called proton is motivated by the requirements applied in the analysis (see section \ref{sec:Selection}). 
@@ -49,9 +48,9 @@ The number of candidates are
     \Ncand{\kaon}   &= \PIDNcandkaonval \pm \PIDNcandkaonerr, \\ 
     \Ncand{\proton} &= \PIDNcandprotonval \pm \PIDNcandprotonerr.
 \end{align}
-\begin{figure}[hptb]
+\begin{figure}[ptb]
 	\centering
-	\includegraphics[width=0.49\textwidth]{LbToD0p/PID/PIDK_vs_PIDp}
+	\includegraphics[width=0.75\textwidth]{LbToD0p/PID/PIDK_vs_PIDp}
 	\caption{Defined regions for the number of particle candidates.
              Events in black are defined as protons, red as kaons and blue as pions.}
 	\label{fig:PIDregions}
@@ -69,16 +68,16 @@ The PID efficiency for each of the 9 possible combinations (real particle to be 
 The results can be seen in figure \ref{fig:PIDefficiencies}.
 The left figure clearly shows that pions and kaons hardly fulfil the tight requirements PIDp $>10$ and PIDp$-$PIDK $>10$ made on the proton identification in the reconstruction of \LbToDpmunuX and \LbToLcmunu.
 Only, if they have a momentum of about $20 \gev$ there is a little chance to pass the selection.
-\begin{figure}[hptb]
+\begin{figure}[ptb]
 	\centering
-	\includegraphics[width=0.32\textwidth]{LbToD0p/PID/PID_proton}
-	\includegraphics[width=0.32\textwidth]{LbToD0p/PID/PID_kaon}
-	\includegraphics[width=0.32\textwidth]{LbToD0p/PID/PID_pion}
+	\includegraphics[width=0.49\textwidth]{LbToD0p/PID/PID_proton}
+	\includegraphics[width=0.49\textwidth]{LbToD0p/PID/PID_kaon}
+	\includegraphics[width=0.49\textwidth]{LbToD0p/PID/PID_pion}
 	\caption{Efficiencies that real protons, kaons and pions are identified as protons (left), kaons (middle) or pions (right). The tight requirements on the proton PID applied in this analysis ensures that only few kaons and pions enter the proton region paying the prize, that one looses a lot of
     protons as well.}
 	\label{fig:PIDefficiencies}
 \end{figure}
-To determine a final value for each identification efficiency, the histograms are weighted with respect to the kinematic distribution of the \LbToDpmunuX data.
+To determine a final value for each identification efficiency and to account for differences in the kinematics between the decays of the test samples and the \LbToDpmunuX decay, the histograms are weighted with respect to the kinematic distribution of the \LbToDpmunuX data.
 The result is:
 \input{includes/result_PID_efficiencies}
 Here, \effPID{i}{j} denotes the efficiency, that a real (true) particle $i$ is identified as what is callied $j$ according to the particle regions defined in section \ref{sec:PIDCalib_Ncand}. 
@@ -98,7 +97,7 @@ With the PID efficiencies \effPID{i}{j} and the number of particle candidates \N
         \Ntrue{\pi} \\ \Ntrue{\kaon} \\ \Ntrue{\proton }
     \end{pmatrix}.
 \end{align*}
-One obtains
+Assuming that the efficiency matrix is invertible, one obtains
 \begin{align}
     \Ntrue{\pi}     &= \PIDNtruepionval \pm \PIDNtruepionerr, \\ 
     \Ntrue{\kaon}   &= \PIDNtruekaonval \pm \PIDNtruekaonerr, \\ 
@@ -107,7 +106,7 @@ One obtains
 \Ntrue{i} denotes the number of real particles $i$ in the sample.
 
 \subsection{Estimate of misidentified protons}
-Using the results of the previous subsections it is now possible to estimate the number of misidentified protons, i.e.``true" kaons or pions entering the proton region.
+Using the results of the previous subsections it is now possible to estimate the number of misidentified protons, i.e. ``true" kaons or pions entering the proton region.
 This is calculated by multiplying the number of ``true" particles \Ntrue{i} with the PID efficiency \effPID{i}{\proton} to be identified as proton. 
 \begin{align}
     N^{\pi}     &= \effPID{\pi}{\proton} \Ntrue{\pi}         = \PIDNtruePregionpionval \pm \PIDNtruePregionpionerr, \\  
@@ -127,7 +126,7 @@ Consequently, the \Lb can be fully reconstructed since all final state particles
 This leads to a peak in the invariant \Dz\proton\mun around the \Lb mass.
 There is indeed such a peak as figure \ref{fig:plot_D0pmuMass} shows.
 Thus, this kind of backgrounds can be easily eliminated by vetoing \Dz\proton\muon masses around the \Lb mass, in this case all masses above 5500\mev.
-\begin{figure}[hptb]
+\begin{figure}[ptb]
 	\centering
 	\includegraphics[width=0.75\textwidth]{LbToD0p/plots/data/Bh_M}
 	\caption{Invariant \Dz\proton\mun mass. A peak at \Lb mass ($\approx 5620 \mev$) can be seen caused by misidentified muons coming from hadronic decays like \decay{\Lb}{\Dz\proton\pi} where the pion is misidentified as muon. 
@@ -135,19 +134,22 @@ Thus, this kind of backgrounds can be easily eliminated by vetoing \Dz\proton\mu
 	\label{fig:plot_D0pmuMass}
 \end{figure}
 
-The situation becomes more tricky, if the background is coming from a more body \Lb decay, i.e. a decay with more than 3 final state particles.
+The situation becomes more tricky, if the background is coming from a multi-body \Lb decay, i.e. a decay with more than 3 final state particles.
 Since this analysis aims to measure the inclusive branching ratio \BR(\LbToDpmunuX), misidentified muons could also come from decays like \decay{\Lb}{\Dz\proton 3\pi}, where one of the 3 pions is misidentified as muon.
-These backgrounds are not easy to eliminate, since the other 2 pions are not reconstructed and thus not peaking in \Dz\proton\mun mass.
+These backgrounds are not easy to eliminate, since the other 2 pions are not reconstructed and the decay is thus not peaking in \Dz\proton\mun mass.
 Nonetheless if they are existent in the data sample it might be possible, that such backgrounds tend to sit at lower PIDmu of the muon saying the lower the PIDmu of a muon is the more likely it is to be a misidentified particle.
 Unfortunately no distinct structures can be seen in figure \ref{fig:plot_D0pmuMass_vs_muPIDmu}.
 This might be a hint that these backgrounds play a minor role.
-Assuming that the decay \decay{\Lb}{\Dz\proton 3\pi} behaves in comparison to \decay{\Lb}{\Dz\proton\pim} similar to the Meson decays \decay{\Bd}{\Dm 3\pi} and \decay{\Bd}{\Dm\pip} with 
+Assuming that the decay \decay{\Lb}{\Dz\proton 3\pi} behaves in comparison to \decay{\Lb}{\Dz\proton\pim} similar to the meson decays \decay{\Bd}{\Dm 3\pi} and \decay{\Bd}{\Dm\pip} with 
 $\BR(\decay{\Bd}{\Dm 3\pi}) = (2.76 \pm 0.13) \cdot 10^{-3} \approx$ 
 $\BR(\decay{\Bd}{\Dm\pip}) = (2.68 \pm 0.13) \cdot 10^{-3}$ (see \cite{PDG})
 they should have similar branching ratios and thus should equally leak as background into this analysis.
 A comparison with $\BR(\decay{\Bd}{\Dm 3\pi})/\BR(\decay{\Bd}{\Dm\ellp\neul}) \approx 10\%$ and the misidentification probabilty of a hadron of less than $10\%$ \cite{muonID_Performance} justifies the assumption that this background leaks with about $1\%$ in the signal yield.
-To account for other possible but not yet measured peaking backgrounds such as \decay{\Lb}{\Dz\proton\rhom}, \decay{\Lb}{\Dz\proton\pim\rhoz} and so on a total peaking background ratio of $(5.0 \pm 2.5)\%$ is assumed.
-\begin{figure}[hptb]
+Furthermore, there are other possible but not yet measured peaking backgrounds such as \decay{\Lb}{\Dz\proton\rhom} or \decay{\Lb}{\Dz\proton\pim\rhoz}.
+Since they have not been measured so far their contribution can only be guessed.
+Starting from the $1\%$ contribution of \decay{\Lb}{\Dz\proton 3\pi} a conservative estimate of a total peaking background ratio of $(5.0 \pm 2.5)\%$ is assumed.
+The large error accounts for the uncertainty in the estimate how many other decay channels and how strongly they contribute.
+\begin{figure}[ptb]
 	\centering
 	\includegraphics[width=0.75\textwidth]{LbToD0p/plots/data/Bh_M_vs_mu_PIDmu_RS}
 	\caption{Invariant \Dz\proton\mun mass versus PIDmu of the muon. No structures tending to low PIDmu can be seen.}
@@ -155,18 +157,19 @@ To account for other possible but not yet measured peaking backgrounds such as \
 \end{figure}
 
 \section{Prompt \Dz}
-With prompt \Dz one denotes \Dz coming directly from the primary \proton\proton interaction, thus being not a product of other decaying particles.
+With prompt \Dz one denotes \Dz mesons coming directly from the primary \proton\proton interaction, thus being not a product of other decaying particles.
 The production of prompt charm and hence prompt \Dz is usually a lot higher than the production of \Lb baryons. 
 One typically measures a ``few" percent prompt charm background in semileptonic \bquark-hadron decays.
 As cross-check the logarithm of the \Dz impact parameter with respect to the primary vertex is drawn.
 Prompt \Dz should have a smaller impact parameter compared to \Dz coming from the \Lb decay.
-This should become more clearly visible in wrong sign combinations.
-However, Figure \ref{fig:plot_D0_IP} does not show any discrepancies between data and different wrong sign combinations, which would indicate the influence of prompt \Dz backgrounds.
-Compared to other background sources this kind of background seems to be negligible, since there are furthermore additional selection requirements applied in the reconstruction to combine the \Dz with the other particles to form a \Lb candidate.
-\begin{figure}[hptb]
+This should become more clearly visible in wrong sign combinations with respect to the right sign data.
+However, Figure \ref{fig:plot_D0_IP} does not show any discrepancies between data and wrong sign combinations, which would indicate the influence of prompt \Dz backgrounds.
+Furthermore one requires in the reconstruction process that the \Dz candidate is combined with a \mun and a \proton to form a \Lb candidate at a secondary vertex displaced from the primary interaction.
+Thus, it seems that the selection requirements in the reconstruction process suppresses the prompt \Dz background to an negligible amount compared to other backgrounds. 
+\begin{figure}[ptb]
 	\centering
 	\includegraphics[width=0.75\textwidth]{LbToD0p/plots/data/D0_IP_OWNPV}
-	\caption{Logarithm of the \Dz impact parameter with respect to the primary \proton\proton interaction. No special behaviour indicating prompt \Dz background can be seen.}
+	\caption{Logarithm of the \Dz impact parameter with respect to the primary \proton\proton interaction. No special behaviour of the wrong sign combinations indicating an enhancement of prompt \Dz background can be seen.}
 	\label{fig:plot_D0_IP}
 \end{figure}
 
@@ -175,7 +178,7 @@ In this section some possible backgrounds not being studied in this analysis are
 Some of these decays have not been measured or seen so far but should be possible.
 \begin{itemize}
     \item $\Lambda_b^0 \rightarrow \Dm \Lc$ \\
-          This decay has not been measured yet, but it should have a branching ratio of around $10^{-2}$, similar to $B \rightarrow D D_s$.
+          This decay has not been measured yet, but it should have a branching ratio of around $10^{-2}$, similar to $B_s \rightarrow D D_s$.
           If the \Lc decays to \pKpi, there should be another $4 \times 10^{-2}$ and in addition one needs to get the muon from somewhere else, or it has to be from $\Km \rightarrow \mun$ misidentifaction. 
           The vertex quality will be spoilt by the \Lc flight.
           Taking all these arguments together, this should be a sub-percent-level background and thus negligible in this study.

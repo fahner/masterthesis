@@ -1,10 +1,12 @@
 \chapter{Checks concerning the enhancement at low \Dz\proton mass}
-\label{sec:Structure}
 
-In section \ref{sec:Signalfit} it has been stated that the fit of the \Dz\proton mass spectrum needs an additional component to parametrise an anomalous enhancement at low \Dz\proton masses right after threshold.
-The fit has converged and matched the dta well, if this enhancement had been model like the two \LcResI and \LcResII resonances.
-This does not mean that there is really an additional resonance seen at all.
-There might be a lot of other reasons, e.g.:
+In Section \ref{sec:Signalfit} it has been stated that the fit of the \Dz\proton mass spectrum needs an additional component to parametrise an anomalous enhancement at low \Dz\proton masses right after threshold.
+The enhancement's yield is counted as signal to \NDp in this analysis.
+The following sections ought to show, that this is reasonable with the current knowledge about the enhancement.
+
+The fit has converged and matched the data well, if this enhancement had been modeled like the two \LcResI and \LcResII resonances.
+This does not mean that there is really an additional or new resonance seen at all.
+There might be other reasons for the enhancement :
 \begin{itemize}
     \item Detector threshold / acceptance effects,
     \item Low mass behaviour induced by some selection requirements,
@@ -18,8 +20,6 @@ There is currently another \lhcb analysis on the exclusive hadronic decay \decay
 This channel enables to study the enhancement with more methods for instance with an amplitude analysis. 
 Hopefully, one can find a final answer with that decay
 Nonetheless, the checks presented here are inevitable.
-The the enhancement's yield is counted as signal to \NDp in this analysis.
-The following sections ought to show, that this is reasonable with the current knowledge about the enhancement.
 
 \section{Detector threshold / acceptance effect}
 One possible explanation of the enhancement might be a simple threshold respectively acceptance effect of the detector.
@@ -30,42 +30,31 @@ The green distribution shows the \Dz\proton mass at generation level, i.e. there
 In blue one sees the \Dz\proton mass after the simulation of the detector and in red the mass after reconstruction and selection.
 For comparison the measured data distribution is shown in black as well.
 In this case always the so called ``true" masses are plotted, i.e. there are no influences of the detector resolution in these distributions.
-The simulations show a similar behaviour at all stages.
-Thus, there is not any significant acceptance effect arising, neither due to the detector itself nor due to the reconstruction and selection process. 
+The simulations show a similar behaviour at all stages, especially in the enhancement region, which is highlighted in Figure \ref{fig:detector_cut_effect}.
+Thus, there is no significant acceptance effect arising, neither due to the detector itself nor due to the reconstruction and selection process that would lead to a peaking structure in the data distribution. 
 Thus, the enhancement cannot be caused by such an effect.
-\begin{figure}[hptb]
+\begin{figure}[ptb]
 	\centering
 	\includegraphics[width=0.6\textwidth]{LbToD0p/structure/detector_cut_effect}
 	\caption{Simulated (true) invariant \Dz\proton mass at different stages, namely after generation (green), detector simulation (blue) and reconstruction and selection (red). The black line shows the measured data.}
 	\label{fig:detector_cut_effect}
 \end{figure}
 
-Excluded to get any structure from acceptance effects a closer look at the \Dz\proton mass threshold reveals some kind of a ``S-shaped" curvature in the ascending part.
-This can be better seen with a zoom into this region as shown in Figure \ref{fig:mD0p_zoom}.
-\begin{figure}[hptb]
-	\centering
-	\includegraphics[width=0.75\textwidth]{LbToD0p/plots/data/Bh_DELTA_MASS_zoom}
-	\caption{Zoom into the low \Dz\proton mass region.}
-	\label{fig:mD0p_zoom}
-\end{figure}
-
-Due to this curvature the fit is not able to describe the low \Dz\proton mass region only with a (steeply rising) nonresonant component but rather prefers to have an additional component. 
 At this point it should be mentioned that there are other analyses seeing a similar behaviour in this \Dz\proton mass region.
-
 First of all, there is a study by \babar on the \Dz\proton final state aiming to measure the \LcResI and \LcResII resonance (and in the latter case to even observe it) as shown in Figure \ref{fig:Babar_D0p} a).
 While discussing their systematics, they are wondering if this bump at roughly 2840\mev might change their results by adding an additional resonance component to their fit, see Figure \ref{fig:Babar_D0p} c).
 Though that bump is much less pronounced compared to the enhancement in this anlaysis, it appears at the same mass.
 Since the impact is not that large on their final result, they just include the deviations as systematic uncertainty, unfortunately without trying to understand the origin of this bump \cite{BaBar_D0p}.
-\begin{figure}[hptb]
+\begin{figure}[ptb]
 	\centering
 	\includegraphics[width=0.49\textwidth]{Babar_D0p}
 	\caption{\babar study on the \Dz\proton final state. They suspect to see a structure similar to the enhancement in the current analysis and fit it in c) with an additional resonance component for their systematic studies. Figure taken from \cite{BaBar_D0p}.}
 	\label{fig:Babar_D0p}
 \end{figure}
 
-Furthermore, there are two more running \lhcb studies on either prompt \Dz\proton events and, as already mentioned, on the hadronic \decay{\Lb}{\Dz\proton\pim} decay.
+Furthermore, there are two more ongoing \lhcb studies on either prompt \Dz\proton events and, as already mentioned, on the hadronic \decay{\Lb}{\Dz\proton\pim} decay.
 It can be disclosed that they are struggling with the same problem, seeing a pronounced enhancement around 2840\mev without being (currently) able to explain it.
-However, since there does not exist any approved material, nothing of their plots can be shown in this thesis.
+However, since there does not exist any approved material, nothing of their studies can be shown in this thesis.
 
 Being seen in different channels and analyses substantiates the assumption, that there is a physical reason for the enhancement.
 
@@ -80,8 +69,9 @@ The leakage into the \Dz\proton mass spectrum should thus be negligible.
 Another resonance exactly sitting a the \Dz\proton mass threshold is the \SigmacpRes{(2800)}.
 So far it is only seen in the hadronic decay \decay{\SigmacpRes{(2800)}}{\Lc\piz}, but the decay \decay{\SigmacpRes{(2800)}}{\Dz\proton} isn't forbidden by any conservation law\footnote{The quark content of the \SigmacpRes{(2800)} is (\uquark\dquark\cquark)}.
 The mean mass of the \SigmacpRes{(2800)} with $2792^{+14}_{-5}\mev$ is indeed below the \Dz\proton mass threshold of 2803 \mev but it has a width of $62^{+60}_{-40}\mev$ \cite{PDG} and is thus a possible candidate for a threshold enhancement.
-The \SigmacpRes{(2800)} itself could come from the decay \decay{\Lb}{\SigmacpRes{(2800)}\mun\neumb}, which hasn't been observed yet either.
-It is thus hard to estimate how probable a threshold enhancement by this \SigmacpRes{(2800)} is.
+The \SigmacpRes{(2800)} itself could come from the decay \decay{\Lb}{\SigmacpRes{(2800)}\mun\neumb}, which has not been observed yet either.
+Thus, it is hard to estimate how probable a threshold enhancement by this \SigmacpRes{(2800)} is.
+Since this thesis aims for an inclusive measurement of the decay \LbToDpmunuX, the enhancement would still be signal if it was caused by either the decay of the \LcRes{(2765)} or \SigmacpRes{(2800)}, similar to the semileptonic \Lb decays via the \LcResI or \LcResII resonance.
 
 \section{Possible background sources}
 It has to be checked that the peaking structure of the enhancement is not caused by any kind of background.
@@ -89,19 +79,19 @@ One can easily exclude that combinatorial background causes the enhancement.
 First, it does not appear in the wrong sign \Dz\proton mass distribution as already shown in Figure \ref{fig:fit_2D_WS}.
 Second, a two-dimensional plot of the invariant \Dz\proton mass versus \logIP distribution shows that the enhancement obeys the same line structure over \logIP than the \LcResI and \LcResII resonances (see Figure \ref{fig:plot_M_vs_logIP}).
 This means that the decay topology looks exactly the same for the enhancement and the resonances leading to the conclusion that the enhancement looks like signal.
-\begin{figure}[hptb]
+\begin{figure}[ptb]
 	\centering
 	\includegraphics[width=0.75\textwidth]{LbToD0p/plots/data/M_vs_logIP_200Bins_RS}
 	\caption{Invariant \Dz\proton mass versus \logIP distribution. The \LcResI and \LcResII are clearly visible as bands in \Dz\proton mass tending to cluster around $\logIP \approx 0.5$. The observed enhancement behaves very similar compared to the resonances excluding that the enhancement can't be caused by combinatorial backgrounds.}
 	\label{fig:plot_M_vs_logIP}
 \end{figure}
 
-Albeit, Peaking backgrounds could enter the \Dz\proton mass spectrum due to either a misidentified \Dz or \proton.
+Albeit, peaking backgrounds could enter the \Dz\proton mass spectrum due to either a misidentified \Dz or \proton.
 For this purpose the invariant \Dz\proton mass is plotted for the \Dz mass sidebands, namely for events with $M(\Dz) < 1820 \mev$ or $M(\Dz) > 1910 \mev$.
 As these events are clearly away from the \Dz mass peak, they have to be background.
 Figure \ref{fig:plot_mD0p_mD0Sideband} shows that neither the enhancement nor any of the identified \Lc resonances appears here.
 This is a clear sign, that backgrounds from fake \Dz don't cause the enhancement.
-\begin{figure}[hptb]
+\begin{figure}[ptb]
 	\centering
 	\includegraphics[width=0.75\textwidth]{LbToD0p/plots/data/Bh_DELTA_MASS_mD0Sideband}
 	\caption{Invariant \Dz\proton mass for events in the \Dz mass sidebands $M(\Dz) < 1820 \mev$ or $M(\Dz) > 1910 \mev$. No enhancement or any other peaking structure can be seen, indicating that fake \Dz backgrounds don't cause the enhancement.}
@@ -127,7 +117,7 @@ All other requirements are the same as described in section \ref{sec:Selection}.
 If the enhancement is made up of events with particles misidentified as protons, then it should disappear if one tightens the requirements on the proton identification.
 However, this is not the case here.
 The enhancement stays as pronounced as the \LcResI resonance for increasing PIDp and PIDp$-$PIDK variables and should thus be made up of real protons.
-\begin{figure}[hptb]
+\begin{figure}[ptb]
 	\centering
 	\includegraphics[width=0.75\textwidth]{LbToD0p/structure/mD0p_PIDcuts}
 	\caption{Invariant \Dz\proton mass for different requirements on the proton's particle identification variables PIDp and PIDp$-$PIDK (for a definition of these variables see section \ref{sec:Selection}). 
@@ -138,28 +128,28 @@ The enhancement stays as pronounced as the \LcResI resonance for increasing PIDp
 \end{figure}
 
 \section{Partially reconstructed decays}
-Assuming that real protons and \Dz cause the enhancement it is not conirmed that this enhancement is a resonance decaying into a \Dz\proton.
-It might be that one sees a so called ``feed down" from a partial reconstructed decay.
-Partial reconstructed decay means that not all particles participating in an event are reconstructed.
-A good example are semileptonic decays like \LbToDpmunuX since the neutrino isn't reconstructed.
-This is furthermore an inclusive measurement, i.e. there might some not reconstructed particles $X$ like kaons or pions.
-Above all the reconstruction of neutral pions is hard at lhcb.
+Assuming that real protons and \Dz cause the enhancement it is not confirmed that this enhancement is a resonance decaying into a \Dz\proton.
+It might be, that one sees a so called ``feed down" from a partially reconstructed decay.
+Partially reconstructed decay means that not all particles participating in an event are reconstructed.
+A good example are semileptonic decays like \LbToDpmunuX since the neutrino is not reconstructed.
+This is furthermore an inclusive measurement, i.e. there might be in addition some not reconstructed particles $X$ like kaons or pions.
+Above all the reconstruction of neutral pions is hard at \lhcb.
 One possibility of getting a peak in \Dz\proton mass without being a direct decay product would be that the inital \Lb decays semileptonically into some resonance $R$ and this resonance $R$ afterwards decays into a \Dstar\proton.
 The \Dstar decays into a \D\pion in turn.
 The total decay chain would then be \decay{\Lb}{R\mun\neumb}, \decay{R}{\Dstar\proton} and \decay{\Dstar}{\D\pion}.
 If one misses the final state \pion and combines the \D and the \proton to look at the invariant \D\proton mass, a peak would appear here, which is not the product of a direct resonant decay \decay{\tilde{R}}{\D\proton}, but rather just the ``reflection" or ``feed-down" from a different decay of another resonance $R$.
 To check if the enhancement is a feed-down from a different decay and a potentially well-known resonance a tool recently developed by Marian Stahl, a Heidelberg Ph.D. student, is used.
 It enables to isolate tracks, i.e. it is possible to require and control, how many tracks come from a certain decay vertex.
-With this ability two further plots of the \Dz\proton invariant mass are produced and plotted in Figure \ref{fig:mD0p_AdditionalParticles}:
-The left one shows the invariant \Dz\proton mass distribution requiring that no other charged hadron (e.g. \pion, \kaon) comes from the \Dz\proton\mun decay vertex.
-This means that this plot should show \Lb decays into \Dz\proton\mun without any other charged particles.
-Since neutral particles do not leave tracks in the detector, there could be some neutral particles, still.
-The well known \Dz\proton spectrum can be seen there including the resonances \LcResI and \LcResII as well as the enhancement.
+With this tool, two further plots of the \Dz\proton invariant mass are produced and plotted in Figure \ref{fig:mD0p_AdditionalParticles}:
+The left-hand side shows the invariant \Dz\proton mass distribution with the requirement that no other charged hadron (e.g. \pion, \kaon) track comes from the \Dz\proton\mun decay vertex.
+Thus, the plot shows \Lb decays into the \Dz\proton\mun final state without any other charged particles.
+Since neutral particles do not leave tracks in the detector, a contribution from neutral particles cannot be excluded, though.
+A \Dz\proton mass spectrum similar to the distribution of the nominal fit in Figure \ref{fig:fit2D} can be seen there including the resonances \LcResI and \LcResII as well as the enhancement.
 In the right plot of Figure \ref{fig:mD0p_AdditionalParticles} it is required that there is at least one additional charged particle coming from the \Dz\proton\mun decay vertex.
 Following this, it shows the invariant \Dz\proton mass distribution for partially reconstructed decays.
 The \LcResI, \LcResII resonances as well as the enhancement have vanished.
-This is a clear sign, that the enhancement likely decays into \Dz\proton and is not an effect of partial reconstructed decays.
-\begin{figure}[hptb]
+This is a clear sign, that the enhancement likely decays into \Dz\proton and is not an effect of partially reconstructed decays with missing a charged particle.
+\begin{figure}[ptb]
 	\centering
 	\includegraphics[width=0.49\textwidth]{LbToD0p/TupleToolPlots/mD0p}
 	\includegraphics[width=0.49\textwidth]{LbToD0p/TupleToolPlots/mD0p_AddedParticles}
@@ -173,24 +163,24 @@ This is a clear sign, that the enhancement likely decays into \Dz\proton and is 
 
 It should again noted, that it is hard to conclude anything for additional neutral particles since they do not leave a track in the detector.
 Having \D mesons in a mass spectrum, it is very common that one sees peaks coming from a partially reconstructed decay with a \decay{\Dstar}{\D\pion}.
-As a last check a possible impact on the \Dz\proton mass spectrum for the special case of a \decay{\Dstarz}{\Dz\piz} decay with mising the \piz is estimated:
+As a last check a possible impact on the \Dz\proton mass spectrum for the special case of a \decay{\Dstarz}{\Dz\piz} decay with missing the \piz is estimated:
 Assuming that there exists a resonance $R^{+}$, obeying the decay chain \decay{\Lb}{R^{+}\mun\neumb}, \decay{R^{+}}{\Dstarz\proton} and \decay{\Dstarz}{\Dz\piz}, the question comes up, which mass this resonance $R^{+}$ must have, to cause a peak in \Dz\proton mass in the enhancement region.
 A simple phase space simulation delivers that this mass of $R^{+}$ should be about $2980\mev$.
 Indeed, there exists a resonance, namely the \XicpRes{(2980)} with a mass of $(2971 \pm 3.3)\mev$ \cite{PDG}.
 However, the quark content of a \Xicp is (\uquark\cquark\squark) whereas neither a \Dstarz nor the proton contain a \squark quark.
 Thus, the decay \decay{\XicpRes{(2980)}}{\Dstarz\proton} would need to decay via the weak interaction.
-Nonetheless the \XicpRes{(2980)} is heavy enough to decay also hadronically. 
-That's why the potential decay \decay{\XicpRes{(2980)}}{\Dstarz\proton} is highly suppressed.
+Nonetheless the \XicpRes{(2980)} is heavy enough to decay also strongly. 
+That is why the potential decay \decay{\XicpRes{(2980)}}{\Dstarz\proton} is highly suppressed.
 So there is currently no resonance known that can decay via a \Dstarz\proton and have a mass that allows to peak in the \Dz\proton mass.
 
 \section{General conclusions on the enhancement}
-In the previous sections different attempts have been made to find either a solution or rule out some potantial explanations of the enhancement seen in the invariant \Dz\proton mass spectrum of the \LbToDpmunuX channel.
+In the previous sections different attempts have been made to find either a solution or rule out some potential reasons of the enhancement seen in the invariant \Dz\proton mass spectrum of the \LbToDpmunuX channel.
 An effect from the detector as well as backgrounds especially from misidentified particles seem to be very unlikely.
 By all indications there are real \Dz and protons involved in the nature of the enhancement.
-It is likely that the process responsible for the enhancement is directly decaying into a \Dz\proton final state without being a ``feed-down" from a partially reconstructed decay, whereas the presence of neutral particles can't be ruled out.
+It is likely that the process responsible for the enhancement is directly decaying into a \Dz\proton final state without being a ``feed-down" from a partially reconstructed decay, whereas the presence of neutral particles cannot be ruled out.
 Finally it can not be concluded if there is a new resonance appearing in the invariant \Dz\proton mass spectrum.
 If this enhancement would we a new \Lc resonance then it should be seen in the \Lc\pip\pim final state as well, which is not the case \cite{PDG}.
 The question on the origin of the enhancement is still open and interesting to pursue.
 One has to keep in mind that the main purpose of this thesis is the measurement of the inclusive branching ratio \BR(\LbToDpmunuX). 
 Considering the fact that a lot of potential background sources causing the enhancement can be ruled out and the enhancement seems to decay into a \Dz and a proton, it should be justified that the yield of the enhancement is counted as signal to
-the total signal yield \NDp in the nominal fit (see Section \ref{sec:Signalfit}). 
+the total signal yield \NDp in the nominal fit (see Chapter \ref{sec:Signalfit}). 
