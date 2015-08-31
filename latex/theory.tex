@@ -108,8 +108,105 @@ The latter one has proven to be useful by the description of $b$ hadrons.
 The main principle is that one considers the heavy $b$ quark as static source of the gluon field surrounded by the light quarks.
 The theoretical simplification in describing the dynamics is analogous to consider a hydrogen atom instead of a positronium \cite{HQET_Introduction}.
 
-\section{The hunt for New Physics at \lhcb}
+\subsection{The hunt for New Physics at \lhcb}
+It has already been stated in the introduction, that the Standard Model does not cover and explain all observed phenomena.
+For instance, gravitation is not included in the Standard model, it does not provide a candidate for dark matter as well as dark energy and the asymmetry between matter and antimatter in the Standard Model is not large enough to fully explain why matter and animatter have not fully annihilated after
+the big bang.
+All physics that go beyond the Standard Model and try to answer those questions are generally referred to as \textsc{New Physics (NP)}.
 
+In principle, there are two ways to discover New Physics:
+The first one is to directly search for new particles.
+This is what \atlas and \cms are doing and what lead to the discovery of the Higgs boson in 2012 \cite{Higgs_ATLAS, Higgs_CMS}.
+However, one can only discover particles with a mass less than the available centre-of-mass energy \sqs.
+
+The \lhcb way of searching for New Physics is an indirect one by the investigation of loop processes such as the \B/\Bbar mixing\footnote{A brief introduction of meson mixing will follow in the next sections.} shown in Figure \ref{fig:Bmixing}.
+The virtual particles in the loops do not need to satisfy Einstein's energy momentum relation and thus can have heavier masses than the initial and final state particles.
+Regarding the \B mixing, it is dominated by the top quark with a mass of $m_t = 173.3 \gev$ in the loop though the \B mass is only $m_\B = 5.3\gev$.
+Thus, by a precise measurement of the \B meson mixing one is sensitive to a particle with a mass more than 30 times higher than the \B mass and hence the necessary center of mass energy needed for its production.
+If there exists new heavy particles they might also contribute to such loop processes.
+By a precise measurement of them, \lhcb tries to find deviations from Standard Model predictions for some variables.
+Two of them, \asld and \Vub will be introduced in the following.
+\begin{figure}[ptb]
+    \centering
+	\includegraphics[width=0.6\textwidth]{bmixing}	
+	\caption{One possible Feynman diagram for \B/\Bbar mixing. The \quark denotes either a \dquark or an \squark quark. Figure taken from \cite{LHCb_roadmap}.}
+	\label{fig:Bmixing}
+\end{figure}
+
+\section{Flavour physics and the measurement of $|\Vub|$}
+The flavour eigenstates of the weak interaction \ket{\dquark'},\ket{\squark'},  \ket{\bquark'} are not equal to the mass eigenstates \ket{\dquark},\ket{\squark},  \ket{\bquark}.
+The transformation between those eigenstates is described by the unitary \textsc{Cabibbo-Kobayashi-Maskawa (CKM) matrix} $V_\text{CKM}$ \cite{Kobayashi_CKM}:
+\begin{align}
+\begin{pmatrix}
+\ket{d'} \\ \ket{s'} \\ \ket{b'}
+\end{pmatrix}
+=
+\begin{pmatrix}
+V_{ud} & V_{us} & V_{ub} \\
+V_{cd} & V_{cs} & V_{cb} \\
+V_{td} & V_{ts} & V_{tb} \\
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+\ket{d} \\ \ket{s} \\ \ket{b}
+\end{pmatrix}.
+\end{align}
+The probability that a quark with a mass eigenstate \ket{j} decays into a quark with mass eigenstate \ket{i} is given by $|V_{ij}|^2$.
+As the CKM matrix is complex there are in principle 18 free parameters.
+Due to unitarity constraints and unobservable quark phases this number reduces to 4 parameters, which can be measured.
+A convenient way is to write the CKM matrix in \textsc{Wolfenstein parametrisation} \cite{Wolfenstein}:
+\begin{align}
+    V_{\text{CKM}}=
+    \begin{pmatrix}
+    V_{ud} & V_{us} & V_{ub} \\
+    V_{cd} & V_{cs} & V_{cb} \\
+    V_{td} & V_{ts} & V_{tb} \\
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+    1-\frac{\lambda^2}{2} & \lambda & A\lambda^3(\rho-\im\eta) \\
+    -\lambda & 1-\frac{\lambda^2}{2} & A\lambda^2 \\
+    A\lambda^3(1-\rho-\im\eta) & -A\lambda^2 & 1
+    \end{pmatrix}
+    + \mathcal{O}(\lambda^4)
+\end{align}
+With a value of $\lambda \approx 0.23$ \cite{PDG}, the Wolfenstein parametrisation clearly shows the almost diagonal structure of the CKM matrix, i.e. that quark transitions happen mostly within a generation.
+The values of the CKM matrix elements are fundamental parameters of the Standard Model, thus their precise measurement and knowledge is important for the search for New Physics.
+The unitarity of the CKM matrix imposes
+\begin{align}
+    \sum_j = V_{ij}V_{kj}^{\ast} = \delta_{ik}, \qquad \sum_i = V_{ij}V_{ik}^{\ast} = \delta_{jk}.
+\end{align}
+The vanishing combinations can be represented as triangles in a complex plane.
+Most commonly one uses
+\begin{align}
+    \Vud\Vub^{\ast} + \Vcd\Vcb^{*} + \Vtd\Vtb^{\ast} = 0. \label{eq:triangle}
+\end{align}
+After division of equation (\ref{eq:triangle}) by $\Vcd\Vcd^{\ast}$, the vertices of the triangle are $(0,0), (0,1)$ and $(\bar{\rho}, \bar{\eta})$ with $\bar{\rho} = \rho (1 - \frac{\lambda^2}{2} + \ldots)$ and $\bar{\eta} = \eta (1 - \frac{\lambda^2}{2} + \ldots)$ as shown on the left-hand side of
+Figure \ref{fig:CKM_triangle}.
+
+The aim of flavour physics is to overconstrain the CKM matrix elements.
+Many loop processes provide the ability to measure the $V_{ij}$ or related quantities and are furthermore sensitive to New Physics as explained above.
+A lot of these results can be displayed and compared in the $(\bar{\rho}, \bar{\eta})$ plane as can be seen on the right hand sight of Figure \ref{fig:CKM_triangle}.
+A clear sign for New Physics would be for instance, that the triangle is not closed at the vertex of angle $\alpha$.
+This is equivalent to the violation of unitarity of the CKM matrix.
+
+Currently, there is a big interest in the measurement of $|\Vub|$ since it is the least known among the CKM matrix element and there is a $\approx 3\sigma$ deviation between measurements of $|\Vub|$ using either exclusive (\decay{\B}{\pi\ell\neul}) or inclusive (\decay{\B}{X_u\ell\neul}) semileptonic decays.
+Theorists try to explain this discrepancy e.g. with the presence of a right-handed coupling of the $W$ boson as extension to the Standard Model \cite{Vub_RightHanded}.
+A recent \lhcb study has measured $|\Vub|$ for the first time in a baryonic decay, namely \decay{\Lb}{\proton\mun\neumb} and confirmed this incompatibility \cite{SL_Vub}.
+The decay \LbToDpmunuX, which is studied in this thesis, is a background in the latter $|\Vub|$ measurement.
+The pollution of \decay{\Lb}{\proton\mun\neumb} with \LbToDpmunuX could only be estimated with simulation.
+Thus a better understanding of \LbToDpmunuX could help to improve the determination of $|\Vub|$.
+\begin{figure}[ptb]
+    \centering
+	\includegraphics[width=0.49\textwidth]{ckm_triangle}	
+	\includegraphics[width=0.49\textwidth]{ckm_fit}	
+	\caption{Left: Triangle in the complex $(\bar{\rho}, \bar{\eta})$ plane obtained by the unitarity constraint on the CKM matrix in equation (\ref{eq:triangle}). Right: Current status of the CKM matrix with all measured variables included. Figures taken from \cite{PDG} and \cite{CKM_fitter}
+    respectively.}
+	\label{fig:CKM_triangle}
+\end{figure}
+
+\section{The measurement of \CP violation in mixing with \asld}
+The symmetry transformation \CP describes
 
 \section{Methods of parameter estimation}
 This section briefly describes two methods to estimate parameters, which are used in this thesis.
