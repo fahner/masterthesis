@@ -69,27 +69,42 @@ Figure \ref{fig:SM} summarises the fermions and bosons of the Standard Model and
 \end{figure}
 
 \section{The interest in \LbToDpmunuX}
-There are several reasons why the study of the decay \LbToDpmunuX is interesting.
+There are several reasons why the study of the decay \LbToDpmunuX, which is done in this thesis, is interesting.
 On the one hand the \Dz\proton subsytem allows spectroscopical studies to learn more about QCD, on the other hand the decay is a background in studies sensitive to physics beyond the Standard Model and thus limiting their precision.
-This section ought to briefly introduce the areas and studies where a better understanding of \LbToDpmunuX is helpful.
+The following sections ought to briefly introduce the areas and studies where a better understanding of \LbToDpmunuX is helpful.
+
+Before, the decay \LbToDpmunuX itself is introduced.
+The \Lb is a baryon with the quark content \uquark\dquark\bquark and a mass of $(5619.5 \pm 0.4)\mev$ \cite{PDG}.
+Among all \bquark baryons it is the lightest one.
+Hence, it can only decay weakly as the strong and the electromagnetic interaction forbid quark transitions into other flavours.
+This results in a characteristic, relatively long lifetime of $(1.451 \pm 0.013)\ps$ \cite{PDG}, which is helpful for the detection and reconstruction as will be explained later.
+The \bquark quark decays into a \cquark by the emission of a \Wm boson.
+Subsequently, the \Wm boson ends up in a muon \mun and a neutrino \neumb.
+With a \uubar pair from the vacuum it is then possible to form a proton \proton (quark content: \uquark\uquark\dquark) and a \Dz meson (\cquark\uquarkbar) in the final state.
+Figure \ref{fig:LbToDpmunu} shows a possible Feynman graph for the decay \LbToDpmunu.
+For the analysis later it is also mentioned, that the mass of the \Dz meson is $(1864.84 \pm 0.07)\mev$ and of the proton\footnote{The uncertainty on the proton is negligible compared to the other particles in this analysis.} $938.27\mev$ \cite{PDG}.
+Thus, a particle decaying into a \Dz\proton must have a mass above the \Dz\proton mass threshold of about $2803\mev$.
+\begin{figure}[ptb]
+    \centering
+	\includegraphics[width=\textwidth]{LbToD0pmunu}	
+	\caption{Feynman diagram for the decay \LbToDpmunu.}
+	\label{fig:LbToDpmunu}
+\end{figure}
 
 \subsection{Baryonic spectroscopy}
 There are plenty of combinatoric possibilities to combine three quarks to a baryon.
-The constituent quark model predicts seven ground-state baryons with a total angular momentum $J$ and parity $P$ of $J^P = \frac{1}{2}^+$ containing a heavy \bquark quark and two light (\uquark, \dquark, \cquark) quarks: 
+The constituent quark model predicts seven ground-state baryons with a total angular momentum $J$ and parity $P$ of $J^P = \frac{1}{2}^+$ containing a heavy \bquark quark and two light (\uquark, \dquark, \squark) quarks: 
 The \Lb singlet, the $\Sigma_b$ triplet, the $\Xi_b$ doublet and the \Omegab \cite{LHCb_Dph}.
 Except for the $\Sigma_b^0$ all these states have been observed.
 However the current knowledge of their fundamental properties like masses, widths and quantum numbers is poor as well as only few decay channels have been measured.
 Thus, there is a big interest in the study of \bquark baryons.
-The \Lb, which is studied in this analysis, has a quark content of \uquark\dquark\bquark and is the lightest \bquark baryon with a mass of $(5619 \pm 0.4) \mev$ \cite{PDG}.
-Hence, it can only decay weakly as the strong and the electromagnetic interaction forbid quark transitions into other flavours.
-This results in a characteristic, relatively long lifetime of $(1.451 \pm 0.013)\ps$ \cite{PDG}, which is helpful for the detection and reconstruction as will be explained later.
 
 With the transition from a \bquark to a \cquark by the emission of a \Wm boson the \Lb can decay into a \Lc baryon.
 The quark content of the \Lc is \uquark\dquark\cquark and thus a representative of a rich spectrum of \textsc{charmed baryons}.
 Figure \ref{fig:Lc_spectrum} shows all known charmed baryons with their quantum number $J^P$ and their observed decays.
 \begin{figure}[ptb]
     \centering
-	\includegraphics[width=\textwidth]{Lc_spectrum}	
+	\includegraphics[width=0.7\textwidth]{Lc_spectrum}	
 	\caption{Summary of all known and established charmed baryons with quantum numbers $J^P$ and their observed decays. Figure taken from \cite{PDG}.}
 	\label{fig:Lc_spectrum}
 \end{figure}
@@ -133,7 +148,7 @@ Two of them, \asld and \Vub will be introduced in the following.
 	\label{fig:Bmixing}
 \end{figure}
 
-\section{Flavour physics and the measurement of $|\Vub|$}
+\subsection{Flavour physics and the measurement of $|\Vub|$}
 The flavour eigenstates of the weak interaction \ket{\dquark'},\ket{\squark'},  \ket{\bquark'} are not equal to the mass eigenstates \ket{\dquark},\ket{\squark},  \ket{\bquark}.
 The transformation between those eigenstates is described by the unitary \textsc{Cabibbo-Kobayashi-Maskawa (CKM) matrix} $V_\text{CKM}$ \cite{Kobayashi_CKM}:
 \begin{align}
@@ -188,7 +203,7 @@ The aim of flavour physics is to overconstrain the CKM matrix elements.
 Many loop processes provide the ability to measure the $V_{ij}$ or related quantities and are furthermore sensitive to New Physics as explained above.
 A lot of these results can be displayed and compared in the $(\bar{\rho}, \bar{\eta})$ plane as can be seen on the right hand sight of Figure \ref{fig:CKM_triangle}.
 A clear sign for New Physics would be for instance, that the triangle is not closed at the vertex of angle $\alpha$.
-This is equivalent to the violation of unitarity of the CKM matrix.
+This is equivalent to the violation of unitarity of the CKM matrix \cite{PDG, Nierste}.
 
 Currently, there is a big interest in the measurement of $|\Vub|$ since it is the least known among the CKM matrix element and there is a $\approx 3\sigma$ deviation between measurements of $|\Vub|$ using either exclusive (\decay{\B}{\pi\ell\neul}) or inclusive (\decay{\B}{X_u\ell\neul}) semileptonic decays.
 Theorists try to explain this discrepancy e.g. with the presence of a right-handed coupling of the $W$ boson as extension to the Standard Model \cite{Vub_RightHanded}.
@@ -205,8 +220,81 @@ Thus a better understanding of \LbToDpmunuX could help to improve the determinat
 	\label{fig:CKM_triangle}
 \end{figure}
 
-\section{The measurement of \CP violation in mixing with \asld}
-The symmetry transformation \CP describes
+\subsection{The measurement of \CP violation in mixing with \asld}
+The symmetry transformation \CP describes a combination of two symmetries:
+The charge conjugation $\mathcal{C}$ transforms a particle into its antiparticle and the parity operation $\mathcal{P}$ inverts spatial coordinates.
+If \CP were an exact symmetry the physical laws would be the same for matter and antimatter.
+Thus, the creation of our universe requires a violation of the \CP symmetry, otherwise all matter would have been annihilated with antimatter\footnote{This requirement is also known as one of the three Sakharov conditions for baryogenesis \cite{Sakharov}.}.
+In the Standard Model, only the weak interaction breaks \CP symmetry.
+Described by only one parameter, it appears as a single, complex phase in the CKM matrix\footnote{Without \CP violation the unitarity triangle would have a vanishing area.} \cite{Kobayashi_CKM}.
+However, the \CP violation predicted by the Standard Model is too small to explain the observed matter in the universe.
+Thus, the measurement of \CP violating observables may reveal New Physics contributions by deviations from the Standard Model predictions.
+
+In principle one distinguishes three different kinds of \CP violation \cite{PDG, Nierste}:
+\begin{enumerate}
+    \item \textbf{\CP violation in decay} \\
+          Let $M$ denote a charged or neutral hadron and $\overline{M}$ its \CP conjugate.
+          Their decay amplitudes into a multi-particle final state $f$ or into the \CP conjugated state $\overline{f}$ respectively are defined as
+          \begin{align}
+              A_f := \bra{f}\Ham\ket{M}, \qquad \overline{A}_f := \bra{f}\Ham\ket{\overline{M}}, \nonumber \\
+              A_{\overline{f}} := \bra{\overline{f}}\Ham\ket{M}, \qquad \overline{A}_{\overline{f}} := \bra{\overline{f}}\Ham\ket{\overline{M}},
+          \end{align}
+          where \Ham denotes the Hamiltonian governing weak interactions.
+          Then, \CP violation in decay is defined by
+          \begin{align}
+            \left|\frac{\overline{A}_{\overline{f}}}{A_f}\right| \neq 1,
+          \end{align}
+          i.e. the probability that $\overline{M}$ decays into $\overline{f}$ is different from the probability, that $M$ decays into $f$.
+    \item \textbf{\CP violation in mixing} \\
+          A neutral meson, e.g. the \Bz meson can oscillate into its antiparticle \Bzb and this \Bzb again back into a \Bz.
+          This phenomenon is also called \textsc{Neutral Meson Mixing} and a possible Feynman diagram of the \Bz/\Bzb is given in Figure \ref{fig:Bmixing}. 
+          The time evolution of the flavour eigenstates \ket{\Bd} and \ket{\Bdb} can be phenomenologically described by an effective Schroedinger equation
+          \begin{align}
+              \im \diff{}{t}\begin{pmatrix} \ket{\text{\Bd}\vphantom{\text{\Bdb}}} \\ \ket{\text{\Bdb}} \end{pmatrix} = \left(M - \frac{\im}{2} \Gamma\right) \begin{pmatrix} \ket{\text{\Bd}\vphantom{\text{\Bdb}}} \\ \ket{\text{\Bdb}} \end{pmatrix},
+          \end{align}
+          where $M$ is the mass matrix and $\Gamma$ the decay matrix.
+          Both, $M$ and $\Gamma$ are hermitian but not $\Ham = M - \frac{\im}{2} \Gamma$ due to the possible decay of the mesons.
+          Due to the mixing it is obvious that \Ham is not diagonal.
+          After diagonalisation, the mass eigenstates \ket{B_H} and \ket{B_L} can be written in terms of the flavour eigenstates as
+          \begin{align}
+              \ket{B_{\text{H}}\vphantom{\text{\Bdb}}} &= p \ket{\text{\Bd}\vphantom{\text{\Bdb}}} - q \ket{\text{\Bdb}} \label{eq:b_heavy}\\ 
+              \ket{B_{\text{L}}\vphantom{\text{\Bdb}}} &= p \ket{\text{\Bd}\vphantom{\text{\Bdb}}} + q \ket{\text{\Bdb}}, \qquad \text{with} \quad |p|^2 + |q|^2 = 1, \label{eq:b_light}
+          \end{align}
+          where the index H (heavy) denotes the mass state with the larger mass compared to the lighter one, indexed with L (light).
+          The coefficients $p$ and $q$ can be related to the mass and decay matrix elements $M_{ij}$ respectively $\Gamma_{ij}$, but a through discussion of the phenomenology of mixing is outside the scope of this thesis.
+          \CP violation in mixing means that the probability that a \Bd oscillates into a \Bdb is different from the probability that a \Bdb oscillates into a \Bd or formally
+          \begin{align}
+              \left|\frac{q}{p}\right| \neq 1.
+          \end{align}
+    \item \textbf{\CP violation in interference} \\
+          If there exist final states $f$, that can be reached from a hadron $M$ as well as from its \CP conjugate $\overline{M}$, \CP violation can occur in the interference between a decay without mixing, $M \to f$, and a decay with mixing, $M \to \overline{M} \to f$.
+          This kind of \CP violation is formally expressed by
+          \begin{align}
+              \Imag(\lambda_f) \neq 0,
+          \end{align}
+          where $\lambda_f$ is defined as
+          \begin{align}
+              \lambda_f) := \frac{q}{p} \frac{\overline{A}_f}{A_f}.
+          \end{align}
+          As an example for \CP violation in mixing serves the decay \decay{\Bd/\Bdb}{\jpsi\KS}.
+\end{enumerate}
+
+For the measurement of \CP violation it is crucial to know, if for instance a \Bd meson or a \Bdb decay.
+A common way to distinguish a \Bd or respectively a \Bdb decay is to use semileptonic decays since the charge of the lepton contains the information about the meson's flavour:
+The \bquark quark in the \Bd meson can only decay via the emission of a \Wm boson resulting in a negatively charged lepton (and a neutrino), whereas the \bquarkbar quark of the \Bdb emits a \Wp when decaying.
+To measure \CP violation in \Bd/\Bdb mixing one defines the \textsc{Semileptonic Asymmetry} \asld as
+\begin{align}
+    \asld = \frac{P(\Bdb \to \Bd) - P(\Bd \to \Bdb)}{P(\Bdb \to \Bd) + P(\Bd \to \Bdb)},
+\end{align}
+where $P$ denotes the probability for the transition given in brackets.
+The Standard Model prediction of $\asld = -(4.1 \pm 0.6) 10^{-4}$ \cite{asld_SM} is tiny compared to the current experimental sensitivity.
+Thus, the measurement of \asld is an excellent test of the Standard Model and significant deviations from zero would be a signal of New Physics.
+A current \lhcb measurement of \asld uses the decays \decay{\Bz}{\Dm\mup\neum X} as well as \decay{\Bz}{\Dstarm\mup\neum X}.
+The result is $\asld = -(0.02 \pm 0.19\stat \pm 0.30\syst)\%$ and thus consistent with zero at the current precision \cite{asld_LHCb}.
+With a contribution of $7\cdot 10^{-4}$, backgrounds coming from \Lb baryon decays make up around $23\%$ of the systematic error. As many \Lb decays have not been measured yet, they had to rely on rough estimates.
+One of these backgrounds is the decay \LbToDpmunuX, which is studied in this thesis.
+If one misses the proton and randomly adds a pion to the \Dz meson to form a \Dstar candidate, it fakes a \decay{\Bz}{\Dstarm\mup\neum X} decay.
+Thus, the understanding of \LbToDpmunuX helps to improve the measurement of \asld by reducing the systematic uncertainties.
 
 \section{Methods of parameter estimation}
 This section briefly describes two methods to estimate parameters, which are used in this thesis.
