@@ -17,7 +17,7 @@ The main strategy in the reconstruction process of the decay \LbToDpmunuX is to 
 Then, the proton track is combined to the \Dz\mun vertex to make a \LbToDpmunuX candidate.
 It is apparent that a main source of background will be a \decay{\Bd/\Bp}{\Dz\mun\neumb X} decay, where a random proton is added.
 To better understand the selection criteria and the way this \textsc{combinatorial background} is reduced, it might be helpful to have a look at a sketch of a typical \LbToDpmunuX decay in Figure \ref{fig:DecaySketch} left.
-\begin{figure}[hptb]
+\begin{figure}[tb]
 	\centering
 	\includegraphics[width=0.49\textwidth]{decay_sketch_signal}
 	\includegraphics[width=0.49\textwidth]{decay_sketch_background}
@@ -44,7 +44,7 @@ From each fit one can retrieve the fit \chisq and the corresponding number of de
 The \logIP of the proton is defined as the logarithm of the difference of the \Dz\mun vertex fit \chisq with and without the proton.
 This means the better the proton makes a vertex with the \Dz\mun, the smaller is \logIP and the more likely the event is a real \LbToDpmunuX decay.
 
-\subsection{Reconstruction of the \Dz}
+\subsection{Reconstruction of the \Dz candidate}
 \label{sec:Selection_D0}
 The first step of the reconstruction process is to reconstruct the \Dz.
 This is supposed to happen via the \DToKpi signature.
@@ -78,7 +78,7 @@ For the reconstruction of the \Dz events with a DIRA $>0.99$ of the \Dz are sele
 As last requirement one suppresses combinatorial background by restricting the \Dz to be close to its mean mass, i.e. the mass difference to the PDG value is smaller than 25 \mev and to require a minimum \Dz flight distance with respect to the primary vertex of 5 \mm.
 Figure \ref{fig:plot_mD0} shows the invariant mass of the reconstructed \Dz candidates after the application of all the requirements except for the restriction of the \Dz mass itself.
 A clear mass peak with very small sidebands indicating a small combinatorial background contribution can be seen.
-\begin{figure}[hptb]
+\begin{figure}[tb]
 	\centering
 	\includegraphics[width=0.8\textwidth]{LbToD0p/plots/data/D0_M}
 	\caption{Invariant \Dz mass after the application of all selection requirements except for the \Dz mass itself.
@@ -150,7 +150,7 @@ Furthermore, if the longitudinal momentum can be ignored in the present rest fra
 Hence, it is required that the corrected \Lb mass lies around its PDG mass $M(\Lb)=(5619.5 \pm 0.4)\mev$ \cite{PDG} between 5 and 6 \gev.
 Figure \ref{fig:plot_correctedMass} shows the distribution of the corrected \Lb mass.
 Due to the correction of the missing neutrino it peaks near the PDG mass as explained above.
-\begin{figure}[hptb]
+\begin{figure}[tb]
 	\centering
 	\includegraphics[width=0.8\textwidth]{LbToD0p/plots/data/Bh_BPVCORRM}
 	\caption{Corrected \Lb mass after the application of all selection requirements except for the corrected \Lb mass itself.
@@ -165,7 +165,7 @@ In this case, all final state particles are reconstructed and the invariant \Dz\
 To veto such backgrounds only events with an invariant \Dz\mun\proton mass of less than 5.5 \gev are selected.
 A detailed discussion of these backgrounds can be found in chapter \ref{sec:Backgrounds}, especially Figure \ref{fig:plot_D0pmuMass} visualises this veto.
 
-\begin{table}[h]
+\begin{table}[tb]
     \centering
     \caption{Summary of the selection requirements for the decay \LbToDpmunuX.}
     \label{tab:cuts_D0p}
@@ -228,7 +228,7 @@ Figure \ref{fig:plot_mD0p_logIP} shows the invariant \Dz\proton mass (top) and t
 The first one is used for a spectroscopical analysis later.
 If this thesis refers to the \Dz\proton mass, there is rather the quantity $\MDp - M(\Dz) + M_\text{PDG}(\Dz)$, where one first subtracts the reconstructed \Dz mass and then adds up the nominal \Dz mass from the PDG.
 With this trick, one ``subtracts" the finite width from the \Dz\proton mass spectrum and improves the mass resolution.
-\begin{figure}[hptb]
+\begin{figure}[tb]
 	\centering
 	\includegraphics[width=\textwidth]{LbToD0p/plots/data/Bh_DELTA_MASS} \\
 	\includegraphics[width=\textwidth]{LbToD0p/plots/data/logIP}
@@ -267,7 +267,7 @@ The lifetime of the \Lb is long enough, such that the \Lb decays at a secondary 
 Like the \Dz, the \Lc flies another distance, finally decaying at a tertiary vertex into \pKpi.
 The strategy for the selection is thus to find decays with the signature $X_{b} \rightarrow (\Lambda_c^+ \rightarrow K^- \pi^+ p^+) \mu^- \bar{\nu}_{\mu} X$.
 
-\subsection{Reconstruction of \Lc (\pKpi) candidates}
+\subsection{Reconstruction of the \Lc (\pKpi) candidate}
 First of all, requirements on the tracks of the final state particles \proton, \kaon and \pion are made.
 These are required to have a minimum momentum of 2\gev and a transverse momentum of 250\mev, their ghost probability should be less than 0.5 and the \chisqip with respect to the primary vertex is greater than 4.
 The motivation for these cuts are the same as for the \Dz reconstruction in Section \ref{sec:Selection_D0}:
@@ -282,7 +282,7 @@ Its DIRA is required to be larger than 0.99 to match flight direction and moment
 The difference of the \Lc mass to its PDG value is required to be smaller than 80\mev only, since the \Lc sidebands are later used to subtract combinatorial backgrounds below the \Lc mass peak.
 Aside from a minimum transverse momentum of 2.1 \gev, \textsc{prompt} \Lc, i.e. \Lc directly coming from the primvary vertex, are supressed by requiring the logarithm of the \Lc impact parameter to be grater than -1.5 and a flight distance \chisq of more than 25, both with respect to the primary vertex.
 Figure \ref{fig:plot_Lc_M} shows a clear peak of the invariant \Lc mass.
-\begin{figure}[hptb]
+\begin{figure}[tb]
     \centering
 	\includegraphics[width=\textwidth]{LbToLc/plots/data/Lc_M}	
 	\caption{Plot of the invariant \pKpi mass distribution. A clear mass peak identified as the \Lc can be seen. The yellow shaded area shows events with the WS combination \Lc\mup.}
@@ -302,7 +302,7 @@ Its decay topology does not differ from \LbToLcmunu, because the \LcRes{(2595)} 
 However, if the massive \piz is missing in addtion, the the corrected \Lb mass should be shifted to lower masses compared to \LbToLcmunu.
 That is why there is not any requirement made on the \Lb corrected mass here.
 The different behaviour of the corrected masses is used in the normalisation fit in Chapter \ref{sec:Normalisationfit}  to disentangle the signal from those backgrounds.
-\begin{table}[h]
+\begin{table}[tb]
     \centering
     \caption{Summary of the selection requirements for the reconstruction of \LbToLcmunu candidates.}
     \label{tab:cuts_Lc}
@@ -351,7 +351,7 @@ Table \ref{tab:cuts_Lc} summarises all requirements for the reconstruction of th
 After application of all these requirements there are in total 2670999 \LbToLcmunu candidates left for the further analysis. 
 Figure \ref{fig:plot_Lb_M_Lc} shows on the left-hand side the invariant mass distribution of the \Lb candidates and on the right-hand side the corrected \Lb mass distribution.
 Whereas the \Lb mass is shifted to lower masses due to the missing neutrino, the corrected mass peaks close to the PDG mass of about 5619.5\mev \cite{PDG}.
-\begin{figure}[hptb]
+\begin{figure}[tb]
     \centering
 	\includegraphics[width=0.49\textwidth]{LbToLc/plots/data/Lb_M} 	
 	\includegraphics[width=0.49\textwidth]{LbToLc/plots/data/Lb_BPVCORRM}	

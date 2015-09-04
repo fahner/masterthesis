@@ -10,6 +10,8 @@
   openright,
   fontsize = 12pt,
   fleqn,
+  chapterprefix,
+  appendixprefix=false,
   toc      = bibnumbered,
   toc      = listofnumbered,
   numbers  = noendperiod,
@@ -68,13 +70,22 @@
 \include{commands}
 \include{includes/values}
 
+\addtokomafont{disposition}{\boldmath}
+%\addtokomafont{pageheadfoot}{\unboldmath} 
+\KOMAoptions{headsepline=true}
+
 \begin{document}
   %% title pages similar to providet template instead of maketitle
   %\include{titlepages-ger} % select either german
   \include{titlepages-eng} % or english title page
+  \cleardoublepage
   \include{abstracts}
+  \cleardoublepage
 
+  \pagestyle{headings}
   \tableofcontents
+  \cleardoublepage
+
   %% Put your contents here
   \include{introduction}
   \include{theory}

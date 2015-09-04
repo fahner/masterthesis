@@ -1,5 +1,5 @@
 \chapter{Checks concerning the enhancement at low \Dz\proton mass}
-
+\label{sec:Structure}
 In Section \ref{sec:Signalfit} it has been stated that the fit of the \Dz\proton mass spectrum needs an additional component to parametrise an anomalous enhancement at low \Dz\proton masses right after threshold.
 The enhancement's yield is counted as signal to \NDp in this analysis.
 The following sections ought to show, that this is reasonable with the current knowledge about the enhancement.
@@ -33,7 +33,7 @@ In this case always the so called ``true" masses are plotted, i.e. there are no 
 The simulations show a similar behaviour at all stages, especially in the enhancement region, which is highlighted in Figure \ref{fig:detector_cut_effect}.
 Thus, there is no significant acceptance effect arising, neither due to the detector itself nor due to the reconstruction and selection process that would lead to a peaking structure in the data distribution. 
 Thus, the enhancement cannot be caused by such an effect.
-\begin{figure}[ptb]
+\begin{figure}[tb]
 	\centering
 	\includegraphics[width=0.6\textwidth]{LbToD0p/structure/detector_cut_effect}
 	\caption{Simulated (true) invariant \Dz\proton mass at different stages, namely after generation (green), detector simulation (blue) and reconstruction and selection (red). The black line shows the measured data.}
@@ -45,7 +45,7 @@ First of all, there is a study by \babar on the \Dz\proton final state aiming to
 While discussing their systematics, they are wondering if this bump at roughly 2840\mev might change their results by adding an additional resonance component to their fit, see Figure \ref{fig:Babar_D0p} c).
 Though that bump is much less pronounced compared to the enhancement in this anlaysis, it appears at the same mass.
 Since the impact is not that large on their final result, they just include the deviations as systematic uncertainty, unfortunately without trying to understand the origin of this bump \cite{BaBar_D0p}.
-\begin{figure}[ptb]
+\begin{figure}[tb]
 	\centering
 	\includegraphics[width=0.49\textwidth]{Babar_D0p}
 	\caption{\babar study on the \Dz\proton final state. They suspect to see a structure similar to the enhancement in the current analysis and fit it in c) with an additional resonance component for their systematic studies. Figure taken from \cite{BaBar_D0p}.}
@@ -79,7 +79,7 @@ One can easily exclude that combinatorial background causes the enhancement.
 First, it does not appear in the wrong sign \Dz\proton mass distribution as already shown in Figure \ref{fig:fit_2D_WS}.
 Second, a two-dimensional plot of the invariant \Dz\proton mass versus \logIP distribution shows that the enhancement obeys the same line structure over \logIP than the \LcResI and \LcResII resonances (see Figure \ref{fig:plot_M_vs_logIP}).
 This means that the decay topology looks exactly the same for the enhancement and the resonances leading to the conclusion that the enhancement looks like signal.
-\begin{figure}[ptb]
+\begin{figure}[tb]
 	\centering
 	\includegraphics[width=0.75\textwidth]{LbToD0p/plots/data/M_vs_logIP_200Bins_RS}
 	\caption{Invariant \Dz\proton mass versus \logIP distribution. The \LcResI and \LcResII are clearly visible as bands in \Dz\proton mass tending to cluster around $\logIP \approx 0.5$. The observed enhancement behaves very similar compared to the resonances excluding that the enhancement can't be caused by combinatorial backgrounds.}
@@ -91,7 +91,7 @@ For this purpose the invariant \Dz\proton mass is plotted for the \Dz mass sideb
 As these events are clearly away from the \Dz mass peak, they have to be background.
 Figure \ref{fig:plot_mD0p_mD0Sideband} shows that neither the enhancement nor any of the identified \Lc resonances appears here.
 This is a clear sign, that backgrounds from fake \Dz don't cause the enhancement.
-\begin{figure}[ptb]
+\begin{figure}[tb]
 	\centering
 	\includegraphics[width=0.75\textwidth]{LbToD0p/plots/data/Bh_DELTA_MASS_mD0Sideband}
 	\caption{Invariant \Dz\proton mass for events in the \Dz mass sidebands $M(\Dz) < 1820 \mev$ or $M(\Dz) > 1910 \mev$. No enhancement or any other peaking structure can be seen, indicating that fake \Dz backgrounds don't cause the enhancement.}
@@ -117,7 +117,7 @@ All other requirements are the same as described in section \ref{sec:Selection}.
 If the enhancement is made up of events with particles misidentified as protons, then it should disappear if one tightens the requirements on the proton identification.
 However, this is not the case here.
 The enhancement stays as pronounced as the \LcResI resonance for increasing PIDp and PIDp$-$PIDK variables and should thus be made up of real protons.
-\begin{figure}[ptb]
+\begin{figure}[tb]
 	\centering
 	\includegraphics[width=0.75\textwidth]{LbToD0p/structure/mD0p_PIDcuts}
 	\caption{Invariant \Dz\proton mass for different requirements on the proton's particle identification variables PIDp and PIDp$-$PIDK (for a definition of these variables see section \ref{sec:Selection}). 
@@ -149,7 +149,7 @@ In the right plot of Figure \ref{fig:mD0p_AdditionalParticles} it is required th
 Following this, it shows the invariant \Dz\proton mass distribution for partially reconstructed decays.
 The \LcResI, \LcResII resonances as well as the enhancement have vanished.
 This is a clear sign, that the enhancement likely decays into \Dz\proton and is not an effect of partially reconstructed decays with missing a charged particle.
-\begin{figure}[ptb]
+\begin{figure}[tb]
 	\centering
 	\includegraphics[width=0.49\textwidth]{LbToD0p/TupleToolPlots/mD0p}
 	\includegraphics[width=0.49\textwidth]{LbToD0p/TupleToolPlots/mD0p_AddedParticles}

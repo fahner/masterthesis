@@ -26,7 +26,7 @@ Depending on the respective variables either data driven methods or simulations 
 % ==================================
 % Section: Fit parametrisation
 % ==================================
-\section{Empiric determination of the shape of the two-dimensional \logIP/\MDp distribution}
+\section{Empiric determination of the two-dimensional \logIP/\MDp distribution's shape}
 This section describes the determination of the shapes for the \logIP distribution and the \Dz\proton mass shape.
 Though there will be a two-dimensional fit in the end, it is assumed that the \logIP and \MDp distributions can be determined separately for each fit component.
 The two-dimensional fit is rather needed for the separation of the different fit components, for instance the \MDp shapes are very similar for nonresonant signal and background but completely differ in their \logIP shape, i.e. their vertex quality.
@@ -64,7 +64,7 @@ The final fit function for the signal \logIP shape is the sum of two bifurcated 
 \end{align}
 where $f_{\BfG_1}$ denotes the fraction of the first \BfG and the two \BfG share a common mean $x_0$. 
 The fit result for the signal simulation can be seen in Figure \ref{fig:fit_logIP_signal}.
-\begin{figure}[ptb]
+\begin{figure}[tb]
     \centering
 	\includegraphics[width=0.75\textwidth]{LbToD0p/fits/MC_D0p_SIG/logIP_RS/fit_DBfG}
 	\caption{Fit to the \logIP distribution of the signal simulation. As parametrisation a double Bifurcated Gaussian has been chosen.}
@@ -108,13 +108,13 @@ So $\alpha$ denotes the transition between the Gaussian and the power law tail a
 The result of the fit to the background simulation can be seen in Figure \ref{fig:fit_logIP_MC_BKG}.
 According to the pull distribution the fit nicely describes the data points.
 Nonetheless one has to note that statistics here are very little.
-\begin{figure}[ptb]
+\begin{figure}[tb]
     \centering
 	\includegraphics[width=0.75\textwidth]{LbToD0p/plots/MC_B2D0munu_BKG/logIP}
 	\caption{Comparison of the \logIP distribution for right sign and wrong sign events in the background simulation. Both, the shapes for right sign and wrong sign are very similar and thus can be added to increase statistics.}
     \label{fig:plot_logIP_MC_BKG}
 \end{figure}
-\begin{figure}[ptb]
+\begin{figure}[tb]
     \centering
 	\includegraphics[width=0.75\textwidth]{LbToD0p/fits/MC_B2D0munu_BKG/logIP_RS/fit_CB}
 	\caption{Fit to the (RS and WS added) \logIP shape of the background simulation.
@@ -132,7 +132,7 @@ For that purpose, the double bifurcated Gaussian as signal component and the Cry
 \end{align},
 where $N_\text{sig}$ denotes the signal yield and $N_\text{bkg}$ the background yield respectively.
 The fitresult can be seen in Figure \ref{fig:fit_logIP_RS} and the corresponding yields and parameter values are listed in Table \ref{tab:logIP_RS}.
-\begin{figure}[ptb]
+\begin{figure}[tb]
     \centering
 	\includegraphics[width=\textwidth]{LbToD0p/fits/data/logIP_RS/fit_DBfG_CB}
 	\caption{\logIP distribution of the data sample.
@@ -149,7 +149,7 @@ This fit is later also used for systematic studies, since it is already able to 
 \label{sec:Shape_mD0p}
 To get an idea of the (combinatorial) background shape in the \Dz\proton mass distribution, events with a wrong sign proton, i.e. events with \Dz\antiproton\mun in the final state are used since the transition from \Lb to a \Dz\antiproton\mun final state is physically forbidden by charge
 conservation and should thus give a good proxy for randomly combined \LbToDpmunu candidates. 
-The \MDp distribution of these wrong sign events is shown in Figure \ref{fig:fit_mD0p_WS} and modeled with an empirical background function
+The \MDp distribution of these wrong sign events is shown in Figure \ref{fig:fit_mD0p_WS} and modeled with an empirical background function \cite{EBG}
 \begin{align}
     \text{EBG}(m|m_0, m_1, m_2, p,c_1) = \text{PS}(m|m_1,m_2) \cdot (m - m_0)^p \cdot \exp\left[ c_1 \left(1-\frac{m_0}{m}\right)\right], \label{eq:EBG}
 \end{align}
@@ -157,12 +157,13 @@ where $m_0 := m_1 + m_2$ denotes the kinematic \Dz\proton mass threshold and PS 
 \begin{align}
     \text{PS}(m|m_1,m_2) = \frac{1}{2m} \sqrt{\left[m^2 - (m_1 + m_2)^2\right] \left[m^2 - (m_1 - m_2)^2\right]}. \label{eq:PS}
 \end{align}
+The term with the power $p$ is included as correction, in case the phase-space function does not satisfactorily describe the threshold shape.
 Here and in the following fits, $m_1$ and $m_2$ are fixed to the \Dz respectively proton PDG mass values.
 Figure \ref{fig:fit_mD0p_WS} shows the result of the fit.
 Again, the model nicely describes the distribution.
 It should be noted here, that there is no structure observed in this wrong sign mass spectrum.
 This is a good confirmation, that the identification of the two peaks in the \Dz\proton mass for right sign events as \LcResI and \LcResII is appropiate.
-\begin{figure}[ptb]
+\begin{figure}[tb]
     \centering
 	\includegraphics[width=0.75\textwidth]{LbToD0p/fits/data/mD0p_WSp/fit_EmpiricBG}
 	\caption{Fit to \Dz\proton mass of wrong sign proton events.
@@ -219,7 +220,7 @@ The reason for this peak is not understood so far and is currently studied in di
 Besides some detector effects, backgrounds or kinematical reflections it is not excluded that a new particle is seen here.
 A thorough discussion, if this additional component is actually needed and what might cause this peak follows in section \ref{sec:Structure}.
 In the following this component is treated as signal since it appears very clear when requiring $\logIP < 1$, i.e. in the background suppressed region making a good decay vertex.
-\begin{figure}[ptb]
+\begin{figure}[tb]
     \centering
 	\includegraphics[width=\textwidth]{LbToD0p/fits/data/mD0p_RS/fit_TurnOnDExp_2RelBWPSRes} \\
 	\includegraphics[width=\textwidth]{LbToD0p/fits/data/mD0p_RS/fit_TurnOnDExp_3RelBWPSRes}
@@ -246,7 +247,7 @@ The fits of all bins can be seen in Appendix \ref{app:Massresolution}, Figure \r
 The widths $\sigma_1$ and $\sigma_2$ and the fraction of the first Gaussian $f_1$ obtained by these fits in the respective bins are used for the parametrisation of the resonances in the nominal \Dz\proton mass fit as described by equation (\ref{eq:RES}).
 Table \ref{tab:Massresolution} summarises the obtained values which are used for the further analysis.
 Though there is a mass dependence of the resolution over the whole \Dz\proton mass spectrum it is assumed, that the mass resolution can be considered as constant over the natural width of the resonances.
-\begin{table}[h]
+\begin{table}[tb]
     \centering
     \caption{Results of the fits to the mass difference distributions for the determination of the mass resolution. Only the values, which are required for the further analysis are quoted here.}
     \label{tab:Massresolution}
@@ -267,7 +268,7 @@ Thus, the measured \Dz\proton mass is just the sum of the PDG masses of the \Dz 
 Hence, there is no sensitivity to a mass resolution at threshold.
 If the measured \Dz\proton mass is above the threshold, there are contributions from the momenta of the \Dz and the proton to the measured \Dz\proton mass, too, influencing the mass resolution.
 As the uncertainties of the momenta gets larger for increasing momenta, the mass resolution increases as well.
-\begin{figure}[ptb]
+\begin{figure}[tb]
     \centering
 	\includegraphics[width=0.49\textwidth]{LbToD0p/massresolution/massresolution_03}
 	\includegraphics[width=0.49\textwidth]{LbToD0p/massresolution/massresolution_widths}
@@ -304,7 +305,7 @@ The results of the fit are shown in Table \ref{tab:2Dfit} and the projections ca
 The model very nicely describes the data.
 The pull distributions do not show any abnormalities.
 A discussion of the result follows in section \ref{sec:Signalyield_D0p}.
-\begin{figure}[ptb]
+\begin{figure}[tb]
 	\centering
 	\includegraphics[width=\textwidth]{LbToD0p/fits/data/2Dfit/fit_DBfG_CB_vs_TurnOnDExp_3RelBWPSRes_EmpiricBG_mD0pProj} \\
 	\includegraphics[width=\textwidth]{LbToD0p/fits/data/2Dfit/fit_DBfG_CB_vs_TurnOnDExp_3RelBWPSRes_EmpiricBG_logIPProj}
@@ -332,7 +333,7 @@ Concerning the \logIP distribution, there is nevertheless a ``signal-like" part.
 This is presumably background from \BToDmunuX decays, where the $X$ is of ``wrong charge" and moreover misidentified as (anti)proton.
 Since the physics are different for right sign and wrong sign events, the yield obtained in this WS fit cannot easily be subtracted from the nominal fit to account for fake proton backgrounds.
 A more thorough study on fake backgrounds will be performed in Chapter \ref{sec:Backgrounds}.
-\begin{figure}[ptb]
+\begin{figure}[tb]
 	\centering
 	\includegraphics[width=0.49\textwidth]{LbToD0p/fits/data/2DWSfit/fit_DBfG_CB_vs_TurnOnDExp_EmpiricBG_mD0pProj}
 	\includegraphics[width=0.49\textwidth]{LbToD0p/fits/data/2DWSfit/fit_DBfG_CB_vs_TurnOnDExp_EmpiricBG_logIPProj}
@@ -345,7 +346,8 @@ A more thorough study on fake backgrounds will be performed in Chapter \ref{sec:
 % ==================================
 % Section: Signal yield and resonances
 % ==================================
-\section{Extraction of \LbToDpmunuX signal yield together with \LcResI and \LcResII properties}
+%\section{Extraction of \LbToDpmunuX signal yield together with \LcResI and \LcResII properties}
+\section{Extraction of \LbToDpmunuX signal yield and \LcResI / \LcResII properties}
 \label{sec:Signalyield_D0p}
 From the previous fits different results can be obtained. 
 The most important result is the \LbToDpmunuX signal yield \NDp for the determination of \R.
