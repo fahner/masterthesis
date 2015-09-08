@@ -3,21 +3,21 @@
 The aim of this analysis is to measure the branching ratio of the inclusive decay \LbToDpmunuX.
 The $X$ means, that the \Lb decays at least into a \Dz\proton\mun\neumb, but the decay might also include additional particles, e.g. pions.
 To measure a single branching ratio one needs to know how many \Lb are produced and how many of them decay via \LbToDpmunu.
-At a hadron collider like the \lhc it is hard to determine how many particles of a certain kind are produced.
+At a hadron collider like the \lhc, it is hard to determine how many particles of a certain kind are produced.
 In this case one would need to know the \bquark\bquarkbar cross section $\sigma(\bquark\bquarkbar)$, i.e. a measure, how many \bquark\bquarkbar quark pairs are produced in a proton-proton (\proton\proton) collision.
-Furthermore another number one needs to know is how many of these \bquark quarks hadronise to a \Lb.
+Furthermore, another number one needs to know is how many of these \bquark quarks hadronise to a \Lb.
 This ratio is called the fragmentation fraction $f_{\Lb}$.
 To avoid these tedious measurements and increase the precision of the result, a normalisation decay, \LbToLcmunu, is used to rather measure a relative branching ratio,
 \begin{align}
 	\R =
 	\frac{\BR(\decay{\Lb}{\Dz\proton \mun \neumb X})}{\BR(\decay{\Lb}{\Lc \mun\neumb})}. \label{eq:R_def}
 \end{align}
-With this choice $\sigma(\bquark\bquarkbar)$ and $f_{\Lb}$ cancel since they appear both in the numerator and the denominator.
+With this choice $\sigma(\bquark\bquarkbar)$ and $f_{\Lb}$ cancel, since they appear both in the numerator and the denominator.
 In addition one has to consider that the \Dz in the signal channel and the \Lc in the normalisation channel are not directly detected.
 They are decaying into more stable particles which are measured and identified in the detector.
 These subsequent decays are chosen to be \DToKpi and \LcTopKpi, because they can be well measured at \lhcb.
 Following the whole decay chain for the signal channel, \LbToDpmunuX, \DToKpi, and for the normalisation channel, \LbToLcmunu, \LcTopKpi one easily sees, that both decays end up in the same final state, namely \pKpi\mun\neumb.
-Incidentally this ensures that potential detection efficiencies, e.g. due to different interaction of particles with the detector material, cancel at first order.
+Incidentally, this ensures that potential detection efficiencies, e.g. due to different interaction of particles with the detector material, cancel at first order.
 Having this in mind, the relative branching ratio splits up to
 \begin{align}
 	\R =
@@ -26,7 +26,7 @@ Having this in mind, the relative branching ratio splits up to
 	 \cdot \frac{\BR(\decay{\Lc}{p \Km \pip})}{\BR(\decay{\Dz}{\Km\pip})}, \label{eq:R}
 \end{align}
 where, \NDp and \NLc denote the signal yields of the channels \LbToDpmunuX and \LbToLcmunu respectively, \effDp and \effLc are the corresponding reconstruction efficiencies and \BR(...) are the branching ratios of the subsequent decays.
-The reconstruction efficiencies describe the fact that not all particle decays are actually detected and reconstructed.
+The reconstruction efficiencies describe the fact, that not all particle decays are actually detected and reconstructed.
 Such inefficiencies may have several reasons:
 \begin{itemize}
     \item Each detector has a limited acceptance and a particle may decay outside this acceptance.
@@ -38,15 +38,15 @@ Such inefficiencies may have several reasons:
 Since the decays of the signal and normalisation channel are semileptonic and thus include a neutrino, which is not reconstructed in the detector, it is not easy to determine the signal yields \NDp and \NLc.
 The missing neutrino prevents to reconstruct a nice \Lb mass peak, which would allow an easy distinction between signal and background.
 Thus, more dedicated methods have to be applied.
-Regarding equation (\ref{eq:R}) the analysis proceeds in the following steps:
+Regarding Equation (\ref{eq:R}) the analysis proceeds in the following steps:
 \begin{enumerate}
     \item The relevant signal decays have to be reconstructed and selected in the collected data (Chapter \ref{sec:Selection}). 
           Since a huge amount of different particles and decays are produced in a proton-proton (\proton\proton) collision, this is an important step to reduce the data size and to separate real signal decays from background.
     \item The number of \LbToDpmunuX events \NLc is determined with a two-dimensional fit on the \Dz\proton mass and the \logIP distribution.
           The variable \logIP  is a measure for the quality of the \Dz\proton\mun vertex.
           It will be thoroughly defined and its choice motivated in Section \ref{sec:Signalfit}.
-          With \logIP it is possible to distinguish between nonresonant signal, i.e. \Lb directly decaying into \Dz\proton\mun\neumb$X$ without going through intermediate resonances, and background.
-    \item For the signal event number \NLc in the normalisation channel \LbToLcmunu a different approach is chosen.
+          With, \logIP it is possible to distinguish between nonresonant signal, i.e. \Lb directly decaying into \Dz\proton\mun\neumb$X$ without going through intermediate resonances, and background.
+    \item For the signal event number \NLc in the normalisation channel \LbToLcmunu, a different approach is chosen.
           In this channel, the main challenge is to distinguish between \LbToLcmunu decays and decays into excited \Lc states, e.g. \decay{\Lc}{\LcRes{(2595)}\mun\neumb}.
           These decays can be separated by a fit to the corrected \Lb mass.
           The corrected mass is a quantity where one (partially) corrects for the missing neutrino in the decay.
@@ -56,7 +56,7 @@ Regarding equation (\ref{eq:R}) the analysis proceeds in the following steps:
           However, these simulations do not perfectly describe the data, so they first have to be reweighted (Chapter \ref{sec:Efficiencies}).
     \item The branching ratios of the subdecays \DToKpi and \LcTopKpi are taken from PDG or other measurements. 
           Their values are $\BR(\DToKpi) = \BRDToKpival \pm \BRDToKpisysterr$ \cite{PDG} and $\BR(\LcTopKpi) = \BRLcTopKpival \pm \BRLcTopKpisysterr$ \cite{Belle_BR_LcTopKpi}.
-    \item At this point all desired observables are obtained and can be used to calculate the relative branching ratio \R in Chapter \ref{sec:Results}.
+    \item At this point, all desired observables are obtained and can be used to calculate the relative branching ratio \R in Chapter \ref{sec:Results}.
 \end{enumerate}
 
 Concerning the signal channel \LbToDpmunuX, a special focus is put on the invariant \Dz\proton mass spectrum.

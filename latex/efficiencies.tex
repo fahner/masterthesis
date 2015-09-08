@@ -10,47 +10,47 @@ Here are some examples:
     \item There are dead regions in the detector.
     \item Applying selection requirements for the reduction of backgrounds prevents signal events to pass these requirements as well.
 \end{itemize}
-For the measurement of the number of signal events the exact knowledge / determination of all efficiencies is crucial.
-The way how the efficiencies for the \LbToDpmunuX and \LbToLcmunu decays are accounted for the measurement of the relative branching ratio \R is shown in equation (\ref{eq:R}).
+For the measurement of the number of signal events, the exact knowledge / determination of all efficiencies is crucial.
+The way, how the efficiencies for the \LbToDpmunuX and \LbToLcmunu decays are accounted for the measurement of the relative branching ratio \R, is shown in Equation (\ref{eq:R}).
 
 For this analysis, the efficiencies are determined using simulated events.
 These simulation samples contain information about all generated as well as reconstructed events for which detector effects are accounted for.
 The simple way is to divide the number of reconstructed and selected simulated events by the number of generated events. 
 This efficiency is hereafter called selection efficiency \effSel.
 However, some generated events are rejected before they enter the simulation process, since above all the simulation of the detector takes a lot of time. 
-Thus, several requirements are already applied during generation to reduce the computation time of the simulation production for instance all generated events are required to be in the \lhcb acceptance.
+Thus, several requirements are already applied during generation to reduce the computation time of the simulation production, for instance all generated events are required to be in the \lhcb acceptance.
 A further acceleration of the production process can be achieved with additional requirements on the final state particles' (transverse) momenta.
-Concerning the \LbToDpmunuX and \LbToLcmunu channel these requirements are different and likewise the efficiencies of the generation process.
+Concerning the \LbToDpmunuX and \LbToLcmunu channel, these requirements are different and likewise the efficiencies of the generation process.
 Thus, the so-called generator level efficiency \effGen also has to be determined for both channels. 
 The total efficiency used for the calculation of \R is the product $\effGen \cdot \effSel$.
 
 Unfortunately, it is known that the simulations do not perfectly describe the data. 
-Since the decay \LbToDpmunuX is not well-known the physical properties are not correctly modeled in simulation and thus disagree with data.
+Since the decay \LbToDpmunuX is not well-known, the physical properties are not correctly modeled in simulation and thus disagree with data.
 Additionally, no theoretical prediction of the \LbToDpmunuX channel is available.
 The plots in Figure \ref{fig:reweighting} show a comparison of data (black points) and the simulation (red lines).
 A huge disagreement between the (unweighted) simulation and data can be seen, above all in the \MDp and \MDmu distributions.
-In order to adjust the decay kinematics the simulated events hence have to be reweighted.
+In order to adjust the decay kinematics, the simulated events hence have to be reweighted.
 This leads to a more proper estimate of the efficiency.
 Several reweigthing steps are applied and will be described in the following.
 The effect of the reweighting is also shown in Figure \ref{fig:reweighting}.
 A discussion on it follows.
-\begin{figure}[tb]
+\begin{figure}[tbp]
 	\centering
 	\includegraphics[width=0.49\textwidth]{LbToD0p/comparisons/3D/mD0p_mD0mu_mD0pmu/20Bins/20.0MaxWeight/Bh_DELTA_MASS}
 	\includegraphics[width=0.49\textwidth]{LbToD0p/comparisons/3D/mD0p_mD0mu_mD0pmu/20Bins/20.0MaxWeight/B_M}
 	\includegraphics[width=0.49\textwidth]{LbToD0p/comparisons/3D/mD0p_mD0mu_mD0pmu/20Bins/20.0MaxWeight/Bh_M}
-	\caption{Comparison of data (black points) and simulation for the \LbToDpmunuX channel before (red line) and after (red shaded area) threedimensional reweighting as described in the text (see sec. \ref{sec:Reweight_D0p}).}
+	\caption{Comparison of data (black points) and simulation for the \LbToDpmunuX channel before (red line) and after (red shaded area) threedimensional reweighting as described in the text (see Sec. \ref{sec:Reweight_D0p}).}
 	\label{fig:reweighting}
 \end{figure}
 
 \section{Kinematic reweighting of the simulated \LbToDpmunuX and \LbToLcmunu decays}
-The production of \Lb baryons depends strongly on their transverse momentum as Figure \ref{fig:LbPTrew} (left) taken from reference \cite{Lb_production_kinematic} shows. 
+The production of \Lb baryons depends strongly on their transverse momentum as Figure \ref{fig:LbPTrew} (left) taken from Reference \cite{Lb_production_kinematic} shows. 
 This dependence is not well emulated in the simulation and thus has to be corrected. 
-This was already done in the semileptonic \lhcb-measurement of $|\Vub|$ in ref. \cite{SL_Vub} using the decay \decay{\Lb}{\jpsi\Dz\proton}. 
-To calculate the weights data and simulation of this hadronic \Lb decay channel was compared as shown in Figure \ref{fig:LbPTrew} (right). 
+This was already done in the semileptonic \lhcb-measurement of $|\Vub|$ in Ref. \cite{SL_Vub} using the decay \decay{\Lb}{\jpsi\Dz\proton}. 
+To calculate the weights, data and simulation of this hadronic \Lb decay channel was compared as shown in Figure \ref{fig:LbPTrew} (right). 
 In this analysis, the applied weights are determined from the same channel with the help of the distributions in Figure \ref{fig:LbPTrew} (right).
 The reweighting is applied in both, \LbToDpmunuX and \LbToLcmunu, channels according to the true \Lb transverse momentum \pt, i.e. the actual generated transverse momentum.
-\begin{figure}[tb]
+\begin{figure}[tbp]
 	\centering
 	\includegraphics[width=0.49\textwidth]{Lb_production_pt_dependence}
 	\includegraphics[width=0.49\textwidth]{Lb_pt_comparison_weights}
@@ -67,7 +67,7 @@ This choice is not trivial and above all not obvious, but there are several reas
 \begin{enumerate}
     \item The simulation shows large differences compared to the data distribution in these variables.
     \item These variables are already available at generator level, i.e. before detector effects are simulated. 
-          To calculate the selection efficiency the simulation has to be reweighted at generator stage as well.
+          To calculate the selection efficiency, the simulation has to be reweighted at generator stage as well.
     \item There are no selection requirements on these variables. 
           Otherwise, no weights could be assigned to events, not fulfilling the requirements\footnote{There exists a selection requirement on M(\Dz\proton\mun) in this analysis to eliminate \decay{\Lb}{\Dz\proton\pim} background, but less than 0.5\% of all events have their generated mass above this value. 
                     Thus, its impact on the efficiency can be neglected.}.
@@ -80,22 +80,22 @@ The reweighting and the calculation of the efficiencies is performed with the fo
           The histogram containing the weights is now calculated by dividing the histogram with the data through the histogram containing the simulated events.
     \item \textbf{Assigning weights to the events} \\
           Now, this weight histogram is used to assign a weight $w$ to each selected and generated event.
-          To get the correct bin in the weight histogram the generated masses \Mtrue{\Dz\proton}, \Mtrue{\Dz\mun} and \Mtrue{\Dz\proton\mun} are used, in the following briefly denoted as $\vec{M}_\text{true}$.
+          To get the correct bin in the weight histogram, the generated masses \Mtrue{\Dz\proton}, \Mtrue{\Dz\mun} and \Mtrue{\Dz\proton\mun} are used, in the following briefly denoted as $\vec{M}_\text{true}$.
     \item \textbf{Calculation of the efficiency} \\
           The efficiency is calculated with
           \begin{align}
               \epsilon = \frac{\sum\limits_{i=1}^{N_\text{sel}} \weight{}{i}(\vec{M}_\text{true})}{\sum\limits_{i=1}^{N_\text{gen}} \weight{}{i}(\vec{M}_\text{true})}, \label{eq:effrew}
           \end{align}
           where $N_\text{sel}$ and $N_\text{gen}$ denote the number of selected respectively generated events.
-          To account for the loss of statistical power due to reweighting, both the numerator and denominator in equation (\ref{eq:effrew}) are multiplied by the renormalisation factor $\sum_{i=1}^{N_\text{gen}} \weight{}{i} / \sum_{i=1}^{N_\text{gen}} \weight{2}{i}$. 
-          This does not affect the central value of $\epsilon$ but influences the statistical error, which is calculated using binomial statistics \cite{Efficiency}, i.e.
+          To account for the loss of statistical power due to reweighting, both, the numerator and denominator in Equation (\ref{eq:effrew}), are multiplied by the renormalisation factor $\sum_{i=1}^{N_\text{gen}} \weight{}{i} / \sum_{i=1}^{N_\text{gen}} \weight{2}{i}$. 
+          This does not affect the central value of $\epsilon$, but influences the statistical error, which is calculated using binomial statistics \cite{Efficiency}, i.e.
           \begin{align}
               \sigma_\epsilon = \sqrt{\frac{\epsilon(1-\epsilon)}{n}}, 
           \end{align}
           with $n := \sum_{i=1}^{N_\text{gen}} \weight{}{i}(\vec{M}_\text{true})$.
 \end{enumerate}
-It becomes clear, that with this procedure one must not apply selection requirements on the weighting variables, since otherwise the weights outside the cut region are zero. 
-Hence it would not be clear how to reweight the generated events not fulfilling the selection requirements. 
+It becomes clear, that with this procedure, one must not apply selection requirements on the weighting variables, since otherwise the weights outside the cut region are zero. 
+Hence, it would not be clear, how to reweight the generated events not fulfilling the selection requirements. 
 The distribution of the masses after reweighting are shown in Figure \ref{fig:reweighting}.
 The agreement between data and the reweighted simulation is much better than without reweighting.
 Nonetheless, some discrepancies can be seen at higher \Dz\mun and \Dz\proton\mun masses.
@@ -105,14 +105,14 @@ No simulated events exist here, though there is still data.
 Nonetheless, these events are weighted with zero, resulting in slight discrepancies.
 Many more comparisons between data and simulation before and after reweighting can be found in the Appendix \ref{app:Reweight_D0p} in Figure \ref{fig:reweight_D0p_app}.
 
-Concerning the channel \LbToLcmunu no further reweighting is applied since the agreement in the comparison between data and simulation seems to be sufficient.
-Several comparison plots for this channel can be found in figure \ref{fig:reweight_Lc_app} in \ref{app:Reweight_Lc}.
+Concerning the channel \LbToLcmunu, no further reweighting is applied since the agreement in the comparison between data and simulation seems to be sufficient.
+Several comparison plots for this channel can be found in Figure \ref{fig:reweight_Lc_app} in Appendix \ref{app:Reweight_Lc}.
 With this framework, the efficiencies are calculated at different stages of the simulation process.
 
 \section{Generator level efficiencies}
 As a reminder, generator level efficiencies arise due to the fact, that one demands the generated events to be in the \lhcb acceptance and apply some (loose) requirements on the kinematics to accelerate the simulation process.
 The generator level samples are reweighted as described above: the \LbToLcmunu sample with the kinematic \pt(\Lb) reweighting and the \LbToDpmunu sample with both reweightings.
-For signal and normalization channel the following generator level efficiencies are obtained:
+For signal and normalisation channel, the following generator level efficiencies are obtained:
 \begin{align*}
     \effGenLc &= \effGenLcval \pm \effGenLcerr, \\
     \effGenDp &= \effGenDpval \pm \effGenDperr.
@@ -123,7 +123,7 @@ The quoted error is statistical and calculated as described in the previous sect
 \section{Reconstruction and selection efficiencies}
 The reconstruction and selection efficiencies are calculated analogously.
 The same reweighting procedure on the different samples is performed.
-The results for signal and normalization channel are:
+The results for signal and normalisation channel are:
 \begin{align*}
     \effSelLc &= \num[scientific-notation=true]{\effSelLcval \pm \effSelLcerr}, \\
     \effSelDp &= \num[scientific-notation=true]{\effSelDpval \pm \effSelDperr}.
@@ -131,7 +131,7 @@ The results for signal and normalization channel are:
 Again, the error relies to limited simulation statistics.
 
 \section{Total efficiencies}
-To summarise the values above the total efficiencies for the channels are:
+To summarise the values above, the total efficiencies for the channels are:
 \begin{align*}
     \effDp &= \effGenDp \cdot \effSelDp = \num[scientific-notation=true]{\effDpval \pm \effDperr}, \\
     \effLc &= \effGenLc \cdot \effSelLc = \num[scientific-notation=true]{\effLcval \pm \effLcerr}.
