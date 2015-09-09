@@ -75,6 +75,7 @@
 \KOMAoptions{headsepline=true}
 
 \begin{document}
+  \pagenumbering{gobble}
   %% title pages similar to providet template instead of maketitle
   %\include{titlepages-ger} % select either german
   \include{titlepages-eng} % or english title page
@@ -83,9 +84,10 @@
   \cleardoublepage
 
   \pagestyle{headings}
+  \pagenumbering{roman}
   \tableofcontents
   \cleardoublepage
-
+  \pagenumbering{arabic}
   %% Put your contents here
   \include{introduction}
   \include{theory}

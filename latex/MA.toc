@@ -1,83 +1,83 @@
 \select@language {english}
-\contentsline {chapter}{\numberline {1}Introduction}{11}{chapter.1}
-\contentsline {chapter}{\numberline {2}Theory and motivation}{13}{chapter.2}
-\contentsline {section}{\numberline {2.1}The Standard Model of Particle Physics}{13}{section.2.1}
-\contentsline {section}{\numberline {2.2}The interest in \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace }{14}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Baryonic spectroscopy}{16}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}The hunt for New Physics at \unhbox \voidb@x \hbox {LHCb}\xspace }{17}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Flavour physics and the measurement of $|{\ensuremath {V_{{\ensuremath {\ensuremath {u}\xspace }}\xspace {\ensuremath {\ensuremath {b}\xspace }}\xspace }}}\xspace |$}{18}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}The measurement of \ensuremath {\mathcal {CP}}\xspace violation in mixing with \ensuremath {a_{sl}^d}\xspace }{20}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Methods of parameter estimation}{22}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Maximum-Likelihood method}{23}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Beeston-Barlow method}{23}{subsection.2.3.2}
-\contentsline {chapter}{\numberline {3}The \unhbox \voidb@x \hbox {LHCb}\xspace detector}{25}{chapter.3}
-\contentsline {section}{\numberline {3.1}Tracking detectors}{25}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Vertex Locator (VELO)}{26}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Silicon Tracker (ST)}{27}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Outer Tracker (OT)}{29}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Track classification}{30}{subsection.3.1.4}
-\contentsline {section}{\numberline {3.2}Particle identification}{30}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Ring Imaging Cherenkov Detector (RICH)}{30}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Calorimeter system}{31}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Muon chambers}{32}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Trigger}{32}{section.3.3}
-\contentsline {chapter}{\numberline {4}Analysis strategy}{35}{chapter.4}
-\contentsline {chapter}{\numberline {5}Data reconstruction and selection}{39}{chapter.5}
-\contentsline {section}{\numberline {5.1}Reconstruction of the decay \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace }{39}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Reconstruction of the {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace candidate}{40}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Reconstruction of the {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace candidate}{42}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Reconstruction of the {\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace ({\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace ) candidate}{42}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}Reconstruction of the decay \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace }\xspace }{47}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Reconstruction of the {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace ({\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {{\ensuremath {\ensuremath {K}\xspace }}\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\ensuremath {\pi }\xspace }}\xspace ^+}}\xspace ) candidate}{47}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Reconstruction of the {\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace ({\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace ) candidate}{48}{subsection.5.2.2}
-\contentsline {chapter}{\numberline {6}Signal fit}{51}{chapter.6}
-\contentsline {section}{\numberline {6.1}Empiric determination of the two-dimensional \ensuremath {\qopname \relax o{log}\chi ^2_{\text {IP}}}\xspace /\ensuremath {M({\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace )}\xspace distribution's shape}{52}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}\ensuremath {\qopname \relax o{log}\chi ^2_{\text {IP}}}\xspace shape}{52}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}One-dimensional fit to the \ensuremath {\qopname \relax o{log}\chi ^2_{\text {IP}}}\xspace distribution in data}{55}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}{\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace mass shape}{55}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Determination of the mass resolution}{60}{section.6.2}
-\contentsline {section}{\numberline {6.3}Nominal fit in two dimensions}{61}{section.6.3}
-\contentsline {section}{\numberline {6.4}Fit to the wrong sign proton data as cross-check}{63}{section.6.4}
-\contentsline {section}{\numberline {6.5}Extraction of \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace signal yield and \ensuremath {{\ensuremath {\PLambda }}\xspace _{\ensuremath {\ensuremath {c}\xspace }}\xspace (2880)^+}\xspace / \ensuremath {{\ensuremath {\PLambda }}\xspace _{\ensuremath {\ensuremath {c}\xspace }}\xspace (2940)^+}\xspace properties}{63}{section.6.5}
-\contentsline {chapter}{\numberline {7}Fit to the reference channel \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace }\xspace }{67}{chapter.7}
-\contentsline {section}{\numberline {7.1}Reduction and handling of backgrounds}{68}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Non {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace background}{68}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Random combinations of {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace and {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace }{69}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Peaking backgrounds}{69}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Fit to the corrected {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {{\ensuremath {\ensuremath {K}\xspace }}\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\ensuremath {\pi }\xspace }}\xspace ^+}}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace ({\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace ) mass}{69}{section.7.2}
-\contentsline {chapter}{\numberline {8}Efficiencies}{73}{chapter.8}
-\contentsline {section}{\numberline {8.1}Kinematic reweighting of the simulated \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace and \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace }\xspace decays}{74}{section.8.1}
-\contentsline {section}{\numberline {8.2}Reweighting of the simulated \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace decays}{75}{section.8.2}
-\contentsline {section}{\numberline {8.3}Generator level efficiencies}{77}{section.8.3}
-\contentsline {section}{\numberline {8.4}Reconstruction and selection efficiencies}{77}{section.8.4}
-\contentsline {section}{\numberline {8.5}Total efficiencies}{77}{section.8.5}
-\contentsline {chapter}{\numberline {9}Backgrounds}{79}{chapter.9}
-\contentsline {section}{\numberline {9.1}Proton misidentification}{79}{section.9.1}
-\contentsline {subsection}{\numberline {9.1.1}Definition of particle identification regions - Number of particle candidates}{80}{subsection.9.1.1}
-\contentsline {subsection}{\numberline {9.1.2}Determination of ``true" candidates with PID efficiencies}{80}{subsection.9.1.2}
-\contentsline {subsection}{\numberline {9.1.3}Estimate of misidentified protons}{82}{subsection.9.1.3}
-\contentsline {section}{\numberline {9.2}Misidentified muons}{83}{section.9.2}
-\contentsline {section}{\numberline {9.3}Prompt {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace mesons}{84}{section.9.3}
-\contentsline {section}{\numberline {9.4}Other possible backgrounds}{85}{section.9.4}
-\contentsline {section}{\numberline {9.5}Backgrounds summary and estimate of background yield}{86}{section.9.5}
-\contentsline {chapter}{\numberline {10}Systematics}{87}{chapter.10}
-\contentsline {section}{\numberline {10.1}Branching ratio uncertainty of subsequent decays}{87}{section.10.1}
-\contentsline {section}{\numberline {10.2}Kinematic \unhbox \voidb@x \hbox {$p_{\rm T}$}\xspace ({\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace ) reweighting of \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace and \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace }\xspace simulated events}{87}{section.10.2}
-\contentsline {section}{\numberline {10.3}Reweighting of \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace simulated events}{88}{section.10.3}
-\contentsline {subsection}{\numberline {10.3.1}Choice of reweighting dimensions}{88}{subsection.10.3.1}
-\contentsline {subsection}{\numberline {10.3.2}Number of bins per dimension}{88}{subsection.10.3.2}
-\contentsline {subsection}{\numberline {10.3.3}Maximum allowed weight}{90}{subsection.10.3.3}
-\contentsline {section}{\numberline {10.4}Choice of fit strategy}{90}{section.10.4}
-\contentsline {section}{\numberline {10.5}Knowledge of backgrounds}{90}{section.10.5}
-\contentsline {section}{\numberline {10.6}Systematics overview}{91}{section.10.6}
-\contentsline {chapter}{\numberline {11}Checks concerning the enhancement at low {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace mass}{93}{chapter.11}
-\contentsline {section}{\numberline {11.1}Detector threshold / acceptance effect}{93}{section.11.1}
-\contentsline {section}{\numberline {11.2}Threshold enhancement from other resonances}{95}{section.11.2}
-\contentsline {section}{\numberline {11.3}Possible background sources}{96}{section.11.3}
-\contentsline {section}{\numberline {11.4}Partially reconstructed decays}{98}{section.11.4}
-\contentsline {section}{\numberline {11.5}General conclusions on the enhancement}{100}{section.11.5}
-\contentsline {chapter}{\numberline {12}Results}{101}{chapter.12}
-\contentsline {chapter}{\numberline {13}Conclusion}{103}{chapter.13}
-\contentsline {chapter}{\numberline {A}Mass resolution}{105}{appendix.A}
-\contentsline {chapter}{\numberline {B}Reweighting of \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace decay simulation}{107}{appendix.B}
-\contentsline {chapter}{\numberline {C}Reweighting and comparison of the \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace }\xspace candidates}{109}{appendix.C}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Theory and motivation}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}The Standard Model of Particle Physics}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}The interest in \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace }{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Baryonic spectroscopy}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}The hunt for New Physics at \unhbox \voidb@x \hbox {LHCb}\xspace }{7}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Flavour physics and the measurement of $|{\ensuremath {V_{{\ensuremath {\ensuremath {u}\xspace }}\xspace {\ensuremath {\ensuremath {b}\xspace }}\xspace }}}\xspace |$}{8}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}The measurement of \ensuremath {\mathcal {CP}}\xspace violation in mixing with \ensuremath {a_{sl}^d}\xspace }{10}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Methods of parameter estimation}{12}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Maximum-Likelihood method}{13}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Beeston-Barlow method}{13}{subsection.2.3.2}
+\contentsline {chapter}{\numberline {3}The \unhbox \voidb@x \hbox {LHCb}\xspace detector}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Tracking detectors}{15}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Vertex Locator (VELO)}{16}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Silicon Tracker (ST)}{17}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Outer Tracker (OT)}{19}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Track classification}{20}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Particle identification}{20}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Ring Imaging Cherenkov Detector (RICH)}{20}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Calorimeter system}{21}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Muon chambers}{22}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Trigger}{22}{section.3.3}
+\contentsline {chapter}{\numberline {4}Analysis strategy}{25}{chapter.4}
+\contentsline {chapter}{\numberline {5}Data reconstruction and selection}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Reconstruction of the decay \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace }{29}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Reconstruction of the {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace candidate}{30}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Reconstruction of the {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace candidate}{32}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Reconstruction of the {\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace ({\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace ) candidate}{32}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Reconstruction of the decay \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace }\xspace }{37}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Reconstruction of the {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace ({\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {{\ensuremath {\ensuremath {K}\xspace }}\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\ensuremath {\pi }\xspace }}\xspace ^+}}\xspace ) candidate}{37}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Reconstruction of the {\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace ({\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace ) candidate}{38}{subsection.5.2.2}
+\contentsline {chapter}{\numberline {6}Signal fit}{41}{chapter.6}
+\contentsline {section}{\numberline {6.1}Empiric determination of the two-dimensional \ensuremath {\qopname \relax o{log}\chi ^2_{\text {IP}}}\xspace /\ensuremath {M({\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace )}\xspace distribution's shape}{42}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}\ensuremath {\qopname \relax o{log}\chi ^2_{\text {IP}}}\xspace shape}{42}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}One-dimensional fit to the \ensuremath {\qopname \relax o{log}\chi ^2_{\text {IP}}}\xspace distribution in data}{45}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}{\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace mass shape}{45}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Determination of the mass resolution}{50}{section.6.2}
+\contentsline {section}{\numberline {6.3}Nominal fit in two dimensions}{51}{section.6.3}
+\contentsline {section}{\numberline {6.4}Fit to the wrong sign proton data as cross-check}{53}{section.6.4}
+\contentsline {section}{\numberline {6.5}Extraction of \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace signal yield and \ensuremath {{\ensuremath {\PLambda }}\xspace _{\ensuremath {\ensuremath {c}\xspace }}\xspace (2880)^+}\xspace / \ensuremath {{\ensuremath {\PLambda }}\xspace _{\ensuremath {\ensuremath {c}\xspace }}\xspace (2940)^+}\xspace properties}{53}{section.6.5}
+\contentsline {chapter}{\numberline {7}Fit to the reference channel \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace }\xspace }{57}{chapter.7}
+\contentsline {section}{\numberline {7.1}Reduction and handling of backgrounds}{58}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Non {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace background}{58}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Random combinations of {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace and {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace }{59}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Peaking backgrounds}{59}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Fit to the corrected {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {{\ensuremath {\ensuremath {K}\xspace }}\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\ensuremath {\pi }\xspace }}\xspace ^+}}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace ({\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace ) mass}{59}{section.7.2}
+\contentsline {chapter}{\numberline {8}Efficiencies}{63}{chapter.8}
+\contentsline {section}{\numberline {8.1}Kinematic reweighting of the simulated \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace and \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace }\xspace decays}{64}{section.8.1}
+\contentsline {section}{\numberline {8.2}Reweighting of the simulated \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace decays}{65}{section.8.2}
+\contentsline {section}{\numberline {8.3}Generator level efficiencies}{67}{section.8.3}
+\contentsline {section}{\numberline {8.4}Reconstruction and selection efficiencies}{67}{section.8.4}
+\contentsline {section}{\numberline {8.5}Total efficiencies}{67}{section.8.5}
+\contentsline {chapter}{\numberline {9}Backgrounds}{69}{chapter.9}
+\contentsline {section}{\numberline {9.1}Proton misidentification}{69}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Definition of particle identification regions - Number of particle candidates}{70}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}Determination of ``true" candidates with PID efficiencies}{70}{subsection.9.1.2}
+\contentsline {subsection}{\numberline {9.1.3}Estimate of misidentified protons}{72}{subsection.9.1.3}
+\contentsline {section}{\numberline {9.2}Misidentified muons}{73}{section.9.2}
+\contentsline {section}{\numberline {9.3}Prompt {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace mesons}{74}{section.9.3}
+\contentsline {section}{\numberline {9.4}Other possible backgrounds}{75}{section.9.4}
+\contentsline {section}{\numberline {9.5}Backgrounds summary and estimate of background yield}{76}{section.9.5}
+\contentsline {chapter}{\numberline {10}Systematics}{77}{chapter.10}
+\contentsline {section}{\numberline {10.1}Branching ratio uncertainty of subsequent decays}{77}{section.10.1}
+\contentsline {section}{\numberline {10.2}Kinematic \unhbox \voidb@x \hbox {$p_{\rm T}$}\xspace ({\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace ) reweighting of \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace and \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace }\xspace simulated events}{77}{section.10.2}
+\contentsline {section}{\numberline {10.3}Reweighting of \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace simulated events}{78}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Choice of reweighting dimensions}{78}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}Number of bins per dimension}{78}{subsection.10.3.2}
+\contentsline {subsection}{\numberline {10.3.3}Maximum allowed weight}{80}{subsection.10.3.3}
+\contentsline {section}{\numberline {10.4}Choice of fit strategy}{80}{section.10.4}
+\contentsline {section}{\numberline {10.5}Knowledge of backgrounds}{80}{section.10.5}
+\contentsline {section}{\numberline {10.6}Systematics overview}{81}{section.10.6}
+\contentsline {chapter}{\numberline {11}Checks concerning the enhancement at low {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace mass}{83}{chapter.11}
+\contentsline {section}{\numberline {11.1}Detector threshold / acceptance effect}{83}{section.11.1}
+\contentsline {section}{\numberline {11.2}Threshold enhancement from other resonances}{85}{section.11.2}
+\contentsline {section}{\numberline {11.3}Possible background sources}{86}{section.11.3}
+\contentsline {section}{\numberline {11.4}Partially reconstructed decays}{88}{section.11.4}
+\contentsline {section}{\numberline {11.5}General conclusions on the enhancement}{90}{section.11.5}
+\contentsline {chapter}{\numberline {12}Results}{91}{chapter.12}
+\contentsline {chapter}{\numberline {13}Conclusion}{93}{chapter.13}
+\contentsline {chapter}{\numberline {A}Mass resolution}{95}{appendix.A}
+\contentsline {chapter}{\numberline {B}Reweighting of \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\ensuremath {D}\xspace }}\xspace ^0}}\xspace {\ensuremath {\ensuremath {p}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace X}\xspace decay simulation}{97}{appendix.B}
+\contentsline {chapter}{\numberline {C}Reweighting and comparison of the \ensuremath {{\ensuremath {{\ensuremath {\PLambda }}\xspace ^0_{\ensuremath {\ensuremath {b}\xspace }}\xspace }}\xspace \tmspace -\thinmuskip {.1667em}\ensuremath {\rightarrow }\xspace {\ensuremath {{\ensuremath {\PLambda }}\xspace ^+_{\ensuremath {\ensuremath {c}\xspace }}\xspace }}\xspace {\ensuremath {\ensuremath {\mu }\xspace ^-}}\xspace {\ensuremath {{\ensuremath {\overline {\ensuremath {\nu }\xspace }}}\xspace _\mu }}\xspace }\xspace candidates}{99}{appendix.C}
