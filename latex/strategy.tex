@@ -4,7 +4,7 @@ The aim of this analysis is to measure the branching ratio of the inclusive deca
 The $X$ means, that the \Lb decays at least into a \Dz\proton\mun\neumb, but the decay might also include additional particles, e.g. pions.
 To measure a single branching ratio one needs to know how many \Lb are produced and how many of them decay via \LbToDpmunu.
 At a hadron collider like the \lhc, it is hard to determine how many particles of a certain kind are produced.
-In this case one would need to know the \bquark\bquarkbar cross section $\sigma(\bquark\bquarkbar)$, i.e. a measure, how many \bquark\bquarkbar quark pairs are produced in a proton-proton (\proton\proton) collision.
+In this case one would need to know the \bquark\bquarkbar cross section $\sigma(\bquark\bquarkbar)$ to a high precision, i.e. a measure, how many \bquark\bquarkbar quark pairs are produced in a proton-proton (\proton\proton) collision.
 Furthermore, another number one needs to know is how many of these \bquark quarks hadronise to a \Lb.
 This ratio is called the fragmentation fraction $f_{\Lb}$.
 To avoid these tedious measurements and increase the precision of the result, a normalisation decay, \LbToLcmunu, is used to rather measure a relative branching ratio,
@@ -13,8 +13,8 @@ To avoid these tedious measurements and increase the precision of the result, a 
 	\frac{\BR(\decay{\Lb}{\Dz\proton \mun \neumb X})}{\BR(\decay{\Lb}{\Lc \mun\neumb})}. \label{eq:R_def}
 \end{align}
 With this choice $\sigma(\bquark\bquarkbar)$ and $f_{\Lb}$ cancel, since they appear both in the numerator and the denominator.
-In addition one has to consider that the \Dz in the signal channel and the \Lc in the normalisation channel are not directly detected.
-They are decaying into more stable particles which are measured and identified in the detector.
+In addition, one has to consider that the \Dz in the signal channel and the \Lc in the normalisation channel are not directly detected.
+They decay into more stable particles which are measured and identified in the detector.
 These subsequent decays are chosen to be \DToKpi and \LcTopKpi, because they can be well measured at \lhcb.
 Following the whole decay chain for the signal channel, \LbToDpmunuX, \DToKpi, and for the normalisation channel, \LbToLcmunu, \LcTopKpi one easily sees, that both decays end up in the same final state, namely \pKpi\mun\neumb.
 Incidentally, this ensures that potential detection efficiencies, e.g. due to different interaction of particles with the detector material, cancel at first order.
@@ -42,12 +42,12 @@ Regarding Equation (\ref{eq:R}) the analysis proceeds in the following steps:
 \begin{enumerate}
     \item The relevant signal decays have to be reconstructed and selected in the collected data (Chapter \ref{sec:Selection}). 
           Since a huge amount of different particles and decays are produced in a proton-proton (\proton\proton) collision, this is an important step to reduce the data size and to separate real signal decays from background.
-    \item The number of \LbToDpmunuX events \NLc is determined with a two-dimensional fit on the \Dz\proton mass and the \logIP distribution.
+    \item The number of \LbToDpmunuX events \NLc is determined with a two-dimensional fit to the \Dz\proton mass and the \logIP distribution.
           The variable \logIP  is a measure for the quality of the \Dz\proton\mun vertex.
           It will be thoroughly defined and its choice motivated in Section \ref{sec:Signalfit}.
           With, \logIP it is possible to distinguish between nonresonant signal, i.e. \Lb directly decaying into \Dz\proton\mun\neumb$X$ without going through intermediate resonances, and background.
     \item For the signal event number \NLc in the normalisation channel \LbToLcmunu, a different approach is chosen.
-          In this channel, the main challenge is to distinguish between \LbToLcmunu decays and decays into excited \Lc states, e.g. \decay{\Lc}{\LcRes{(2595)}\mun\neumb}.
+          In this channel, the main challenge is to distinguish between \LbToLcmunu decays and decays into excited \Lc states, e.g. \decay{\Lb}{\LcRes{(2595)}\mun\neumb}.
           These decays can be separated by a fit to the corrected \Lb mass.
           The corrected mass is a quantity where one (partially) corrects for the missing neutrino in the decay.
           A detailed explanation and motivation follows in Chapter \ref{sec:Normalisationfit}.

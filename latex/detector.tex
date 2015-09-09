@@ -4,7 +4,7 @@ The Large Hadron Collider (LHC) of the European Organization for Nuclear Researc
 Having a circumference of $26.7 \km$, it is designed to either collide protons with a centre-of-mass energy of $\sqs=14\tev$ or heavy ions with $2.8 \tev$ per nucleon \cite{LHC}.
 The beams can be brought to collision at four interaction points.
 At these points, different experiments are placed.
-Whereas \atlas and \cms are built as multi-purpose detectors \cite{ATLAS, CMS} and \alice studies heavy-ion collisions \cite{ALICE}, \lhcb is dedicated to search indirectly for evidence of physics beyond the Standard Model by the study of hadrons containing either a heavy \bquark- or \cquark-quark.
+Whereas \atlas and \cms are built as multi-purpose detectors \cite{ATLAS, CMS} and \alice studies heavy-ion collisions \cite{ALICE}, \lhcb is dedicated to study hadrons containing either a heavy \bquark- or \cquark-quark.
 
 Those \bquark- and \cquark-hadrons are mainly produced by gluon-gluon fusion at \lhc energies with subsequent hadronisation.
 These gluons in general carry different momenta leading to a boost of the hadron along the beam-pipe.
@@ -28,7 +28,7 @@ With this choice approximately 25\% of all \bquark\bquarkbar pairs are produced 
 \end{figure}
 The \lhcb detector consists of multiple subdetectors and sensors.
 They can be roughly separated into two groups by their dedicated purpose.
-They are in priciple either used for the reconstruction of particle tracks or to identify the particles.
+They are in principle either used for the reconstruction of particle tracks or to identify the particles and measure their energy.
 Both groups will be explained in the following.
 
 % ===========================
@@ -36,7 +36,7 @@ Both groups will be explained in the following.
 % ===========================
 \section{Tracking detectors}
 Tracking describes the whole procedure to reconstruct the trajectories of (charged) particles produced in the proton-proton collision. 
-Together with the dipole magnet, the particles' charges and momenta can be determined as well by the deflection of the track.
+Together with the dipole magnet that bends charged particles, the particles' charges and momenta can be determined by the deflection of the tracks.
 The magnet provides a magnetic field of 4\unit{Tm} integrated over a length of 10\m.
 Its main component, the magnetic field in $y$ direction, is shown in Figure \ref{fig:MagneticField_Tracks}.
 For the particle tracking, a system of several subdetectors is aligned up- and downstream the dipole magnet, namely the Vertex locator (VELO), the Trigger Tracker (TT) and the Trigger stations (T1-T3) built-up by the Inner Tracker (IT) and the Outer Tracker (OT).
@@ -44,10 +44,10 @@ For the particle tracking, a system of several subdetectors is aligned up- and d
 \subsection{Vertex Locator (VELO)}
 The VErtex LOcator (VELO) is placed directly around the primary interaction point. 
 Its task is to precisely measure the track coordinates of charged particles and separate the proton-proton interaction point from other vertices, namely either other primary vertices (so called pile-up events) or secondary vertices. 
-The latter ones are typically for \bquark- or \cquark-hadron decays \cite{VELO_TDR} and a good separation and resolution of these vertices is crucial for the \lhcb physics programme.
-As an example serves the measurement of particles' decay lengths and times for the determination of the rapid $\Bs-\Bsb$ oscillation frequency \cite{BsBsbar_frequency}.
+The latter ones are typical for \bquark- or \cquark-hadron decays \cite{VELO_TDR} and a good separation and resolution of these vertices is crucial for the \lhcb physics programme.
+An example is the measurement of particles' decay lengths and times for the determination of the rapid $\Bs-\Bsb$ oscillation frequency \cite{BsBsbar_frequency}.
 
-The VELO is built up by silicon modules due to the high particle flux and thus high radiation in the interaction region. 
+The VELO is built up by silicon modules due to the required high resolution as well as the high particle flux and thus high radiation in the interaction region. 
 It is placed only 7\mm apart from the beam. 
 This is closer than the required aperture of the \lhcb beam pipe at injection. 
 Thus, the VELO sensors are made of silicon microstrips shaped as slightly overlapping half-discs. 
@@ -57,16 +57,16 @@ Each module provides a measurement of the $r$- and $\phi$-coordinates.
 The sensores for these measurements are correspondingly called $R$- and $\Phi$-sensor, which can be seen in Figure \ref{fig:VELO_RandPhiSensor}.
 An overview over the VELO system with its modules is shown in Figure \ref{fig:VELO_Overview}. 
 Around the nominal interaction region, the modules are placed closer to each other. 
-Upstream there are two $R$ sensors dedicated to veto pile-up events. 
+Upstream, there are two $R$ sensors dedicated to veto pile-up events. 
 Figure \ref{fig:VELO_Overview} furthermore shows the VELO in the closed and opened position.
-\begin{figure}[tb]
+\begin{figure}[tbp]
     \centering
 	\includegraphics[width=0.5\textwidth]{VELO_randphisensors}	
 	\caption{Schematic representation of an $R$ and a $\Phi$ sensor. The $R$ sensor strips are arranged into four approximately 45\degrees segments and have routing lines perpendicular to the strips. The $\Phi$ sensor has two zones with inner and outer strips. The routing lines of the inner strips
     are orientated parallel to the outer strips. Figure and caption taken from \cite{VELO_Performance}.}
 	\label{fig:VELO_RandPhiSensor}
 \end{figure}
-\begin{figure}[tb]
+\begin{figure}[tbp]
     \centering
 	\includegraphics[width=0.8\textwidth]{VELO_Overview}	
 	\caption{Cross section in the $(x,z)$ plane of the VELO silicon sensors, at $y=0$, with the detector in the fully closed position. 
@@ -151,9 +151,9 @@ The reconstruction of \bquark- and \cquark- hadrons require the identification o
 Several facilities for that purpose are available at the \lhcb detector, that are described in the following.
 
 \subsection{Ring Imaging Cherenkov Detector (RICH)}
-The RICH detectors at \lhcb are dedicated to distinguish charged hadrons, especially pions, kaons and hadrons.
+The RICH detectors at \lhcb are dedicated to distinguish charged hadrons, especially pions, kaons and protons.
 They make use of the Cherenkov radiation.
-If charged particles fly through a dielectric medium with a velocity $\beta = v/c$ that is faster than the speed of light in that medium, they emit photons in a cone around their flight path.
+If charged particles fly through a dielectric medium with a velocity $\beta = v/c$ that is faster than the speed of light in that medium, photons are emitted in a cone around their flight path.
 The opening angle $\theta_C$ of that light cone is given by
 \begin{align}
     \cos \theta_C = \frac{1}{\beta n},
@@ -163,8 +163,8 @@ where $n$ denotes the refractive index of the medium \cite{Jackson_ED}.
 Together with the measured momenta from tracking it is possible to calculate the mass of the particle and thus to identify it.
 The \lhcb detector consists of two RICH detectors.
 RICH1 is located upstream the magnet before particles might be bent out of the \lhcb detector acceptance by the magnet.
-It contains aerogel and \cfourften gas and is dedicated to measure low-momenta particles between 1 \gev and 60 \gev.
-However, RICH2 is placed downstream the magnet, filled with \cffour gas and covers the high-momentum range from 15 \gev to 100 \gev \cite{detector, RICH_Performance}.
+It contains aerogel and \cfourften gas and is dedicated to measure low-momenta particles between 1\gev and 60\gev.
+However, RICH2 is placed downstream the magnet, filled with \cffour gas and covers the high-momentum range from 15\gev to 100\gev \cite{detector, RICH_Performance}.
 
 \subsection{Calorimeter system}
 The main purpose of the calorimeter system is to measure the energy of the particles.
@@ -174,7 +174,7 @@ The first part of the calorimeter system is the scintillating pad detector (SPD)
 It is used to select charged particles and above all to distinguish between electrons and photons in the subsequent calorimeter parts.
 After a 2.5 radiation lengths lead wall it is followed by the preshower detector (PS) identifying electromagnetic particles.
 To measure the energy of electromagnetic particles, the electromagnetic calorimeter (ECAL) is placed behind the PS.
-It uses the so called shashlik-technology, i.e. it employs an alternating structure of scintillating tiles and lead plates.
+It uses the so-called shashlik-technology, i.e. it employs an alternating structure of scintillating tiles and lead plates.
 The last part of the calorimeter system is the hadronic calorimeter (HCAL).
 It is a sampling device made of iron as absorber and scintillating tiles as active material and measures the energy of hadrons.
 
@@ -188,14 +188,14 @@ Muons as long-lived and minimum ionising particles can penetrate the whole detec
 That is why the muon chambers for the identification of muons are the last part of the detector.
 There are five muon stations, one (M1) before the calorimeter system and four (M2-M5) behind.
 To ensure that only muons penetrate the whole system the latter ones are interleaved with 80\cm thick iron absorbers.
-Besides for the inner part of M1, the muon chambers mainly consist of multi-wire proportional chambers (MWPC) providing a fast readout.
+Besides the inner part of M1, the muon chambers mainly consist of multi-wire proportional chambers (MWPC) providing a fast readout.
 In the inner part of M1 a gas electron multiplier is used due to the high particle flux \cite{detector, Muon_Performance}.
 
 % ===========================
 % SECTION: Trigger
 % ===========================
 \section{Trigger}
-The LHC is designed to cross proton bunches every 25\ns.
+The LHC is designed to collide proton bunches every 25\ns.
 This is equivalent to a beam crossing rate of 40\mhz.
 However, it is not possible to record data at this rate.
 Thus, the task of the \lhcb trigger system is to reduce the rate to a recordable level.

@@ -14,12 +14,12 @@
 \contentsline {section}{\numberline {3.1}Tracking detectors}{25}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Vertex Locator (VELO)}{26}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Silicon Tracker (ST)}{27}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Outer Tracker (OT)}{28}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Track classification}{29}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.3}Outer Tracker (OT)}{29}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Track classification}{30}{subsection.3.1.4}
 \contentsline {section}{\numberline {3.2}Particle identification}{30}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Ring Imaging Cherenkov Detector (RICH)}{30}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Calorimeter system}{31}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Muon chambers}{31}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Muon chambers}{32}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Trigger}{32}{section.3.3}
 \contentsline {chapter}{\numberline {4}Analysis strategy}{35}{chapter.4}
 \contentsline {chapter}{\numberline {5}Data reconstruction and selection}{39}{chapter.5}
